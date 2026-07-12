@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Auth Callback</title>
+  <style>
+    body { font-family: monospace; background: #111; color: #eee; padding: 40px; }
+    h2 { color: #fff; }
+    pre { background: #222; padding: 16px; border-radius: 6px; font-size: 1.1em; word-break: break-all; white-space: pre-wrap; }
+    .label { color: #888; font-size: 0.9em; margin-top: 20px; }
+    button { margin-top: 10px; padding: 8px 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Authorization Response</h2>
+
+  <div class="label">code:</div>
+  <pre id="code">(none)</pre>
+
+  <div class="label">state:</div>
+  <pre id="state">(none)</pre>
+
+  <div class="label">full query string:</div>
+  <pre id="raw">(none)</pre>
+
+  <button onclick="copyCode()">Copy code</button>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('code').textContent = params.get('code') || '(no code found)';
+    document.getElementById('state').textContent = params.get('state') || '(no state found)';
+    document.getElementById('raw').textContent = window.location.search || '(empty)';
+
+    function copyCode() {
+      const code = document.getElementById('code').textContent;
+      navigator.clipboard.writeText(code).then(() => alert('Copied!'));
+    }
+  </script>
+</body>
+</html>
