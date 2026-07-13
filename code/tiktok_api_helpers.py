@@ -33,14 +33,14 @@ CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
-DELAY_BETWEEN_CALLS = 15.0  # seconds between successful chunk calls — bumped up since the limit was being hit on nearly every call
+DELAY_BETWEEN_CALLS = 30.0  # seconds between successful chunk calls — raised again: even 15s still needed a retry on nearly every chunk
 
 LOG_FILE = "run_pass.log"
 
 logger = logging.getLogger("tiktok_api_helpers.run_pass")
 logger.setLevel(logging.INFO)
 if not logger.handlers:  # avoid duplicate handlers if this module is re-imported (e.g. notebook re-run)
-    _file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
+    _file_handler = logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8")  # append, never overwrite
     _file_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
     logger.addHandler(_file_handler)
 
@@ -99,8 +99,8 @@ def call_api(
     query_params: dict | None = None,
     body_dict: dict | None = None,
     max_retries: int = 3,
-    base_delay: float = 10.0,
-    max_delay: float = 40.0,
+    base_delay: float = 15.0,
+    max_delay: float = 45.0,
 ) -> dict:
     """
     Generic signed call to a TikTok Shop Open API endpoint. Handles:
@@ -324,7 +324,7 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
         if result.get("code") != 0:
             logger.info(f"  ⚠️  Search failed: {result}")
             if result.get("code") == RATE_LIMIT_CODE:
-                cooldown = 30.0
+                cooldown = 60.0
                 logger.info(f"  Cooling down an extra {cooldown:.0f}s before the next chunk...")
                 time.sleep(cooldown)
         else:
