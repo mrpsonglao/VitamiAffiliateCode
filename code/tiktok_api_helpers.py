@@ -32,7 +32,7 @@ CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
-DELAY_BETWEEN_CALLS = 5.0  # seconds between successful chunk calls
+DELAY_BETWEEN_CALLS = 8.0  # seconds between successful chunk calls
 
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
@@ -88,9 +88,9 @@ def call_api(
     path: str,
     query_params: dict | None = None,
     body_dict: dict | None = None,
-    max_retries: int = 5,
-    base_delay: float = 5.0,
-    max_delay: float = 60.0,
+    max_retries: int = 6,
+    base_delay: float = 10.0,
+    max_delay: float = 90.0,
 ) -> dict:
     """
     Generic signed call to a TikTok Shop Open API endpoint. Handles:
