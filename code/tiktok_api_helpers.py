@@ -1,6 +1,7 @@
 import hashlib
 import hmac
 import json
+import logging
 import os
 import random
 import time
@@ -33,6 +34,15 @@ MANIFEST_CSV = "creators_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 15.0  # seconds between successful chunk calls — bumped up since the limit was being hit on nearly every call
+
+LOG_FILE = "run_pass.log"
+
+logger = logging.getLogger("tiktok_api_helpers.run_pass")
+logger.setLevel(logging.INFO)
+if not logger.handlers:  # avoid duplicate handlers if this module is re-imported (e.g. notebook re-run)
+    _file_handler = logging.FileHandler(LOG_FILE)
+    _file_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
+    logger.addHandler(_file_handler)
 
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
@@ -134,11 +144,13 @@ def call_api(
             return result
 
         if attempt == max_retries - 1:
-            print(f"  ⚠️  Still rate-limited after {max_retries} attempts — giving up for now.")
+            msg = f"  ⚠️  Still rate-limited after {max_retries} attempts — giving up for now."
+            logger.info(msg)
+            print(msg)
             return result
 
         delay = min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
-        print(f"Rate limited (attempt {attempt + 1}/{max_retries}). Waiting {delay:.1f}s...")
+        logger.info(f"Rate limited (attempt {attempt + 1}/{max_retries}). Waiting {delay:.1f}s...")
         time.sleep(delay)
 
     return result
@@ -303,15 +315,17 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
 
     for i, chunk in enumerate(chunks, start=1):
         keyword = build_keyword(chunk)
-        print(f"[chunk_size={chunk_size}] {i}/{len(chunks)}: searching {chunk}")
+        msg = f"[chunk_size={chunk_size}] {i}/{len(chunks)}: searching {chunk}"
+        logger.info(msg)
+        print(msg)
 
         result = search_creators_with_retry(keyword=keyword, search_key=search_key)
 
         if result.get("code") != 0:
-            print(f"  ⚠️  Search failed: {result}")
+            logger.info(f"  ⚠️  Search failed: {result}")
             if result.get("code") == RATE_LIMIT_CODE:
                 cooldown = 30.0
-                print(f"  Cooling down an extra {cooldown:.0f}s before the next chunk...")
+                logger.info(f"  Cooling down an extra {cooldown:.0f}s before the next chunk...")
                 time.sleep(cooldown)
         else:
             data = result.get("data", {}) or {}
