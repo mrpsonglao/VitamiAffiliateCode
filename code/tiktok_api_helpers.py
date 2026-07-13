@@ -26,7 +26,7 @@ CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
-DELAY_BETWEEN_CALLS = 1.0
+DELAY_BETWEEN_CALLS = 5.0  # seconds between successful chunk calls — was 1.0, too fast to stay under the limit
 
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
@@ -115,11 +115,16 @@ def get_and_save_shop_cipher() -> str:
     return cipher
 
 
-def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: int = 5, base_delay: float = 2.0) -> dict:
+def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: int = 8, base_delay: float = 5.0, max_delay: float = 60.0) -> dict:
     """
     Calls Seller Search Creator on Marketplace for the given keyword, with
     exponential backoff + jitter on TikTok's rate-limit error (code 36009002).
     Any other error code is returned immediately without retrying.
+
+    Delay grows as base_delay * 2^attempt (capped at max_delay), plus jitter.
+    With defaults: ~5s, 10s, 20s, 40s, 60s, 60s, 60s, 60s — over 5 minutes
+    of total patience before giving up, since TikTok's rate-limit window
+    may take longer to clear than a few quick retries account for.
     """
     params = {
         "app_key": app_key,
@@ -147,7 +152,7 @@ def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: i
         if attempt == max_retries - 1:
             raise RuntimeError(f"Still rate-limited after {max_retries} attempts: {result}")
 
-        delay = base_delay * (2 ** attempt) + random.uniform(0, 1)
+        delay = min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
         print(f"Rate limited (attempt {attempt + 1}/{max_retries}). Waiting {delay:.1f}s...")
         time.sleep(delay)
 
