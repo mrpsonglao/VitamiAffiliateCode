@@ -23,6 +23,7 @@ AUTHORIZED_SHOPS_PATH = "/authorization/202309/shops"
 MARKETPLACE_SEARCH_PATH = "/affiliate_seller/202508/marketplace_creators/search"
 CREATE_TARGET_COLLABORATION_PATH = "/affiliate_seller/202508/target_collaborations"
 QUERY_TARGET_COLLABORATION_PATH_TEMPLATE = "/affiliate_seller/202508/target_collaborations/{}"
+CHECK_TARGET_COLLABORATION_CONFLICTS_PATH = "/affiliate_seller/202605/target_collaborations/conflicts/check"
 CREATE_CONVERSATION_PATH = "/affiliate_seller/202508/conversations"
 GET_CONVERSATION_LIST_PATH = "/affiliate_seller/202412/conversations"
 SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messages"
@@ -181,6 +182,113 @@ def search_creators_with_retry(keyword: str, search_key: str = "", page_size: in
     query_params = {"page_size": page_size}
     body_dict = {"keyword": keyword, "search_key": search_key}
     return call_api("POST", MARKETPLACE_SEARCH_PATH, query_params, body_dict, **retry_kwargs)
+
+
+def create_target_collaboration(
+    name: str,
+    end_time: int,
+    products: list[dict],
+    creator_user_open_ids: list[str],
+    seller_contact_info: dict,
+    free_sample_rule: dict,
+    message: str | None = None,
+    **retry_kwargs,
+) -> dict:
+    """
+    Creates a Target Collaboration, inviting creators to promote specific products.
+
+    products: list of {"id": ..., "target_commission_rate": ..., "shop_ads_commission_rate": ...}
+              (max 100 entries)
+    creator_user_open_ids: list of creator_open_id strings (max 50 entries)
+    seller_contact_info: dict with "email" required, other contact fields optional
+    free_sample_rule: {"has_free_sample": bool, "is_sample_approval_exempt": bool}
+    end_time: Unix epoch timestamp (int) for when the collaboration ends
+    """
+    if len(products) > 100:
+        raise ValueError("products can have at most 100 entries")
+    if len(creator_user_open_ids) > 50:
+        raise ValueError("creator_user_open_ids can have at most 50 entries")
+
+    query_params = None
+    body_dict = {
+        "name": name,
+        "end_time": str(end_time),
+        "products": products,
+        "creator_user_open_ids": creator_user_open_ids,
+        "seller_contact_info": seller_contact_info,
+        "free_sample_rule": free_sample_rule,
+    }
+    if message:
+        body_dict["message"] = message
+
+    return call_api("POST", CREATE_TARGET_COLLABORATION_PATH, query_params, body_dict, **retry_kwargs)
+
+
+def query_target_collaboration_detail(target_collaboration_id: str, **retry_kwargs) -> dict:
+    """Fetches full detail (products, creators, status) for a given target collaboration."""
+    path = QUERY_TARGET_COLLABORATION_PATH_TEMPLATE.format(target_collaboration_id)
+    return call_api("GET", path, query_params=None, body_dict=None, **retry_kwargs)
+
+
+def check_target_collaboration_conflicts(creator_open_id_list: list[str], product_id_list: list[str], **retry_kwargs) -> dict:
+    """
+    Checks whether any (creator, product) pairs already have an existing
+    target collaboration, before actually creating one. Useful to call
+    ahead of create_target_collaboration to avoid conflict failures.
+
+    Returns data.has_conflict (bool) and data.conflict_items (list of
+    {creator_open_id, product_id, existing_collaboration_id}).
+    """
+    body_dict = {
+        "creator_open_id_list": creator_open_id_list,
+        "product_id_list": product_id_list,
+    }
+    return call_api("POST", CHECK_TARGET_COLLABORATION_CONFLICTS_PATH, query_params=None, body_dict=body_dict, **retry_kwargs)
+
+
+def create_conversation_with_creator(creator_open_id: str, only_need_conversation_id: bool = True, **retry_kwargs) -> dict:
+    """Opens (or fetches, if one already exists) a conversation with a creator. Returns conversation_id."""
+    body_dict = {"creator_open_id": creator_open_id, "only_need_conversation_id": only_need_conversation_id}
+    return call_api("POST", CREATE_CONVERSATION_PATH, query_params=None, body_dict=body_dict, **retry_kwargs)
+
+
+def get_conversation_list(
+    page_size: int = 50,
+    page_token: str = "",
+    conversation_status: str | None = None,
+    only_need_conversation_id: bool = True,
+    **retry_kwargs,
+) -> dict:
+    """
+    Lists conversations. page_size max is 50.
+    conversation_status: "ALL", "UNREAD", or "UNREPLIED" (optional filter).
+    """
+    query_params = {"page_size": page_size, "only_need_conversation_id": only_need_conversation_id}
+    if page_token:
+        query_params["page_token"] = page_token
+    if conversation_status:
+        query_params["conversation_status"] = conversation_status
+
+    return call_api("GET", GET_CONVERSATION_LIST_PATH, query_params, body_dict=None, **retry_kwargs)
+
+
+def send_im_message(conversation_id: str, msg_type: str, content: dict, **retry_kwargs) -> dict:
+    """
+    Sends a message in an existing conversation.
+
+    msg_type: "TEXT", "PRODUCT_CARD", "TARGET_COLLABORATION_CARD", "FREE_SAMPLE_CARD", or "IMAGE"
+    content: a dict matching the msg_type, e.g.:
+        TEXT:                    {"content": "simple text"}
+        PRODUCT_CARD:             {"product_id": "12345"}
+        TARGET_COLLABORATION_CARD: {"target_collaboration_id": "1234"}
+        FREE_SAMPLE_CARD:         {"apply_id": "1234"}
+        IMAGE:                    {"url": "...", "width": 1280, "height": 720}
+    This function handles JSON-serializing `content` into the string the API expects.
+    """
+    path = SEND_IM_MESSAGE_PATH_TEMPLATE.format(conversation_id)
+    body_dict = {"msg_type": msg_type, "content": json.dumps(content)}
+    return call_api("POST", path, query_params=None, body_dict=body_dict, **retry_kwargs)
+
 
 def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFrame) -> tuple[list[str], set, pd.DataFrame]:
     """
