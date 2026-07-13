@@ -23,7 +23,7 @@ MARKETPLACE_SEARCH_PATH = "/affiliate_seller/202508/marketplace_creators/search"
 
 CREATORS_LIST_CSV = "all_creators_handleonly.csv"
 CONSOLIDATED_CSV = "creators_found.csv"
-MANIFEST_CSV="creators_manifest.csv"
+MANIFEST_CSV = "creators_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 1.0
@@ -74,7 +74,7 @@ def build_signed_params(path: str, params: dict, app_secret: str, body: str = ""
 
 def build_keyword(handles: list[str]) -> str:
     """Builds the '@handle1|@handle2|...' keyword string for a multi-handle search."""
-    return "@" + "|@".join(h.lstrip("@") for h in handles)
+    return "@" + "|@".join(handles)
 
 
 def get_and_save_shop_cipher() -> str:
@@ -152,13 +152,13 @@ def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: i
         time.sleep(delay)
 
 
-def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFrame) -> tuple[list[str], pd.DataFrame]:
+def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFrame) -> tuple[list[str], set, pd.DataFrame]:
     """
     Runs a single pass over handles_to_find, chunked into groups of chunk_size.
     Each chunk is searched exactly once (linear pass, no re-searching within
     this call). Saves progress to CSV after every chunk.
 
-    Returns (handles still not found after this pass, updated df_creators).
+    Returns (handles still not found after this pass, found_usernames, updated df_creators).
     """
     chunks = [handles_to_find[i:i + chunk_size] for i in range(0, len(handles_to_find), chunk_size)]
 
@@ -180,7 +180,7 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
         df_creators.to_csv(CONSOLIDATED_CSV, index=False)  # save progress every chunk
         time.sleep(DELAY_BETWEEN_CALLS)
 
-    found_usernames = set(df_creators["username"].str.lower()) if not df_creators.empty else set()
-    still_not_found = [h for h in handles_to_find if h.lstrip("@").lower() not in found_usernames]
+    found_usernames = set(df_creators["username"]) if not df_creators.empty else set()
+    still_not_found = [h for h in handles_to_find if h not in found_usernames]
 
     return still_not_found, found_usernames, df_creators
