@@ -115,16 +115,29 @@ def get_and_save_shop_cipher() -> str:
     return cipher
 
 
-def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: int = 8, base_delay: float = 5.0, max_delay: float = 60.0) -> dict:
+def search_creators_with_retry(keyword: str, search_key: str = "", page_size: int = 20, max_retries: int = 5, base_delay: float = 5.0, max_delay: float = 60.0) -> dict:
     """
     Calls Seller Search Creator on Marketplace for the given keyword, with
     exponential backoff + jitter on TikTok's rate-limit error (code 36009002).
     Any other error code is returned immediately without retrying.
 
-    Delay grows as base_delay * 2^attempt (capped at max_delay), plus jitter.
-    With defaults: ~5s, 10s, 20s, 40s, 60s, 60s, 60s, 60s — over 5 minutes
-    of total patience before giving up, since TikTok's rate-limit window
-    may take longer to clear than a few quick retries account for.
+    search_key: pass the value from a previous response's data.search_key to
+    let TikTok cache/stabilize the search. Per their docs this "improves api
+    performance and ensures stable request results" — worth carrying forward
+    between calls in case it also helps with the rate-limit issue, since the
+    error message mentions "downstream" load. Leave "" for a first call.
+
+    Delay grows as base_delay * 2^attempt (capped at max_delay), plus jitter:
+    ~5s, 10s, 20s, 40s, 60s.
+
+    If still rate-limited after max_retries, this does NOT raise — it returns
+    the last rate-limited result dict as-is. Empirically, this rate limit can
+    persist well beyond a few minutes of backoff (possibly reflecting load on
+    a downstream service rather than purely your own call pace), so blocking
+    a whole multi-thousand-row run on one stubborn chunk isn't worth it.
+    The caller (run_pass) already just logs a warning and moves on for any
+    non-zero code, and the manifest lets you re-run later to pick up whatever
+    didn't resolve this time.
     """
     params = {
         "app_key": app_key,
@@ -132,10 +145,11 @@ def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: i
         "shop_cipher": shop_cipher,
         "page_size": page_size,
     }
-    body_dict = {"keyword": keyword, "search_key": ""}
+    body_dict = {"keyword": keyword, "search_key": search_key}
     body = json.dumps(body_dict)
     signed_params = build_signed_params(MARKETPLACE_SEARCH_PATH, params, app_secret, body)
 
+    result = None
     for attempt in range(max_retries):
         response = requests.post(
             f"{base_url}{MARKETPLACE_SEARCH_PATH}",
@@ -150,11 +164,14 @@ def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: i
             return result
 
         if attempt == max_retries - 1:
-            raise RuntimeError(f"Still rate-limited after {max_retries} attempts: {result}")
+            print(f"  ⚠️  Still rate-limited after {max_retries} attempts — giving up on this chunk for now.")
+            return result
 
         delay = min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
         print(f"Rate limited (attempt {attempt + 1}/{max_retries}). Waiting {delay:.1f}s...")
         time.sleep(delay)
+
+    return result
 
 
 def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFrame) -> tuple[list[str], set, pd.DataFrame]:
@@ -167,16 +184,21 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
     """
     chunks = [handles_to_find[i:i + chunk_size] for i in range(0, len(handles_to_find), chunk_size)]
 
+    search_key = ""  # empty on first call; carried forward from each response after that
+
     for i, chunk in enumerate(chunks, start=1):
         keyword = build_keyword(chunk)
         print(f"[chunk_size={chunk_size}] {i}/{len(chunks)}: searching {chunk}")
 
-        result = search_creators_with_retry(keyword=keyword)
+        result = search_creators_with_retry(keyword=keyword, search_key=search_key)
 
         if result.get("code") != 0:
             print(f"  ⚠️  Search failed: {result}")
         else:
-            creators = result.get("data", {}).get("creators", [])
+            data = result.get("data", {}) or {}
+            search_key = data.get("search_key", search_key)  # carry forward for next call
+
+            creators = data.get("creators", [])
             if creators:
                 new_df = pd.DataFrame(creators)
                 df_creators = pd.concat([df_creators, new_df], ignore_index=True)
