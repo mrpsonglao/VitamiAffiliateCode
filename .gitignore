@@ -2,3 +2,4 @@ code/.env
 code/.ipynb_checkpoints/
 code/chunk_code/chunked_output/
 code/__pycache__/
+tiktok_api_markdown/
