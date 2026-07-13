@@ -40,7 +40,7 @@ LOG_FILE = "run_pass.log"
 logger = logging.getLogger("tiktok_api_helpers.run_pass")
 logger.setLevel(logging.INFO)
 if not logger.handlers:  # avoid duplicate handlers if this module is re-imported (e.g. notebook re-run)
-    _file_handler = logging.FileHandler(LOG_FILE)
+    _file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
     _file_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
     logger.addHandler(_file_handler)
 
