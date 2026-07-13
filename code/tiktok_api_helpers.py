@@ -28,7 +28,6 @@ CREATE_CONVERSATION_PATH = "/affiliate_seller/202508/conversations"
 GET_CONVERSATION_LIST_PATH = "/affiliate_seller/202412/conversations"
 SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messages"
 
-CREATORS_LIST_CSV = "all_creators_handleonly.csv"
 CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
 
