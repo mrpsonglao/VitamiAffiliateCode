@@ -32,7 +32,7 @@ CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
-DELAY_BETWEEN_CALLS = 8.0  # seconds between successful chunk calls
+DELAY_BETWEEN_CALLS = 15.0  # seconds between successful chunk calls — bumped up since the limit was being hit on nearly every call
 
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
@@ -88,9 +88,9 @@ def call_api(
     path: str,
     query_params: dict | None = None,
     body_dict: dict | None = None,
-    max_retries: int = 6,
+    max_retries: int = 3,
     base_delay: float = 10.0,
-    max_delay: float = 90.0,
+    max_delay: float = 40.0,
 ) -> dict:
     """
     Generic signed call to a TikTok Shop Open API endpoint. Handles:
@@ -309,6 +309,10 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
 
         if result.get("code") != 0:
             print(f"  ⚠️  Search failed: {result}")
+            if result.get("code") == RATE_LIMIT_CODE:
+                cooldown = 30.0
+                print(f"  Cooling down an extra {cooldown:.0f}s before the next chunk...")
+                time.sleep(cooldown)
         else:
             data = result.get("data", {}) or {}
             search_key = data.get("search_key", search_key)  # carry forward for next call
