@@ -119,6 +119,8 @@ def call_api(
     for attempt in range(max_retries):
         query_params["app_key"] = app_key
         query_params["timestamp"] = int(time.time())  # fresh every attempt
+        if shop_cipher:
+            query_params.setdefault("shop_cipher", shop_cipher)
         signed_params = build_signed_params(path, query_params, app_secret, body)
 
         if method.upper() == "GET":
@@ -176,7 +178,7 @@ def search_creators_with_retry(keyword: str, search_key: str = "", page_size: in
     if page_size not in (12, 20):
         raise ValueError("page_size must be 12 or 20")
 
-    query_params = {"shop_cipher": shop_cipher, "page_size": page_size}
+    query_params = {"page_size": page_size}
     body_dict = {"keyword": keyword, "search_key": search_key}
     return call_api("POST", MARKETPLACE_SEARCH_PATH, query_params, body_dict, **retry_kwargs)
 
