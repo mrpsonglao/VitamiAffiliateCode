@@ -32,6 +32,7 @@ SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messa
 CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
 TARGET_COLLAB_MANIFEST_CSV = "target_collaboration_manifest.csv"
+CONFLICTS_MANIFEST_CSV = "collab_conflicts_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 30.0  # seconds between successful chunk calls — raised again: even 15s still needed a retry on nearly every chunk
