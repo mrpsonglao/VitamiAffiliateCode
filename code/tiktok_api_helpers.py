@@ -1,10 +1,32 @@
+import hashlib
+import hmac
 import json
 import os
 import random
 import time
 from pathlib import Path
+
 import pandas as pd
 import requests
+from dotenv import load_dotenv, set_key
+
+load_dotenv()  # reads .env in the current directory into environment variables
+
+app_key = os.environ.get("TIKTOK_APP_KEY")
+app_secret = os.environ.get("TIKTOK_APP_SECRET")
+access_token = os.environ.get("TIKTOK_ACCESS_TOKEN")
+shop_cipher = os.environ.get("SHOP_CIPHER")
+
+base_url = "https://open-api.tiktokglobalshop.com"
+AUTHORIZED_SHOPS_PATH = "/authorization/202309/shops"
+MARKETPLACE_SEARCH_PATH = "/affiliate_seller/202508/marketplace_creators/search"
+
+CREATORS_LIST_CSV = "all_creators_handleonly.csv"
+CONSOLIDATED_CSV = "creators_found.csv"
+MANIFEST_CSV="creators_manifest.csv"
+
+RATE_LIMIT_CODE = 36009002
+DELAY_BETWEEN_CALLS = 1.0
 
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
@@ -25,21 +47,12 @@ def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> s
     Returns:
         Lowercase hex-encoded HMAC-SHA256 signature string.
     """
-    # Step 1: sort params alphabetically, excluding sign/access_token
     filtered = {k: v for k, v in params.items() if k not in ("sign", "access_token")}
     sorted_params = sorted(filtered.items())
-
-    # Step 2: concatenate sorted param names + values
     param_string = "".join(f"{k}{v}" for k, v in sorted_params)
-
-    # Step 3: prepend the path
     base_string = f"{path}{param_string}"
-
-    # Step 4: append the raw body, if any
     if body:
         base_string += body
-
-    # Step 5: wrap with app_secret on both ends, then HMAC-SHA256
     signed_string = f"{app_secret}{base_string}{app_secret}"
 
     return hmac.new(
@@ -47,6 +60,7 @@ def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> s
         signed_string.encode("utf-8"),
         hashlib.sha256,
     ).hexdigest()
+
 
 def build_signed_params(path: str, params: dict, app_secret: str, body: str = "") -> dict:
     """
@@ -57,9 +71,48 @@ def build_signed_params(path: str, params: dict, app_secret: str, body: str = ""
     params_with_sign["sign"] = generate_sign(path, params, app_secret, body)
     return params_with_sign
 
+
 def build_keyword(handles: list[str]) -> str:
     """Builds the '@handle1|@handle2|...' keyword string for a multi-handle search."""
     return "@" + "|@".join(h.lstrip("@") for h in handles)
+
+
+def get_and_save_shop_cipher() -> str:
+    """
+    Calls Get Authorized Shops and saves the first shop's cipher to .env as
+    SHOP_CIPHER. Returns the cipher too, in case you want to use it directly.
+
+    Note: `shop_cipher` at module level was loaded from .env at import time.
+    Calling this afterward updates the .env FILE, but the already-imported
+    `shop_cipher` name in your notebook won't update on its own. After
+    calling this, either:
+        shop_cipher = get_and_save_shop_cipher()
+    or re-run load_dotenv(override=True) and reassign it, so the rest of
+    your notebook picks up the new value.
+    """
+    params = {
+        "app_key": app_key,
+        "timestamp": int(time.time()),
+    }
+    signed_params = build_signed_params(AUTHORIZED_SHOPS_PATH, params, app_secret)
+
+    headers = {
+        "x-tts-access-token": access_token,
+        "content-type": "application/json",
+    }
+
+    response = requests.get(
+        f"{base_url}{AUTHORIZED_SHOPS_PATH}", params=signed_params, headers=headers, timeout=15
+    )
+    result = response.json()
+
+    if result.get("code") != 0:
+        raise RuntimeError(f"Get Authorized Shops failed: {result}")
+
+    cipher = result["data"]["shops"][0]["cipher"]
+    set_key(".env", "SHOP_CIPHER", cipher)
+    print(f"Saved SHOP_CIPHER to .env: {cipher}")
+    return cipher
 
 
 def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: int = 5, base_delay: float = 2.0) -> dict:
@@ -76,11 +129,11 @@ def search_creators_with_retry(keyword: str, page_size: int = 20, max_retries: i
     }
     body_dict = {"keyword": keyword, "search_key": ""}
     body = json.dumps(body_dict)
-    signed_params = build_signed_params(path, params, app_secret, body)
+    signed_params = build_signed_params(MARKETPLACE_SEARCH_PATH, params, app_secret, body)
 
     for attempt in range(max_retries):
         response = requests.post(
-            f"{base_url}{path}",
+            f"{base_url}{MARKETPLACE_SEARCH_PATH}",
             params=signed_params,
             data=body,
             headers={"x-tts-access-token": access_token, "content-type": "application/json"},
@@ -130,4 +183,4 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
     found_usernames = set(df_creators["username"].str.lower()) if not df_creators.empty else set()
     still_not_found = [h for h in handles_to_find if h.lstrip("@").lower() not in found_usernames]
 
-    return still_not_found, df_creators
+    return still_not_found, found_usernames, df_creators
