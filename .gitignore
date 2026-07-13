@@ -1,3 +1,4 @@
 code/.env
 code/.ipynb_checkpoints/
 code/chunked_output/
+code/__pycache__/
