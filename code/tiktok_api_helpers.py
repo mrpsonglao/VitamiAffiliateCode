@@ -359,6 +359,19 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
                 new_df = pd.DataFrame(creators)
                 usernames_found_this_run.update(new_df["username"])
 
+                # Only count/report matches against the handles we actually
+                # asked for — the search API is fuzzy and can return extra
+                # usernames/nicknames that loosely matched but weren't in
+                # our target list.
+                new_matches = new_df[new_df["username"].isin(handles_to_find)]
+                match_msg = f"  ✅ {len(new_matches)} new handle(s) matched this chunk"
+                logger.info(match_msg)
+                print(match_msg)
+                for _, row in new_matches.iterrows():
+                    match_line = f"    {row['username']} -> {row['creator_open_id']}"
+                    logger.info(match_line)
+                    print(match_line)
+
                 # Only append rows for creators not already on disk, so
                 # re-running or overlapping chunks don't duplicate rows.
                 to_append = new_df[~new_df["creator_open_id"].isin(already_saved_ids)]
