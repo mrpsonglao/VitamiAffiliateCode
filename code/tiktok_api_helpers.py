@@ -32,11 +32,13 @@ SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/
 
 CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
-TARGET_COLLAB_MANIFEST_CSV = "target_collaboration_manifest.csv"
-CONFLICTS_MANIFEST_CSV = "collab_conflicts_manifest.csv"
+TARGET_COLLAB_MANIFEST_CSV = "collabs/target_collaboration_manifest.csv"
+TARGET_COLLAB_CREATORS_CSV = "collabs/target_collaboration_creators.csv"
+CONFLICTS_MANIFEST_CSV = "collabs/collab_conflicts_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 30.0  # seconds between successful chunk calls — raised again: even 15s still needed a retry on nearly every chunk
+DELAY_BETWEEN_QUERIES = 5.0  # seconds between calls, to be gentle on rate limits
 
 LOG_FILE = "run_pass.log"
 
