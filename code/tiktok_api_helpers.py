@@ -135,24 +135,33 @@ def call_api(
             query_params.setdefault("shop_cipher", shop_cipher)
         signed_params = build_signed_params(path, query_params, app_secret, body)
 
-        if method.upper() == "GET":
-            response = requests.get(f"{base_url}{path}", params=signed_params, headers=headers, timeout=15)
-        else:
-            response = requests.post(f"{base_url}{path}", params=signed_params, data=body, headers=headers, timeout=15)
+        try:
+            if method.upper() == "GET":
+                response = requests.get(f"{base_url}{path}", params=signed_params, headers=headers, timeout=30)
+            else:
+                response = requests.post(f"{base_url}{path}", params=signed_params, data=body, headers=headers, timeout=30)
+            result = response.json()
+            is_retryable = result.get("code") == RATE_LIMIT_CODE
+            failure_reason = f"Rate limited (attempt {attempt + 1}/{max_retries})"
+        except requests.exceptions.RequestException as e:
+            # Network-level failure (timeout, connection error, etc.) — no
+            # response to parse, so treat it the same as a retryable failure
+            # rather than letting the exception crash the whole run.
+            result = {"code": -1, "data": None, "message": f"Request failed: {e}"}
+            is_retryable = True
+            failure_reason = f"Network error (attempt {attempt + 1}/{max_retries}): {e}"
 
-        result = response.json()
-
-        if result.get("code") != RATE_LIMIT_CODE:
+        if not is_retryable:
             return result
 
         if attempt == max_retries - 1:
-            msg = f"  ⚠️  Still rate-limited after {max_retries} attempts — giving up for now."
+            msg = f"  ⚠️  Still failing after {max_retries} attempts — giving up for now. Last error: {result.get('message')}"
             logger.info(msg)
             print(msg)
             return result
 
         delay = min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
-        logger.info(f"Rate limited (attempt {attempt + 1}/{max_retries}). Waiting {delay:.1f}s...")
+        logger.info(f"{failure_reason}. Waiting {delay:.1f}s...")
         time.sleep(delay)
 
     return result
