@@ -28,6 +28,7 @@ CHECK_TARGET_COLLABORATION_CONFLICTS_PATH = "/affiliate_seller/202605/target_col
 CREATE_CONVERSATION_PATH = "/affiliate_seller/202508/conversations"
 GET_CONVERSATION_LIST_PATH = "/affiliate_seller/202412/conversations"
 SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messages"
+SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/search"
 
 CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
@@ -204,6 +205,127 @@ def search_creators_with_retry(keyword: str, search_key: str = "", page_size: in
     query_params = {"page_size": page_size}
     body_dict = {"keyword": keyword, "search_key": search_key}
     return call_api("POST", MARKETPLACE_SEARCH_PATH, query_params, body_dict, **retry_kwargs)
+
+
+def search_sample_applications(
+    status: str | None = None,
+    product_id: str | None = None,
+    title: str | None = None,
+    creator_open_id: str | None = None,
+    username: str | None = None,
+    target_collaboration_id: str | None = None,
+    order_id: str | None = None,
+    page_size: int = 50,
+    page_token: str = "",
+    **retry_kwargs,
+) -> dict:
+    """
+    Seller Search Sample Applications.
+
+    All filter arguments are optional — pass only the ones you want to filter
+    on (e.g. just `status="PENDING"`). page_size max is 50.
+
+    status: one of PENDING, AWAITING_SHIPMENT, SHIPPED, CONTENT_PENDING,
+        REJECT_CANCELLED, OVERDUE_CANCELLED, UNFULFILL_CANCELLED,
+        DEL_OPEN_COLLAB, SELLER_NOT_SHIP_CANCELLED, WITHDRAW_CANCELLED,
+        UNFULFILLABLE_CANCELLED, OPS_CANCELLED, OPS_FAILED, OPS_COMPLETED,
+        COMPLETED
+
+    Note: the API's actual field names for creator_open_id and
+    target_collaboration_id contain typos in TikTok's own doc/schema
+    ("creator_user_oepn_id", "target_collabration_id") — this function uses
+    clean parameter names and maps them to the API's misspelled field names
+    internally, so you don't need to remember the typos yourself.
+
+    Returns data.sample_applications (list), data.next_page_token, data.total_count.
+    """
+    if not 0 < page_size <= 50:
+        raise ValueError("page_size must be greater than 0 and at most 50")
+
+    query_params = {"page_size": page_size}
+    if page_token:
+        query_params["page_token"] = page_token
+
+    body_dict = {}
+    if status is not None:
+        body_dict["status"] = status
+    if product_id is not None:
+        body_dict["product_id"] = product_id
+    if title is not None:
+        body_dict["title"] = title
+    if creator_open_id is not None:
+        body_dict["creator_user_oepn_id"] = creator_open_id  # sic — matches TikTok's actual (misspelled) field name
+    if username is not None:
+        body_dict["username"] = username
+    if target_collaboration_id is not None:
+        body_dict["target_collabration_id"] = target_collaboration_id  # sic — matches TikTok's actual (misspelled) field name
+    if order_id is not None:
+        body_dict["order_id"] = order_id
+
+    return call_api("POST", SEARCH_SAMPLE_APPLICATIONS_PATH, query_params, body_dict, **retry_kwargs)
+
+
+def search_all_sample_applications(
+    status: str | None = None,
+    product_id: str | None = None,
+    title: str | None = None,
+    creator_open_id: str | None = None,
+    username: str | None = None,
+    target_collaboration_id: str | None = None,
+    order_id: str | None = None,
+    page_size: int = 50,
+    delay_between_pages: float = 1.0,
+    **retry_kwargs,
+) -> list[dict]:
+    """
+    Same filters as search_sample_applications, but automatically follows
+    data.next_page_token and keeps pulling pages until there are no more,
+    returning the combined list of every sample_application found.
+
+    delay_between_pages: seconds to wait between page requests (kept small
+    by default since this typically pulls far fewer pages than the creator
+    search pipeline; raise it if you see rate-limit errors here too).
+
+    If a page fails outright (non-zero code), pagination stops there and
+    whatever was collected so far is returned — it won't retry the whole
+    thing from page 1.
+    """
+    all_applications = []
+    page_token = ""
+    page_num = 1
+
+    while True:
+        result = search_sample_applications(
+            status=status,
+            product_id=product_id,
+            title=title,
+            creator_open_id=creator_open_id,
+            username=username,
+            target_collaboration_id=target_collaboration_id,
+            order_id=order_id,
+            page_size=page_size,
+            page_token=page_token,
+            **retry_kwargs,
+        )
+
+        if result.get("code") != 0:
+            print(f"  ⚠️  Page {page_num} failed, stopping pagination here: {result}")
+            break
+
+        data = result.get("data", {}) or {}
+        applications = data.get("sample_applications", [])
+        all_applications.extend(applications)
+
+        print(f"Page {page_num}: {len(applications)} application(s) (total so far: {len(all_applications)})")
+
+        page_token = data.get("next_page_token", "")
+        if not page_token:
+            break
+
+        page_num += 1
+        time.sleep(delay_between_pages)
+
+    return all_applications
 
 
 def create_target_collaboration(
