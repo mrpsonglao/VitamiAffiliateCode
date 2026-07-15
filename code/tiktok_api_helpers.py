@@ -28,6 +28,7 @@ CHECK_TARGET_COLLABORATION_CONFLICTS_PATH = "/affiliate_seller/202605/target_col
 CREATE_CONVERSATION_PATH = "/affiliate_seller/202508/conversations"
 GET_CONVERSATION_LIST_PATH = "/affiliate_seller/202412/conversations"
 SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messages"
+UPLOAD_MESSAGE_IMAGE_PATH = "/affiliate_seller/202511/images/upload"
 SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/search"
 
 CONSOLIDATED_CSV = "creators_found.csv"
@@ -434,6 +435,79 @@ def send_im_message(conversation_id: str, msg_type: str, content: dict, **retry_
     path = SEND_IM_MESSAGE_PATH_TEMPLATE.format(conversation_id)
     body_dict = {"msg_type": msg_type, "content": json.dumps(content)}
     return call_api("POST", path, query_params=None, body_dict=body_dict, **retry_kwargs)
+
+
+ALLOWED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".gif", ".webp", ".png"}
+MAX_IMAGE_SIZE_BYTES = 10 * 1024 * 1024  # 10MB
+
+
+def upload_message_image(file_path: str, max_retries: int = 3, base_delay: float = 10.0, max_delay: float = 40.0) -> dict:
+    """
+    Uploads an image (jpg, gif, webp, or png; max 10MB) and returns a URL you
+    can pass into send_im_message's IMAGE content, e.g.:
+        result = upload_message_image("photo.png")
+        send_im_message(conversation_id, "IMAGE", {
+            "url": result["data"]["url"],
+            "width": result["data"]["width"],
+            "height": result["data"]["height"],
+        })
+
+    NOTE on the doc: its header table lists Method as GET, but every code
+    example (curl -X POST, and all three SDKs calling "...Post(...)") uses
+    POST — a GET request can't carry a multipart file body, so this is
+    implemented as POST to match the actual working examples, not the
+    (apparently mislabeled) Method field.
+
+    This does NOT go through call_api, because it's a multipart/form-data
+    file upload, not a JSON body — requests needs to generate its own
+    multipart boundary via the `files=` param, so content-type must NOT be
+    set manually here (unlike every other endpoint in this file).
+    """
+    path = Path(file_path)
+    if not path.exists():
+        raise FileNotFoundError(file_path)
+    if path.suffix.lower() not in ALLOWED_IMAGE_EXTENSIONS:
+        raise ValueError(f"Unsupported image type '{path.suffix}'. Allowed: {sorted(ALLOWED_IMAGE_EXTENSIONS)}")
+    size = path.stat().st_size
+    if size > MAX_IMAGE_SIZE_BYTES:
+        raise ValueError(f"Image is {size / 1024 / 1024:.1f}MB, exceeds the 10MB limit.")
+
+    headers = {"x-tts-access-token": access_token}  # no content-type — requests sets the multipart boundary itself
+
+    result = None
+    for attempt in range(max_retries):
+        query_params = {"app_key": app_key, "timestamp": int(time.time())}
+        signed_params = build_signed_params(UPLOAD_MESSAGE_IMAGE_PATH, query_params, app_secret)  # no JSON body to sign
+
+        try:
+            with open(path, "rb") as f:
+                response = requests.post(
+                    f"{base_url}{UPLOAD_MESSAGE_IMAGE_PATH}",
+                    params=signed_params,
+                    files={"data": (path.name, f)},
+                    headers=headers,
+                    timeout=30,
+                )
+            result = response.json()
+            is_retryable = result.get("code") == RATE_LIMIT_CODE
+        except requests.exceptions.RequestException as e:
+            result = {"code": -1, "data": None, "message": f"Request failed: {e}"}
+            is_retryable = True
+
+        if not is_retryable:
+            return result
+
+        if attempt == max_retries - 1:
+            msg = f"  ⚠️  Still failing after {max_retries} attempts — giving up. Last error: {result.get('message')}"
+            logger.info(msg)
+            print(msg)
+            return result
+
+        delay = min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
+        logger.info(f"Upload retry (attempt {attempt + 1}/{max_retries}). Waiting {delay:.1f}s...")
+        time.sleep(delay)
+
+    return result
 
 
 def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFrame) -> tuple[list[str], set, pd.DataFrame]:
