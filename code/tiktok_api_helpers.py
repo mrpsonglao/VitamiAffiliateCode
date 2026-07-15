@@ -307,13 +307,34 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
     """
     Runs a single pass over handles_to_find, chunked into groups of chunk_size.
     Each chunk is searched exactly once (linear pass, no re-searching within
-    this call). Saves progress to CSV after every chunk.
+    this call).
+
+    IMPORTANT: each chunk's new rows are APPENDED to CONSOLIDATED_CSV, never
+    rewritten wholesale. The old approach re-saved the entire accumulated
+    df_creators after every chunk — if two processes ever wrote around the
+    same time (or a single write got interrupted, e.g. by a sync client on a
+    Google-Drive-backed folder), whichever write landed last would replace
+    the ENTIRE file with just its own in-memory state, silently wiping out
+    everything found before. Appending means a bad write can only affect
+    that one chunk's rows, not the whole file's history.
 
     Returns (handles still not found after this pass, found_usernames, updated df_creators).
     """
+    consolidated_path = Path(CONSOLIDATED_CSV)
+
+    # Read-only pass at the start to find creator_open_ids already saved
+    # (from this run or any previous one), so appends don't create duplicate
+    # rows on disk. This is a read, not a write, so it's safe even if another
+    # process is writing to the same file concurrently.
+    if consolidated_path.exists():
+        already_saved_ids = set(pd.read_csv(consolidated_path, usecols=["creator_open_id"])["creator_open_id"])
+    else:
+        already_saved_ids = set()
+
     chunks = [handles_to_find[i:i + chunk_size] for i in range(0, len(handles_to_find), chunk_size)]
 
     search_key = ""  # empty on first call; carried forward from each response after that
+    usernames_found_this_run = set()  # every username matched this run, whether newly appended or already on disk
 
     for i, chunk in enumerate(chunks, start=1):
         keyword = build_keyword(chunk)
@@ -336,13 +357,29 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
             creators = data.get("creators", [])
             if creators:
                 new_df = pd.DataFrame(creators)
-                df_creators = pd.concat([df_creators, new_df], ignore_index=True)
+                usernames_found_this_run.update(new_df["username"])
+
+                # Only append rows for creators not already on disk, so
+                # re-running or overlapping chunks don't duplicate rows.
+                to_append = new_df[~new_df["creator_open_id"].isin(already_saved_ids)]
+                if not to_append.empty:
+                    file_exists = consolidated_path.exists()
+                    to_append.to_csv(consolidated_path, mode="a", header=not file_exists, index=False)
+                    already_saved_ids.update(to_append["creator_open_id"])
+
+                # Keep df_creators consistent with CONSOLIDATED_CSV: only add
+                # rows that were actually newly written to the file this run.
+                # (Handles matching an already-saved creator are still counted
+                # as "found" via usernames_found_this_run below — they just
+                # don't need to be re-added here since df_creators, as passed
+                # in, is expected to already reflect anything previously saved.)
+                df_creators = pd.concat([df_creators, to_append], ignore_index=True)
                 df_creators = df_creators.drop_duplicates(subset="creator_open_id", keep="first")
 
-        df_creators.to_csv(CONSOLIDATED_CSV, index=False)  # save progress every chunk
         time.sleep(DELAY_BETWEEN_CALLS)
 
-    found_usernames = set(df_creators["username"]) if not df_creators.empty else set()
+    existing_usernames = set(df_creators["username"]) if not df_creators.empty else set()
+    found_usernames = existing_usernames | usernames_found_this_run
     still_not_found = [h for h in handles_to_find if h not in found_usernames]
 
     return still_not_found, found_usernames, df_creators
