@@ -4931,3 +4931,1264 @@
 2026-07-15 10:13:40,019   Cooling down an extra 60s before the next chunk...
 2026-07-15 10:15:10,166 [chunk_size=5] 120/672: searching ['len_shop16', 'chaeyo.cart', 'sairahjoy', 'heeyrosie6', 'bebang850']
 2026-07-15 10:15:42,039 [chunk_size=5] 121/672: searching ['makisdelpilar', '_itsme.kylgxx', 'davidabranilla11', 'emac5770', 'docmia.healthtipsph']
+2026-07-15 13:57:54,977 [chunk_size=5] 1/672: searching ['ginoroqueiv', 'rosmar.acaiberry.legit', 'shoppersvirtual', 'youbeauty_hub', 'annecorpz']
+2026-07-15 13:57:55,177 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 13:58:10,841 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 13:58:41,501   ⚠️  Still rate-limited after 3 attempts — giving up for now.
+2026-07-15 13:58:41,501   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151358412AB298378CBB270B1DBD'}
+2026-07-15 13:58:41,501   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:00:11,521 [chunk_size=5] 2/672: searching ['atchealthcarecompany', 'budolnganiii23', '_4ela2', 'centrum.ph', 'super.renmario']
+2026-07-15 14:00:11,672 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:00:27,327 Rate limited (attempt 2/3). Waiting 30.0s...
+2026-07-15 14:00:57,556   ⚠️  Still rate-limited after 3 attempts — giving up for now.
+2026-07-15 14:00:57,557   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071514005789FA1AC2C6FF390B17C4'}
+2026-07-15 14:00:57,557   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:02:27,572 [chunk_size=5] 3/672: searching ['myraphilippines', 'pinkperegrin', 'salveobarleydaily', 'rsnpremium', 'craftmania8']
+2026-07-15 14:02:27,760 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 14:02:44,078   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:03:14,089 [chunk_size=5] 4/672: searching ['fyp.shopey', 'missylethal_23', 'tiktokshop_09', 'shinduko.audrey', 'kmbeautywellness']
+2026-07-15 14:03:14,303 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 14:03:29,513 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 14:03:59,814   ⚠️  Still rate-limited after 3 attempts — giving up for now.
+2026-07-15 14:03:59,816   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151403594B3075F927B16E0AF937'}
+2026-07-15 14:03:59,816   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:05:29,827 [chunk_size=5] 5/672: searching ['reysenpai00', 'montesjulia08', 'ashieeee_56', 'ms.reya.0_0', 'mommyja1406']
+2026-07-15 14:05:31,944   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:06:01,965 [chunk_size=5] 6/672: searching ['richbry13', 'alexabulanadi', 'gladsecondshop', 'fypdailyhub', 'prettyash_06']
+2026-07-15 14:06:02,145 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 14:06:17,499 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 14:06:49,293   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:07:19,310 [chunk_size=5] 7/672: searching ['yourshoppingbody1', 'ms.havenvanityroom', 'ehrajeanroman4', 'fresh_aura13', 'jilyumfinds']
+2026-07-15 14:07:19,520 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:07:36,247   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:08:06,269 [chunk_size=5] 8/672: searching ['katchmeanywear', 'devinrey', 'ag.tiktokfindssss', 'janelyn_lequigan', 'its_jeff5']
+2026-07-15 14:08:06,445 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 14:08:22,379 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 14:08:54,246   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:08:54,246     devinrey -> Z1zqJAAAAACOV4AEeERJl-yievH_HBssUfFnMnC371KXS9XPWj1eXQ
+2026-07-15 14:08:54,246     ag.tiktokfindssss -> RwdyWQAAAACOV4AEeERJl-yievH_HBssHeYzMoaqIy1vjCL4Cx6Ltw
+2026-07-15 14:09:24,269 [chunk_size=5] 9/672: searching ['jenardreoliquio', 'beesexybeefit', 'glowupavenue2026', 'mitcharizala3', 'hrveyyy']
+2026-07-15 14:09:24,496 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 14:09:40,522 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 14:10:12,288   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:10:42,307 [chunk_size=5] 10/672: searching ['ashting1', 'itsgeminigirly', 'findzzz09', 'itsdianne.ugc', 'babycutiepi3']
+2026-07-15 14:10:42,504 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:11:28,986 [chunk_size=5] 11/672: searching ['pepemartonline', 'aivideoss118', 'paupelaez_', 'trending.ph7', 'chai_skiee']
+2026-07-15 14:11:29,148 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:11:44,610 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 14:17:50,866 [chunk_size=5] 1/672: searching ['ginoroqueiv', 'rosmar.acaiberry.legit', 'shoppersvirtual', 'youbeauty_hub', 'annecorpz']
+2026-07-15 14:17:52,429   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:18:22,445 [chunk_size=5] 2/672: searching ['atchealthcarecompany', 'budolnganiii23', '_4ela2', 'centrum.ph', 'super.renmario']
+2026-07-15 14:18:22,676 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 14:18:39,099   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:19:09,111 [chunk_size=5] 3/672: searching ['myraphilippines', 'pinkperegrin', 'salveobarleydaily', 'rsnpremium', 'craftmania8']
+2026-07-15 14:19:09,336 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:19:26,244   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:19:56,267 [chunk_size=5] 4/672: searching ['fyp.shopey', 'missylethal_23', 'tiktokshop_09', 'shinduko.audrey', 'kmbeautywellness']
+2026-07-15 14:19:56,504 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:20:13,312   ✅ 1 new handle(s) matched this chunk
+2026-07-15 14:20:13,312     fyp.shopey -> thysxQAAAACOV4AEeERJl-yievH_HBssCu8a3qnn4Osaobnk-42tjQ
+2026-07-15 14:20:43,335 [chunk_size=5] 5/672: searching ['reysenpai00', 'montesjulia08', 'ashieeee_56', 'ms.reya.0_0', 'mommyja1406']
+2026-07-15 14:20:43,561 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 14:20:59,628 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 14:21:30,258   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:21:30,260   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715142130FC425233FB246C13651E'}
+2026-07-15 14:21:30,260   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:23:00,273 [chunk_size=5] 6/672: searching ['richbry13', 'alexabulanadi', 'gladsecondshop', 'fypdailyhub', 'prettyash_06']
+2026-07-15 14:23:01,290 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:23:19,949 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 14:23:50,541   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:23:50,544   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715142350A94107BAA14D800BBD82'}
+2026-07-15 14:23:50,544   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:25:20,560 [chunk_size=5] 7/672: searching ['yourshoppingbody1', 'ms.havenvanityroom', 'ehrajeanroman4', 'fresh_aura13', 'jilyumfinds']
+2026-07-15 14:25:20,818 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:25:36,616 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 14:26:07,441   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:26:07,443   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151426076648B6DF2130B80D903F'}
+2026-07-15 14:26:07,443   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:27:37,461 [chunk_size=5] 8/672: searching ['katchmeanywear', 'janelyn_lequigan', 'its_jeff5', 'jenardreoliquio', 'beesexybeefit']
+2026-07-15 14:27:37,680 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 14:27:54,538   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:28:24,548 [chunk_size=5] 9/672: searching ['glowupavenue2026', 'mitcharizala3', 'hrveyyy', 'ashting1', 'itsgeminigirly']
+2026-07-15 14:28:24,699 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 14:28:39,925 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 14:29:10,420   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:29:10,421   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071514291097ABDE094F271A134611'}
+2026-07-15 14:29:10,421   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:30:40,426 [chunk_size=5] 10/672: searching ['findzzz09', 'itsdianne.ugc', 'babycutiepi3', 'pepemartonline', 'aivideoss118']
+2026-07-15 14:30:40,607 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 14:30:57,541   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:30:57,541     pepemartonline -> Qs8h_gAAAACOV4AEeERJl-yievH_HBssmBU21erJ0-4ot4Dm_kOamQ
+2026-07-15 14:30:57,542     findzzz09 -> d6QUwQAAAACOV4AEeERJl-yievH_HBssDXPHN2o7Y-bdvNPDL3BjBg
+2026-07-15 14:31:27,555 [chunk_size=5] 11/672: searching ['paupelaez_', 'trending.ph7', 'chai_skiee', 'pinoy.ai.affiliate', 's1zdadey']
+2026-07-15 14:31:27,779 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 14:31:44,349   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:31:44,350     s1zdadey -> JXbLAQAAAACOV4AEeERJl-yievH_HBssN8qHLZ8mYi3hrrsOoYFHQA
+2026-07-15 14:31:44,350     trending.ph7 -> Tl4mLwAAAACOV4AEeERJl-yievH_HBssbUpeVXLwIVU9U7YJoAl2qw
+2026-07-15 14:32:14,364 [chunk_size=5] 12/672: searching ['ecostill_', 'elijahalejo04', 'vlad.scarface', '_janine.pm', 'giselleduenas815']
+2026-07-15 14:32:14,678 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:32:30,455 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 14:33:01,611   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:33:01,612   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151433016C204A225936280D3500'}
+2026-07-15 14:33:01,612   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:34:31,623 [chunk_size=5] 13/672: searching ['eryx.online.shop', '.lota', 'kwoncharly', 'momshieodilleandzoe', 'lovelyjhane.1']
+2026-07-15 14:34:31,858 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 14:34:47,892 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 14:35:18,385   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:35:18,386   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715143518525AD824C0283E0D05B9'}
+2026-07-15 14:35:18,386   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:36:48,404 [chunk_size=5] 14/672: searching ['courageouswomanofgod', 'jezhop', 'sweetpeachy0101', 'gaylenextdoor', 'totallywhoop']
+2026-07-15 14:36:48,563 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:37:05,954   ✅ 1 new handle(s) matched this chunk
+2026-07-15 14:37:05,954     sweetpeachy0101 -> A0M4cQAAAACOV4AEeERJl-yievH_HBsseKCN58TmGdCOWgo2uzpe2w
+2026-07-15 14:37:35,986 [chunk_size=5] 15/672: searching ['beautyvaultph', 'ig_brandon.gtp', 'lovereyes.2', 'kuyajogsdanao', 'gelascarlett']
+2026-07-15 14:37:37,669   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:38:07,693 [chunk_size=5] 16/672: searching ['shopfindssph', 'jinkygloriagarcia', 'mrkolrgdo', 'warrengodinez', 'ljrivel_mainaccount']
+2026-07-15 14:38:07,914 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 14:38:24,564   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:38:24,566     warrengodinez -> K4sDawAAAACOV4AEeERJl-yievH_HBssNW7PkdR1JHwMQd1ewcNPNA
+2026-07-15 14:38:24,566     jinkygloriagarcia -> YFuaVwAAAACOV4AEeERJl-yievH_HBss0a25EbSxHtkItJW5UGSRlg
+2026-07-15 14:38:54,587 [chunk_size=5] 17/672: searching ['trend.ship', 'simwood.sport', 'atemengshop', 'saharabeautique', 'tiktokshopglobalgoods.ph']
+2026-07-15 14:38:54,899 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:39:10,340 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 14:39:42,430   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:39:42,432     atemengshop -> ez_1vwAAAACOV4AEeERJl-yievH_HBss1AZ0oZ1D-2cVPPtobVxnBA
+2026-07-15 14:39:42,432     saharabeautique -> 7X_X4wAAAACOV4AEeERJl-yievH_HBssnFW0IyNdsRD0nBZhEKuBYg
+2026-07-15 14:40:12,455 [chunk_size=5] 18/672: searching ['cetaphilph', 'joymayanne', 'itsmeprl1', 'annhomedecor8', 'alliyourshop']
+2026-07-15 14:40:12,657 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 14:40:29,673   ✅ 1 new handle(s) matched this chunk
+2026-07-15 14:40:29,674     itsmeprl1 -> 6H_WgQAAAACOV4AEeERJl-yievH_HBssRm-TLo0e0l4Ti1Of7qGQsA
+2026-07-15 14:40:59,698 [chunk_size=5] 19/672: searching ['pantenephilippines', 'mrkjoshuabuan0', 'tiktokcollective6', 'zai_verona', 'user4087383616804']
+2026-07-15 14:40:59,906 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:41:15,341 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 14:41:45,754   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:41:45,755   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151441455B2CBD95E84AEF0CCE0D'}
+2026-07-15 14:41:45,755   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:43:15,762 [chunk_size=5] 20/672: searching ['stariphonecase', 'vern_shop12', 'longxiang.deng', 'kuya.ko49', '.armhea']
+2026-07-15 14:43:17,544   ✅ 0 new handle(s) matched this chunk
+2026-07-15 14:43:47,561 [chunk_size=5] 21/672: searching ['bob_eyeseeonig', 'its.meyanna26', 'dinetrends', 'mackenzievarquez', 'sakalam_andrei']
+2026-07-15 14:43:47,751 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 14:44:04,639   ✅ 4 new handle(s) matched this chunk
+2026-07-15 14:44:04,640     mackenzievarquez -> 0isDLQAAAACOV4AEeERJl-yievH_HBss07j_gEg_V2CXXHnToZFqew
+2026-07-15 14:44:04,640     sakalam_andrei -> N8bBLAAAAACOV4AEeERJl-yievH_HBssMmx6qMUFsi2y7aa66xjseg
+2026-07-15 14:44:04,641     dinetrends -> DM0k6QAAAACOV4AEeERJl-yievH_HBssC-oQ_HDdEiuKkaYbuB5Ukg
+2026-07-15 14:44:04,641     bob_eyeseeonig -> ceiIuwAAAACOV4AEeERJl-yievH_HBssQgrdg70UjF48xf1L8uJUYw
+2026-07-15 14:44:34,660 [chunk_size=5] 22/672: searching ['explorefitswithme', 'ballerschoice24', 'rencelfinds18', 'ryanldasas0413', 'emsclothing.ph']
+2026-07-15 14:44:34,827 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 14:44:51,323   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:44:51,324     rencelfinds18 -> Q8FtaQAAAACOV4AEeERJl-yievH_HBssX2Z_WHCeQ55SZW3v-WVTiA
+2026-07-15 14:44:51,324     narutoverse6 -> E0YnfAAAAACOV4AEeERJl-yievH_HBssqTNMa3QzJfh8yl-sX2baUw
+2026-07-15 14:45:21,353 [chunk_size=5] 23/672: searching ['rcsanchez0618', 'jelang0127', 'itslalune', 'goodsourceshopping', 'anyaaforgerr5']
+2026-07-15 14:45:21,523 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 14:45:38,396   ✅ 3 new handle(s) matched this chunk
+2026-07-15 14:45:38,396     anyaaforgerr5 -> FXF9mQAAAACOV4AEeERJl-yievH_HBssYxoNIXkM_kDZBC1D5AmGLw
+2026-07-15 14:45:38,397     itslalune -> gASxbQAAAACOV4AEeERJl-yievH_HBsshKgdhKRhzjbwVshTeSygDw
+2026-07-15 14:45:38,397     jelang0127 -> qFZ9VQAAAACOV4AEeERJl-yievH_HBss9wb5hJyMgaHFPm4nBT3HwQ
+2026-07-15 14:46:08,410 [chunk_size=5] 24/672: searching ['zorenhandig', 'tincaliwag', 'kiertiktokshop', 'charmmhyschoice', 'pantra_tech']
+2026-07-15 14:46:08,571 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 14:46:24,526 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 14:46:55,622   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:46:55,624   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715144655F554F3A43600A20D373A'}
+2026-07-15 14:46:55,624   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:48:25,626 [chunk_size=5] 25/672: searching ['rgnalyn', 'gilrosarioo', 'vinesvlogs02', 'chinoni29', 'kimmmyyy013']
+2026-07-15 14:48:25,903 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 14:48:41,422 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 14:49:11,850   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:49:11,852   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715144911CF16C663F79CFC00E72A'}
+2026-07-15 14:49:11,852   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:50:41,866 [chunk_size=5] 26/672: searching ['jezurates.affiliate', 'harveyyyy_00', 'its.amplayojudy', 'kennedyfiel', '.savageshop']
+2026-07-15 14:50:45,190   ✅ 1 new handle(s) matched this chunk
+2026-07-15 14:50:45,190     kennedyfiel -> jQF7MgAAAACOV4AEeERJl-yievH_HBssafxtXaa6DKHtoNaFYkUerw
+2026-07-15 14:51:15,205 [chunk_size=5] 27/672: searching ['titamargsss', 'celhynsison', 'darrecos', 'kuyajclothing1', 'vianzkie90']
+2026-07-15 14:51:15,356 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 14:51:32,822   ✅ 4 new handle(s) matched this chunk
+2026-07-15 14:51:32,823     celhynsison -> wg7XQgAAAACOV4AEeERJl-yievH_HBssJ41xqoVz0_KfGKMKxe-XNw
+2026-07-15 14:51:32,824     titamargsss -> 1yfqBAAAAACOV4AEeERJl-yievH_HBss3OmJExd2EiqxgZwLCJU9qA
+2026-07-15 14:51:32,824     vianzkie90 -> A1Su3gAAAACOV4AEeERJl-yievH_HBssAPqxidshXBspjAxGpVFvCg
+2026-07-15 14:51:32,824     darrecos -> A9hxYwAAAACOV4AEeERJl-yievH_HBsswKmQd6fi4utwtjcs9nu4yg
+2026-07-15 14:52:02,841 [chunk_size=5] 28/672: searching ['digit_files19', 'sir.ninyo', 'noovaintme', 'colmemaybe', 'suci_nzl']
+2026-07-15 14:52:04,227   ✅ 2 new handle(s) matched this chunk
+2026-07-15 14:52:04,227     suci_nzl -> batqBgAAAACOV4AEeERJl-yievH_HBssPNZOzn5oytVPALV7oE0cAA
+2026-07-15 14:52:04,227     colmemaybe -> -6g99QAAAACOV4AEeERJl-yievH_HBsstcPtJvF5tJ-0VJBNtorjRQ
+2026-07-15 14:52:34,242 [chunk_size=5] 29/672: searching ['caremedyo', 'esnyrrr', 'melody_santiago13', 'bernadethdeinla7', 'tyn_nay']
+2026-07-15 14:52:34,449 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 14:52:51,562   ✅ 5 new handle(s) matched this chunk
+2026-07-15 14:52:51,562     caremedyo -> C7sU3QAAAACOV4AEeERJl-yievH_HBssMZJvjXjdV58P6VYojS6uOQ
+2026-07-15 14:52:51,562     tyn_nay -> Nf6NmQAAAACOV4AEeERJl-yievH_HBss2pRChlcpQsqqSaYVsqKxPA
+2026-07-15 14:52:51,562     melody_santiago13 -> NBpPqwAAAACOV4AEeERJl-yievH_HBssu-ngAEkr2sxEOF54mbTEmQ
+2026-07-15 14:52:51,562     bernadethdeinla7 -> D_jKYwAAAACOV4AEeERJl-yievH_HBss3V7h5ICdF0ygh4AXLPVaVw
+2026-07-15 14:52:51,564     esnyrrr -> qFLLnAAAAACOV4AEeERJl-yievH_HBssxZhuPNa_cwie2caJYprUqA
+2026-07-15 14:53:21,574 [chunk_size=5] 30/672: searching ['elrush17', 'sjmavs', 'mgailawnimalby', 'pretyy_shina', 'bkjd_021']
+2026-07-15 14:53:21,775 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 14:53:36,915 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 14:54:07,719   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:54:07,721   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151454073E5705C870D8D8000226'}
+2026-07-15 14:54:07,721   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:55:37,738 [chunk_size=5] 31/672: searching ['yourstruly0407', 'dbafindz', 'shaishybells', 'marff.orjel', 'mrm6911']
+2026-07-15 14:55:37,918 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 14:55:53,490 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 14:56:24,386   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 14:56:24,388   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071514562488C634BFE3DF3F00BE11'}
+2026-07-15 14:56:24,388   Cooling down an extra 60s before the next chunk...
+2026-07-15 14:57:54,408 [chunk_size=5] 32/672: searching ['redeemanas', 'braven_shop', 'tipidsale01', 'buy1take1promosale', 'gailll29']
+2026-07-15 14:57:54,691 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 14:58:10,550 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 14:58:43,069   ✅ 4 new handle(s) matched this chunk
+2026-07-15 14:58:43,070     redeemanas -> 4LGwrwAAAACOV4AEeERJl-yievH_HBss_u5SW-SqaJH4DiM5WHX2ew
+2026-07-15 14:58:43,070     gailll29 -> IT7LfwAAAACOV4AEeERJl-yievH_HBss1AtxTykIpVyxeE_hSEjChg
+2026-07-15 14:58:43,070     tipidsale01 -> 28rQnAAAAACOV4AEeERJl-yievH_HBssR6VvZLVCPuVX5GqHsXEtFA
+2026-07-15 14:58:43,071     braven_shop -> eLMJ4gAAAACOV4AEeERJl-yievH_HBssYlZeKqh0Dhp2M3Xp0N2uaA
+2026-07-15 14:59:13,090 [chunk_size=5] 33/672: searching ['trendinguniquefinds', 'ailshop03', 'lumairegunita', '.enajmnl', 'bernadetteloise_']
+2026-07-15 14:59:13,310 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 14:59:30,801   ✅ 1 new handle(s) matched this chunk
+2026-07-15 14:59:30,802     bernadetteloise_ -> G7OBbAAAAACOV4AEeERJl-yievH_HBssaRj0exHR4wKZhSk8lNnzSg
+2026-07-15 15:00:00,821 [chunk_size=5] 34/672: searching ['carttr1p', 'azirazednalf', 'kai.villafuerte', 'rowenlandicho', 'juvy.b..waing']
+2026-07-15 15:00:02,528   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:00:02,528     rowenlandicho -> p-ur0gAAAACOV4AEeERJl-yievH_HBssqjnFfgz81fVtcdG1Ol8jbA
+2026-07-15 15:00:02,529     juvy.b..waing -> hw0uuwAAAACOV4AEeERJl-yievH_HBssgE1pg-PnVBYAzfv1qG4u_g
+2026-07-15 15:00:02,529     azirazednalf -> klWrugAAAACOV4AEeERJl-yievH_HBssRKRbH_q6vpZNjABr1uVGdg
+2026-07-15 15:00:32,542 [chunk_size=5] 35/672: searching ['momshieghems', 'ciilezz05', 'tipid.station', 'ivyshop16', 'masterm_02']
+2026-07-15 15:00:32,711 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 15:00:49,792   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:00:49,792     tipid.station -> -7hT_wAAAACOV4AEeERJl-yievH_HBsssIDfcLfJ4UE-BY2hWrZptg
+2026-07-15 15:00:49,794     ciilezz05 -> BABzCAAAAACOV4AEeERJl-yievH_HBssBW2QiniIgETaZO1LMZGDdg
+2026-07-15 15:00:49,794     momshieghems -> VSgY_gAAAACOV4AEeERJl-yievH_HBss7qBeMmcukYf16L7YOj1H6A
+2026-07-15 15:00:49,794     ivyshop16 -> 4kfUpwAAAACOV4AEeERJl-yievH_HBssFy5sb6xE1ZAZg85qH0a2Jg
+2026-07-15 15:01:19,815 [chunk_size=5] 36/672: searching ['zunshayne', 'paul.agsaoay', 'streatnationph', 'dexterwabinabibera', 'lovedion_']
+2026-07-15 15:01:23,577   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:01:23,577     lovedion_ -> TGR2OAAAAACOV4AEeERJl-yievH_HBssk6349aPep-DHRFKjN4rr9g
+2026-07-15 15:01:23,578     dexterwabinabibera -> UNSawwAAAACOV4AEeERJl-yievH_HBss4JWWVy2p_rJcaD6DPHJgcg
+2026-07-15 15:01:53,598 [chunk_size=5] 37/672: searching ['kuyadugstiktok2023', 'crstljde', 'just.nica', 'paknerrrs21', '_cjheyyy']
+2026-07-15 15:01:53,772 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 15:02:09,534 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 15:02:41,418   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:02:41,418     just.nica -> sLIedAAAAACOV4AEeERJl-yievH_HBssAmgFvh3XTW0rPLGQfInttQ
+2026-07-15 15:02:41,419     _cjheyyy -> 8lxyEAAAAACOV4AEeERJl-yievH_HBssK35riY3WLnuKKesOVVJ0IQ
+2026-07-15 15:02:41,420     paknerrrs21 -> jBrdhQAAAACOV4AEeERJl-yievH_HBssTXPmkj5HhZh9UvcQWxCHSg
+2026-07-15 15:02:41,420     crstljde -> 8Qxt-wAAAACOV4AEeERJl-yievH_HBss3SzjlZ4C8vBM4zJiWPyhtg
+2026-07-15 15:03:11,431 [chunk_size=5] 38/672: searching ['anya_uuuuu', 'ntrends1', 'tiktokfindrecos', 'yhen.26', 'angeladyosaaaa']
+2026-07-15 15:03:11,686 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:03:31,255   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:04:01,268 [chunk_size=5] 39/672: searching ['mayegncls_', 'leleyspam', 'recosby_zel', 'missjazgarcia', 'shania_trendyshop14']
+2026-07-15 15:04:01,417 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 15:04:17,559 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 15:04:48,342   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:04:48,343   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715150448B5D8739F75608500D8A6'}
+2026-07-15 15:04:48,343   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:06:18,359 [chunk_size=5] 40/672: searching ['egtrendsapparelmain', 'cat_hieee', 'faceless00981', '_yelshop', 'besimple0326']
+2026-07-15 15:06:18,532 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 15:06:34,500 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 15:07:06,457   ✅ 1 new handle(s) matched this chunk
+2026-07-15 15:07:06,458     _yelshop -> ygRNzQAAAACOV4AEeERJl-yievH_HBssTdGnlxn1E4Yz4bjsavJECg
+2026-07-15 15:07:36,472 [chunk_size=5] 41/672: searching ['elleeenn28', 'fhel702', 'jaydee_0282', 'jessica.mercene4', 'findsbyjeenah']
+2026-07-15 15:07:36,639 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 15:07:53,272   ✅ 5 new handle(s) matched this chunk
+2026-07-15 15:07:53,272     jaydee_0282 -> fIdfKQAAAACOV4AEeERJl-yievH_HBssinpExSRPvxExBBwRmdzYLw
+2026-07-15 15:07:53,274     jessica.mercene4 -> Sgi0gwAAAACOV4AEeERJl-yievH_HBss7EQeintmDOLdL5V30KXkog
+2026-07-15 15:07:53,274     fhel702 -> Dga6yAAAAACOV4AEeERJl-yievH_HBssJM5Kv0UME1MYKcssBzmhuw
+2026-07-15 15:07:53,274     findsbyjeenah -> 1VSnkwAAAACOV4AEeERJl-yievH_HBssKj_7LdEuTx6FTmFgDF8KYg
+2026-07-15 15:07:53,274     poutylipsriesha -> vpHx0gAAAACOV4AEeERJl-yievH_HBssBJvwkyeXmdakYEO4NQGoMQ
+2026-07-15 15:08:23,292 [chunk_size=5] 42/672: searching ['heydricktd', 'swelas77', 'mxc.o_o', 'bem0668', 'matchalatte.570']
+2026-07-15 15:08:23,471 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 15:08:39,332 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 15:09:12,993   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:09:43,006 [chunk_size=5] 43/672: searching ['bellainmanila', 'ymaya34', 'lenyml19', 'naplorica', 'joannajadraquegom']
+2026-07-15 15:09:44,675   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:09:44,675     ymaya34 -> mm0sNgAAAACOV4AEeERJl-yievH_HBsslj_lr8b0B9rnQFvOiK-4rA
+2026-07-15 15:09:44,678     naplorica -> bZoX4QAAAACOV4AEeERJl-yievH_HBssUaX0tB0g8VPbqENehYvnzw
+2026-07-15 15:09:44,678     joannajadraquegom -> oYKYYAAAAACOV4AEeERJl-yievH_HBsslhjq4LcWHG9v_U9mnQJp2w
+2026-07-15 15:09:44,679     bellainmanila -> AJmVaAAAAACOV4AEeERJl-yievH_HBssCPrV5JN266EZeST8OOke-w
+2026-07-15 15:10:14,695 [chunk_size=5] 44/672: searching ['allyza943', 'gfnilan0', 'iampapicharles', 'emgiedimaala_', 'shoppers.legittambayan']
+2026-07-15 15:10:14,866 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 15:10:31,750   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:10:31,753     shoppers.legittambayan -> xw_EpgAAAACOV4AEeERJl-yievH_HBssaFqgh9WZC65nTDzfoYFBbw
+2026-07-15 15:10:31,753     emgiedimaala_ -> 2nvMvgAAAACOV4AEeERJl-yievH_HBsskl7Lloirkl7VB6xfQaGSYw
+2026-07-15 15:10:31,754     iampapicharles -> XpsLQwAAAACOV4AEeERJl-yievH_HBsspucn4pZL6kimZ7r3fLQAqw
+2026-07-15 15:11:01,768 [chunk_size=5] 45/672: searching ['xavyy_finds', 'affordableshop2026', 'ekitkath', 'agentxegolifts', 'veryshopsy']
+2026-07-15 15:11:03,386   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:11:33,409 [chunk_size=5] 46/672: searching ['flawlessskin23', 'pawsderhuncho', 'bella_080415cb', '_tessa.montilla', 'danicatgsp']
+2026-07-15 15:11:33,575 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 15:11:50,681   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:11:50,682     danicatgsp -> CrkrIwAAAACOV4AEeERJl-yievH_HBssXmZO_NyHlcm-ypt1MDQOfA
+2026-07-15 15:11:50,682     pawsderhuncho -> q4lKRwAAAACOV4AEeERJl-yievH_HBssVbGIUrwFyOuclYmvsqBymg
+2026-07-15 15:12:20,703 [chunk_size=5] 47/672: searching ['itsannemei', 'natnat04133', 'raizo_l1fts', 'gandawn', 'misspammy__']
+2026-07-15 15:12:20,882 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 15:12:37,802   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:12:37,803     gandawn -> VrvzFAAAAACOV4AEeERJl-yievH_HBssUDjkUQdrQW7wKysOHarxHQ
+2026-07-15 15:12:37,803     misspammy__ -> 1MngBgAAAACOV4AEeERJl-yievH_HBss7qmzstzcCJX0hapicL6iHg
+2026-07-15 15:12:37,803     raizo_l1fts -> XnAPEwAAAACOV4AEeERJl-yievH_HBssw4uJxoArQWFUNeTW65oEGw
+2026-07-15 15:13:07,819 [chunk_size=5] 48/672: searching ['michaelamarieechipare', 'sheyfinds1', 'kingjericcruz', 'user78830059437765', 'hearts2.jee']
+2026-07-15 15:13:10,282   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:13:40,308 [chunk_size=5] 49/672: searching ['jolejolevlogs', 'francine.lu', 'kaleidoscopecontent', 'supp_life', 'familyloveandcare']
+2026-07-15 15:13:40,596 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 15:13:55,843 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 15:14:27,443   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:14:27,444     supp_life -> 5ZXrXAAAAACOV4AEeERJl-yievH_HBssxdd8POtD0RP4Y3mrv0O6kw
+2026-07-15 15:14:27,444     familyloveandcare -> xr-vsAAAAACOV4AEeERJl-yievH_HBssFZ5chFzXmUvk4Sh7ewbg8Q
+2026-07-15 15:14:27,445     francine.lu -> Ie7uagAAAACOV4AEeERJl-yievH_HBssC1xtuzON_5ziaXPO_T1RHQ
+2026-07-15 15:14:57,472 [chunk_size=5] 50/672: searching ['larry.alvarez_14', 'mgamamako', 'findsbynb22', 'mydailypickss', 'eyankarlflores']
+2026-07-15 15:14:57,640 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 15:15:13,444 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 15:15:45,583   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:15:45,584     findsbynb22 -> owi4IgAAAACOV4AEeERJl-yievH_HBssoC_NNpLaOxwxteBO56oOrA
+2026-07-15 15:15:45,584     mgamamako -> zR8IeAAAAACOV4AEeERJl-yievH_HBssjvpUX1x93C1Ng_6tH39TwA
+2026-07-15 15:15:45,585     mydailypickss -> nI5TpAAAAACOV4AEeERJl-yievH_HBssRqiV3I9V1RmVMPk3R9SwKg
+2026-07-15 15:16:15,596 [chunk_size=5] 51/672: searching ['chichi_gandaa', 'crucifiedheart1', 'ellaceq08', 'moon.sun_888', 'dah_tiktokshop']
+2026-07-15 15:16:15,728 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 15:16:31,719 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 15:17:02,617   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:17:02,619   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715151702E0252032B75E37010FBA'}
+2026-07-15 15:17:02,619   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:18:32,623 [chunk_size=5] 52/672: searching ['new.tiktokshop.mar', 'gihli.selfcare', 'alexafinds1593', 'djdennis.geralao8shop', 'mvcshop']
+2026-07-15 15:18:32,829 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:18:48,375 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 15:19:19,389   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:19:19,389   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715151919B418CBEDFA095E00BD95'}
+2026-07-15 15:19:19,389   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:20:49,415 [chunk_size=5] 53/672: searching ['shaw_0150', 'mreab08', 'judyfam', 'buhay.ni.johndave', 'inti_hilmi_inshi']
+2026-07-15 15:20:49,643 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:21:06,253   ✅ 1 new handle(s) matched this chunk
+2026-07-15 15:21:06,253     buhay.ni.johndave -> kG4FjAAAAACOV4AEeERJl-yievH_HBss42vu5V2K9DoagCuEhFH2Tw
+2026-07-15 15:21:36,278 [chunk_size=5] 54/672: searching ['secretly.teo', 'jmtcachero', 'budolfindsbyrae', 'joannacasquejopoyos', 'mitchangfindsph']
+2026-07-15 15:21:36,504 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 15:21:53,727   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:21:53,727     joannacasquejopoyos -> WTsfJwAAAACOV4AEeERJl-yievH_HBssHo3Mjf_ESz0CpOSmepdeIw
+2026-07-15 15:21:53,727     budolfindsbyrae -> B2JZgQAAAACOV4AEeERJl-yievH_HBsshW1uuTSAMaGXBceWc5VCtA
+2026-07-15 15:22:23,734 [chunk_size=5] 55/672: searching ['jayson.lao.saclet', 'angelicamalang19', 'rb_timoteo', 'ms_lhyn09', 'adultingnatayo']
+2026-07-15 15:22:25,236   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:22:25,236     rb_timoteo -> U6GcTwAAAACOV4AEeERJl-yievH_HBssCNz6aTJsR5RKWPwfAymhNA
+2026-07-15 15:22:25,236     jayson.lao.saclet -> QQ7zLwAAAACOV4AEeERJl-yievH_HBsssiAs494ngVZGCCc5-phnFA
+2026-07-15 15:22:25,236     ms_lhyn09 -> lb4-4AAAAACOV4AEeERJl-yievH_HBss7fU69k1qbteLo7pdxw8jHg
+2026-07-15 15:22:55,260 [chunk_size=5] 56/672: searching ['tepandzebbysmom', 'saicee188', 'shopping.com257', 'mrslykanape', 'aldrindelanotumpalan']
+2026-07-15 15:22:55,405 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 15:23:10,629 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 15:23:42,399   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:23:42,399     saicee188 -> 2WiZMgAAAACOV4AEeERJl-yievH_HBssguQk91UGQGkCUDEGuhOFvw
+2026-07-15 15:23:42,399     aldrindelanotumpalan -> VQHVmAAAAACOV4AEeERJl-yievH_HBssxxSBA-iUP0XlPBpgckMUaw
+2026-07-15 15:23:42,399     mrslykanape -> 2Rq6wgAAAACOV4AEeERJl-yievH_HBss9XjGKjoLCdySMLQcYJ9vww
+2026-07-15 15:23:42,399     marl_shop -> i2st-QAAAACOV4AEeERJl-yievH_HBsssRwOMB9OLSu8nOvIRRVNMw
+2026-07-15 15:24:12,421 [chunk_size=5] 57/672: searching ['rachelmcollection', 'zyreco', 'fifthsolomon', 'super_discuento', 'sheeshhgods']
+2026-07-15 15:24:12,840 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 15:24:30,570   ✅ 1 new handle(s) matched this chunk
+2026-07-15 15:24:30,570     sheeshhgods -> mC01RQAAAACOV4AEeERJl-yievH_HBssveHx62E5WOo3rRN61UH8Zw
+2026-07-15 15:25:00,600 [chunk_size=5] 58/672: searching ['christinejoyaaaaa', 'engr.jubileebernandino', 'ftmmd07', 'ruvieann_co', 'yourdream.finds']
+2026-07-15 15:25:00,777 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 15:25:16,606 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 15:25:47,683   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:25:47,683   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715152547EA72C191FE24A900EEF8'}
+2026-07-15 15:25:47,683   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:27:17,702 [chunk_size=5] 59/672: searching ['shiappingnow09', 'limjessamaefernando_', 'petsandhomies', 'chapuset0824', 'ampbudolfinds']
+2026-07-15 15:27:17,841 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 15:27:33,284 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 15:28:05,404   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:28:05,404     chapuset0824 -> BW51-AAAAACOV4AEeERJl-yievH_HBssdX65hedz7h--GqM1jPyBXw
+2026-07-15 15:28:05,404     ampbudolfinds -> YZrcJgAAAACOV4AEeERJl-yievH_HBssqMBqajSutbsfKht_fBKzcw
+2026-07-15 15:28:05,404     mommypia0027 -> 1-pyvwAAAACOV4AEeERJl-yievH_HBssVBFgwFGk9ILVyjGxqUJDDA
+2026-07-15 15:28:35,422 [chunk_size=5] 60/672: searching ['urgiirl_lyn', 'gorgeousm.shop.ph', 'inhaler.ai.budol', 'davidguison', 'kylie.blisss']
+2026-07-15 15:28:35,643 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:28:52,418   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:28:52,418     kylie.blisss -> IRoEfgAAAACOV4AEeERJl-yievH_HBssinPkEInmOaZLz4H9JT-FhQ
+2026-07-15 15:28:52,418     urgiirl_lyn -> 4ICYUQAAAACOV4AEeERJl-yievH_HBssFE8ZfupGqN2VWvaCNZkeJQ
+2026-07-15 15:28:52,418     davidguison -> 7AqodgAAAACOV4AEeERJl-yievH_HBssW5RlpBKoUKlLTtw-Id40xw
+2026-07-15 15:29:22,439 [chunk_size=5] 61/672: searching ['littlemisssssecret', 'itsmemiri0', 'pinaybeautytrendshopuae', 'jmanobo', 'nicole_sanjuan']
+2026-07-15 15:29:22,599 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 15:29:38,583 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 15:30:08,799   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:30:08,799   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151530089455CB553174A5011950'}
+2026-07-15 15:30:08,799   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:31:38,814 [chunk_size=5] 62/672: searching ['caiiiyy8', 'm_thingsss', 'cae2h24', 'sephmaine', 'ayosbumilikana']
+2026-07-15 15:31:40,229   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:31:40,229     ayosbumilikana -> QAg26AAAAACOV4AEeERJl-yievH_HBss5KQCdbgS6W8h3ondwczyEw
+2026-07-15 15:31:40,229     cae2h24 -> vkU7EQAAAACOV4AEeERJl-yievH_HBssJppcJrMkYn09YWWLdlK4Hw
+2026-07-15 15:32:10,255 [chunk_size=5] 63/672: searching ['claire_reco2', 'kuyajuanph', 'biasongjohnsan', 'rainkian0901', 'yzelle.rei']
+2026-07-15 15:32:10,415 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:32:27,266   ✅ 5 new handle(s) matched this chunk
+2026-07-15 15:32:27,266     rainkian0901 -> uTVP7QAAAACOV4AEeERJl-yievH_HBssZ5VgerkA1gvlr35GWS_P3g
+2026-07-15 15:32:27,266     claire_reco2 -> z-FnEgAAAACOV4AEeERJl-yievH_HBss3E-jzvMuQkWFatRsojDKTQ
+2026-07-15 15:32:27,266     biasongjohnsan -> 86kZrAAAAACOV4AEeERJl-yievH_HBssy4TPshUn3W2yZrUBb1hCGg
+2026-07-15 15:32:27,266     kuyajuanph -> KWKXzwAAAACOV4AEeERJl-yievH_HBss9I4j8GptclT9SPSGywzi5Q
+2026-07-15 15:32:27,266     yzelle.rei -> SfeYiAAAAACOV4AEeERJl-yievH_HBsseurJ6jjJN8eJjp8ewOdcqw
+2026-07-15 15:32:57,300 [chunk_size=5] 64/672: searching ['whosmaryhoney', 'kopikakes', 'faustosisters_519', 'kyagrvc', 'mwa.lexa']
+2026-07-15 15:32:57,724 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 15:33:14,670   ✅ 1 new handle(s) matched this chunk
+2026-07-15 15:33:14,670     whosmaryhoney -> 7HfP6gAAAACOV4AEeERJl-yievH_HBssC6dvftrBgYiohMFs6XjI7g
+2026-07-15 15:33:44,690 [chunk_size=5] 65/672: searching ['dal_b02', 'lexyss_finds', '00009maica', 'trendyfinds016', 'itsavaa29']
+2026-07-15 15:33:44,836 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 15:34:00,621 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 15:34:31,459   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:34:31,459   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071515343153D5E0AFD3AA1A01D6DC'}
+2026-07-15 15:34:31,459   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:36:01,465 [chunk_size=5] 66/672: searching ['lorie_annie', 'gigi_adultingengr', 'tiano.tagabi', 'supportaffilliate571319', 'angelenejoves']
+2026-07-15 15:36:01,647 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 15:36:18,386   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:36:18,386     angelenejoves -> -SsMcgAAAACOV4AEeERJl-yievH_HBssuZLqLJ_HAcRlF8J_HzqZgQ
+2026-07-15 15:36:18,386     tiano.tagabi -> uPu82wAAAACOV4AEeERJl-yievH_HBss1jHzGg9r3-s0-38ch2A72Q
+2026-07-15 15:36:48,415 [chunk_size=5] 67/672: searching ['jovethmangali', 'lyzzdlrsr', 'mahvhic', 'thereismae_ig', 'shopwithmamajo']
+2026-07-15 15:36:48,539 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 15:37:04,488 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 15:37:37,001   ✅ 1 new handle(s) matched this chunk
+2026-07-15 15:37:37,001     thereismae_ig -> yYDDXgAAAACOV4AEeERJl-yievH_HBsspncXkovrmRpWG5ZOQ-2yJQ
+2026-07-15 15:38:07,025 [chunk_size=5] 68/672: searching ['zekequillang', 'kuya..ian', 'mommyjoanne06', 'kazmirra', 'yeloxxx_']
+2026-07-15 15:38:07,216 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:38:22,817 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 15:38:55,031   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:39:25,060 [chunk_size=5] 69/672: searching ['sashasdigitacreations', 'forwhat145', 'budget_basement', 'carlyn598', 'jukslanshop']
+2026-07-15 15:39:26,426   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:39:26,441     sashasdigitacreations -> R__hZQAAAACOV4AEeERJl-yievH_HBsslsBjWVFYWWaSPOajuRgq1Q
+2026-07-15 15:39:26,441     carlyn598 -> QHvJWgAAAACOV4AEeERJl-yievH_HBssxW7KLN_4tEZG6plfWaSHSA
+2026-07-15 15:39:26,441     budget_basement -> MQTPpAAAAACOV4AEeERJl-yievH_HBss7b2pwtN_mcqZttWyylPGUQ
+2026-07-15 15:39:26,441     jukslanshop -> 6OG80wAAAACOV4AEeERJl-yievH_HBssdp3suGufBCWlngTrkCtSLQ
+2026-07-15 15:39:56,451 [chunk_size=5] 70/672: searching ['m.pacis03', 'mrlgnzls28', 'jesabelbalermo27', 'lynngarciatapia22', 'itspat_14']
+2026-07-15 15:39:56,615 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 15:40:13,907   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:40:13,907     m.pacis03 -> Cg63OwAAAACOV4AEeERJl-yievH_HBss1YJtebjC0hb0WmT_nhPefg
+2026-07-15 15:40:13,907     lynngarciatapia22 -> gmkw5wAAAACOV4AEeERJl-yievH_HBssjX1xQanyp2002xupZ_xD5Q
+2026-07-15 15:40:43,924 [chunk_size=5] 71/672: searching ['cessyyy.af', 'lovelydimple23', 'maricarshop19', 'luxekidsph', 'ricky.altarejos']
+2026-07-15 15:40:45,571   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:41:15,602 [chunk_size=5] 72/672: searching ['dreyfinds1', 'fhaye_261', 'wayouthrift12', 'iamclaudineca', 'jenniferbanaga03']
+2026-07-15 15:41:15,799 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 15:41:31,809 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 15:42:02,663   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:42:02,663   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715154202D22B3E763B0C0A02E421'}
+2026-07-15 15:42:02,663   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:43:32,669 [chunk_size=5] 73/672: searching ['ldcml30', 'docshashamd', 'affiliatebystacy', 'kehlanifindsx', 'babyvon138']
+2026-07-15 15:43:32,849 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 15:43:48,434 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 15:44:20,950   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:44:20,950     babyvon138 -> 9kPXPQAAAACOV4AEeERJl-yievH_HBssFjPZ8otrtn2TYWsNXz9euA
+2026-07-15 15:44:20,950     docshashamd -> Q46DiwAAAACOV4AEeERJl-yievH_HBssnuUDyPpqcCsKmFxiY9xzCA
+2026-07-15 15:44:20,950     kehlanifindsx -> _SD2jwAAAACOV4AEeERJl-yievH_HBss1D4sgWRBmZE_JCffZnrVsw
+2026-07-15 15:44:50,977 [chunk_size=5] 74/672: searching ['najafinds', 'recosbyarrah', 'melnsaj', 'unicayuness14', 'healthylooksguide']
+2026-07-15 15:44:52,841   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:44:52,841     recosbyarrah -> aHfRQAAAAACOV4AEeERJl-yievH_HBssF8r2QfN0qyRUKjxPNSZ2rw
+2026-07-15 15:44:52,841     najafinds -> V9t2MAAAAACOV4AEeERJl-yievH_HBssEqH6IqP4R4miMuWE1JsynQ
+2026-07-15 15:45:22,853 [chunk_size=5] 75/672: searching ['leahgregs', 'dailyhustler8', 'generous_gorgeous', 'micah_wtf', '_allylicious']
+2026-07-15 15:45:24,606   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:45:24,606     leahgregs -> g1RAHQAAAACOV4AEeERJl-yievH_HBssFvyDEGEIq-O3lZzJYvU-yQ
+2026-07-15 15:45:24,606     micah_wtf -> geJlcQAAAACOV4AEeERJl-yievH_HBsscdM9bnkMyM8UQV2mOIXXiw
+2026-07-15 15:45:24,606     _allylicious -> DpYccQAAAACOV4AEeERJl-yievH_HBsspQ_lvb52h3BRqHhwjIY_Zw
+2026-07-15 15:45:54,630 [chunk_size=5] 76/672: searching ['lee_chenazu', 'itsme_chanmae22', 'hopeglowforever', 'dhaybilan', 'carlos_miguel1029']
+2026-07-15 15:45:54,913 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 15:46:10,512 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 15:46:42,750   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:46:42,750     dhaybilan -> -g8GCAAAAACOV4AEeERJl-yievH_HBsszfZSB6QUygSI81tF2tL5HQ
+2026-07-15 15:46:42,750     carlos_miguel1029 -> 7WXi_wAAAACOV4AEeERJl-yievH_HBsshV_JVu0K9x-NLthEKJytbg
+2026-07-15 15:46:42,750     lee_chenazu -> cuhE3QAAAACOV4AEeERJl-yievH_HBssdU-69Rb-PRwgEuK0Lj7LQw
+2026-07-15 15:46:42,750     hopeglowforever -> ioI-YQAAAACOV4AEeERJl-yievH_HBsskaP3OwXTq4uLNp4X1DihOQ
+2026-07-15 15:47:12,757 [chunk_size=5] 77/672: searching ['regehm_10', 'leigh123021', 'renuelpioquinto', '.parodyking', 'goldareserva2']
+2026-07-15 15:47:12,899 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 15:47:31,471   ✅ 1 new handle(s) matched this chunk
+2026-07-15 15:47:31,471     goldareserva2 -> 6hvlVwAAAACOV4AEeERJl-yievH_HBsstHWRnZlZXjxJXjJuzcbR1Q
+2026-07-15 15:48:01,487 [chunk_size=5] 78/672: searching ['marites.fuentes14', 'decko_tum', 'chewstark', 'cymirando', 'anjj1128']
+2026-07-15 15:48:01,666 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:48:19,204   ✅ 5 new handle(s) matched this chunk
+2026-07-15 15:48:19,204     anjj1128 -> yT4jwgAAAACOV4AEeERJl-yievH_HBssegx54-i1Umgn6dVvL6MFgA
+2026-07-15 15:48:19,219     chewstark -> uTsJSwAAAACOV4AEeERJl-yievH_HBssUzEtAEtR1OlO-n9_ftiR6w
+2026-07-15 15:48:19,219     cymirando -> -ca5kQAAAACOV4AEeERJl-yievH_HBsslRuNp3qnaI-08NLJdt46eg
+2026-07-15 15:48:19,219     marites.fuentes14 -> _I7pHwAAAACOV4AEeERJl-yievH_HBsskhcgqZ9mh65GLz6pR41LzQ
+2026-07-15 15:48:19,219     decko_tum -> YmmUVAAAAACOV4AEeERJl-yievH_HBssmWYiUj9Fomqpo1se1hFO8Q
+2026-07-15 15:48:49,229 [chunk_size=5] 79/672: searching ['affiliateshop080', 'aaeejjayyy.08', 'a_dashofglam', 'itsme_yengfinds', 'odetttepm']
+2026-07-15 15:48:51,102   ✅ 0 new handle(s) matched this chunk
+2026-07-15 15:49:21,113 [chunk_size=5] 80/672: searching ['lrry_ll', 'mommyabig', 'withlovemamamia', 'tarontamatawmanungl', 'mitsbelle']
+2026-07-15 15:49:22,661   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:49:22,661     withlovemamamia -> kUc5xAAAAACOV4AEeERJl-yievH_HBssZ_i7EsdWp45Cqii3DjuoFA
+2026-07-15 15:49:22,661     mitsbelle -> LghhjwAAAACOV4AEeERJl-yievH_HBsshoaY0kSToNmKj8v9w89ROQ
+2026-07-15 15:49:22,661     mommyabig -> IIAJXwAAAACOV4AEeERJl-yievH_HBssyOV0xFl90tYDu0M7PNv55Q
+2026-07-15 15:49:52,682 [chunk_size=5] 81/672: searching ['patriciashop12', 'tin_montilla', 'incognitocravings', 'johana.jannah2410', 'dumpyreyn']
+2026-07-15 15:49:52,803 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 15:50:08,550 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 15:50:40,429   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:50:40,429     tin_montilla -> _VVHTgAAAACOV4AEeERJl-yievH_HBssARO9F4R-8X9o5idTrWotoA
+2026-07-15 15:50:40,429     dumpyreyn -> 34sz1wAAAACOV4AEeERJl-yievH_HBss-x3T0lSrvbegQBi9oVTPUA
+2026-07-15 15:50:40,429     incognitocravings -> u9t9LwAAAACOV4AEeERJl-yievH_HBssL2tkQpnGJZNICPAq4zrZtQ
+2026-07-15 15:51:10,436 [chunk_size=5] 82/672: searching ['frincess.sebastian23', 'peakleaf.health', 'vhogzz05', 'marjmaroket', 'samjohmg']
+2026-07-15 15:51:10,631 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 15:51:25,894 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 15:51:57,699   ✅ 2 new handle(s) matched this chunk
+2026-07-15 15:51:57,699     samjohmg -> dA1kKAAAAACOV4AEeERJl-yievH_HBss3pII1CqNg3_lAwDdfWKwKw
+2026-07-15 15:51:57,699     marjmaroket -> -e6oTQAAAACOV4AEeERJl-yievH_HBsss6MXn3iZWDPKxyUYR_qUKw
+2026-07-15 15:52:27,729 [chunk_size=5] 83/672: searching ['genjoyfinds', 'vah2990', 'rhanazedelara', 'cleisorns', 'addtocartnateee']
+2026-07-15 15:52:27,845 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 15:52:43,723 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 15:53:15,801   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:53:15,801     genjoyfinds -> vfNuoQAAAACOV4AEeERJl-yievH_HBssOPc_doerJuL5YNQpk0C0qQ
+2026-07-15 15:53:15,801     vah2990 -> UZk9CwAAAACOV4AEeERJl-yievH_HBsscUlwhHd5iNNUW5ixHxAKxA
+2026-07-15 15:53:15,801     cleisorns -> zOoB4gAAAACOV4AEeERJl-yievH_HBss3ukE1BAepKH2JiX093QHwQ
+2026-07-15 15:53:15,801     rhanazedelara -> 6605rAAAAACOV4AEeERJl-yievH_HBssSZ_GMcBedV98LoMKKsyPCQ
+2026-07-15 15:53:45,820 [chunk_size=5] 84/672: searching ['cathycadion', 'buypopperdeals', 'haven4rizz_', 'mommy.erich', 'nelzednem']
+2026-07-15 15:53:45,978 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 15:54:01,766 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 15:54:33,749   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:54:33,749     buypopperdeals -> tiJQ_gAAAACOV4AEeERJl-yievH_HBssb_YoMJGNfOY3h_O1YMlE1A
+2026-07-15 15:54:33,749     cathycadion -> rYYsuwAAAACOV4AEeERJl-yievH_HBssAVB4zCdnCmoCwiK3vZJTvg
+2026-07-15 15:54:33,763     mommy.erich -> eX3m-gAAAACOV4AEeERJl-yievH_HBss5vBedQITspbx01ULbhU3LA
+2026-07-15 15:54:33,763     haven4rizz_ -> mW8SFAAAAACOV4AEeERJl-yievH_HBssPRyy-o3sektesrGlcJgdvw
+2026-07-15 15:55:03,776 [chunk_size=5] 85/672: searching ['budolsfind1', 'sk_ange', 'ahrisaints', 'pandachii18', 'bhebhesayson']
+2026-07-15 15:55:03,968 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 15:55:19,799 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 15:55:50,824   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 15:55:50,824   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151555507DD48B54A7717701CF07'}
+2026-07-15 15:55:50,824   Cooling down an extra 60s before the next chunk...
+2026-07-15 15:57:20,826 [chunk_size=5] 86/672: searching ['iloveeeeyoubabe', 'ehraamuraocabilangan', 'nenejean26', 'lovelyann.shop', 'r.shawp']
+2026-07-15 15:57:22,304   ✅ 3 new handle(s) matched this chunk
+2026-07-15 15:57:22,304     nenejean26 -> DSmKagAAAACOV4AEeERJl-yievH_HBssuJVSm6WHWfmbA8s9YChkqg
+2026-07-15 15:57:22,304     r.shawp -> 1rA5agAAAACOV4AEeERJl-yievH_HBss9TJzzOYeoVm6NFTwCmj8mQ
+2026-07-15 15:57:22,304     iloveeeeyoubabe -> rFEcugAAAACOV4AEeERJl-yievH_HBss_39oC1e2UCBq1NcswL_0lA
+2026-07-15 15:57:52,323 [chunk_size=5] 87/672: searching ['lyndonph', 'jnsscrbll', 'tatayangelnanayeula', 'sowmfo', 'nycabernardo']
+2026-07-15 15:57:54,064   ✅ 5 new handle(s) matched this chunk
+2026-07-15 15:57:54,064     tatayangelnanayeula -> WqwPHAAAAACOV4AEeERJl-yievH_HBsswbvYGCavyCMV54Ns-drn2Q
+2026-07-15 15:57:54,064     nycabernardo -> iYT7twAAAACOV4AEeERJl-yievH_HBssQ_q8qOlM4yJOAsYpTQ8EBQ
+2026-07-15 15:57:54,064     lyndonph -> CweMcwAAAACOV4AEeERJl-yievH_HBssZDrVE_SSHNo39m1VdUPrhg
+2026-07-15 15:57:54,064     sowmfo -> 1Q0MRwAAAACOV4AEeERJl-yievH_HBss_fSx7OMWmu2YCYugtKQgmQ
+2026-07-15 15:57:54,064     jnsscrbll -> VFLkYwAAAACOV4AEeERJl-yievH_HBssReFiKhOjYi4f_CzdhuXKcw
+2026-07-15 15:58:24,078 [chunk_size=5] 88/672: searching ['stre8596', 'jhen102014', 'ronnxx_21', 'ongaileen', 'liannexeri']
+2026-07-15 15:58:25,728   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:58:25,728     liannexeri -> LyQYYgAAAACOV4AEeERJl-yievH_HBssboCv1AawWuyyfM5pUewYrA
+2026-07-15 15:58:25,728     jhen102014 -> usBwagAAAACOV4AEeERJl-yievH_HBssccaHJMTJelM3XKTTXK-FKw
+2026-07-15 15:58:25,728     ongaileen -> B1YSJQAAAACOV4AEeERJl-yievH_HBssIwQtuTNgiSJoDnhUY35gKQ
+2026-07-15 15:58:25,728     marl_shop -> i2st-QAAAACOV4AEeERJl-yievH_HBsssRwOMB9OLSu8nOvIRRVNMw
+2026-07-15 15:58:55,754 [chunk_size=5] 89/672: searching ['ea.mae_', 'affiliatesmktg', 'loveurfinds32', 'langgagail', 'mchanzzzy']
+2026-07-15 15:58:55,932 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 15:59:12,992   ✅ 5 new handle(s) matched this chunk
+2026-07-15 15:59:12,992     loveurfinds32 -> zn45xAAAAACOV4AEeERJl-yievH_HBssWd8dreMpUpI3mAnN_4-yjQ
+2026-07-15 15:59:12,992     langgagail -> OBjn2QAAAACOV4AEeERJl-yievH_HBsslmhLit5qF_62tw_L2qwivQ
+2026-07-15 15:59:13,006     mchanzzzy -> A6suvAAAAACOV4AEeERJl-yievH_HBssmvm0WVOWaPEemZUoukmSMQ
+2026-07-15 15:59:13,006     ea.mae_ -> K5R6zQAAAACOV4AEeERJl-yievH_HBsshUWfIxmwP9fj_mZHA61Ibw
+2026-07-15 15:59:13,006     affiliatesmktg -> 9PiR4wAAAACOV4AEeERJl-yievH_HBss56gaHdJum4gI821mcCKteA
+2026-07-15 15:59:43,011 [chunk_size=5] 90/672: searching ['barillarich', 'cycy_183', 'noimenieva', 'kevinlumag_4', 'paulotolosaaa']
+2026-07-15 15:59:44,373   ✅ 4 new handle(s) matched this chunk
+2026-07-15 15:59:44,373     kevinlumag_4 -> nNj5vwAAAACOV4AEeERJl-yievH_HBss1rgS4brLLiA2xlcbzTh1DQ
+2026-07-15 15:59:44,373     noimenieva -> bmnM3wAAAACOV4AEeERJl-yievH_HBssyWy4ZYNovQwTgJ9cEpt_9w
+2026-07-15 15:59:44,373     barillarich -> BjiR4QAAAACOV4AEeERJl-yievH_HBss7UcREdTOb9eGleIpemelKA
+2026-07-15 15:59:44,373     paulotolosaaa -> 3XYcPwAAAACOV4AEeERJl-yievH_HBss5sY2jH8hbohzrIYT2dgNKQ
+2026-07-15 16:00:14,400 [chunk_size=5] 91/672: searching ['mariefinds53', 'anhourah', 'dodoykabueng', 'iamkatryn.co', 'iversonsh0p']
+2026-07-15 16:00:14,579 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 16:00:33,904   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:00:33,904     dodoykabueng -> iF4TwgAAAACOV4AEeERJl-yievH_HBssQPX3RSq2BAO6lXjrCL9Hfg
+2026-07-15 16:00:33,904     iamkatryn.co -> Y2n9jAAAAACOV4AEeERJl-yievH_HBss8vnag2aDJZpUNsjL-APBKQ
+2026-07-15 16:00:33,904     iversonsh0p -> Bepf6gAAAACOV4AEeERJl-yievH_HBssKLMdIj7dCEZAP7SPxlFiBw
+2026-07-15 16:01:03,907 [chunk_size=5] 92/672: searching ['euna.xcs', 'murangitems16', 'itsn.t_jessa', 'kissedprl343', 'eleyaretees']
+2026-07-15 16:01:05,659   ✅ 1 new handle(s) matched this chunk
+2026-07-15 16:01:05,659     euna.xcs -> _9qEqQAAAACOV4AEeERJl-yievH_HBssVvqB96she1jAAfPirT6I1A
+2026-07-15 16:01:35,689 [chunk_size=5] 93/672: searching ['meafinds_27', 'anneremigioindaopher', 'tinx.belle', 'outstyld', 'lykagaa7']
+2026-07-15 16:01:35,885 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 16:01:52,785   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:01:52,785     tinx.belle -> OFQ5WwAAAACOV4AEeERJl-yievH_HBssJHJFS95qNGNzbfF2gxBx4w
+2026-07-15 16:01:52,785     lykagaa7 -> Uik5iQAAAACOV4AEeERJl-yievH_HBss67w6Hj7LYebeUbnMenSxGg
+2026-07-15 16:01:52,785     outstyld -> qPLSyAAAAACOV4AEeERJl-yievH_HBssPl9X0qE7smPWslDz4-42kA
+2026-07-15 16:01:52,785     meafinds_27 -> aVpRhgAAAACOV4AEeERJl-yievH_HBssKQTbC2hgyEjY5U54Edp2CQ
+2026-07-15 16:02:22,815 [chunk_size=5] 94/672: searching ['marineth_p', 'robinnjuanillo', 'casheen_shop', 'crizzy_09', 'jalimfit']
+2026-07-15 16:02:22,981 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 16:02:39,326   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:02:39,326     robinnjuanillo -> kjJqUwAAAACOV4AEeERJl-yievH_HBsstLV3XVDm6PHJcrUHKCAwwQ
+2026-07-15 16:02:39,326     marineth_p -> 44cvtwAAAACOV4AEeERJl-yievH_HBssGmImk3mVAZ8uh6Pb4UiyPA
+2026-07-15 16:02:39,326     casheen_shop -> P7p6WgAAAACOV4AEeERJl-yievH_HBsshZodayGmaDZQourK3-ztrQ
+2026-07-15 16:02:39,326     jalimfit -> 0m9YnAAAAACOV4AEeERJl-yievH_HBssAOpCqpsnmEhjZB-nwb5nZA
+2026-07-15 16:03:09,354 [chunk_size=5] 95/672: searching ['daynexsantiago', 'cinzie_belle', 'flashsaleofficial', 'jomharjimenez25', 'gerlie070814']
+2026-07-15 16:03:09,542 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 16:03:26,505   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:03:26,505     cinzie_belle -> _kO3GQAAAACOV4AEeERJl-yievH_HBsslgDysCqSY2nsG1QlkCaPoA
+2026-07-15 16:03:26,505     gerlie070814 -> RgyiiAAAAACOV4AEeERJl-yievH_HBssYAH5M5W-EGUBWekq9saKQQ
+2026-07-15 16:03:26,505     flashsaleofficial -> 0vxE-wAAAACOV4AEeERJl-yievH_HBsshZft-76byLFSFuB35PNvgw
+2026-07-15 16:03:26,505     daynexsantiago -> f7Pw9AAAAACOV4AEeERJl-yievH_HBssW2qqk1lCUPB66ZSMPemlSg
+2026-07-15 16:03:26,505     poutylipsriesha -> vpHx0gAAAACOV4AEeERJl-yievH_HBssBJvwkyeXmdakYEO4NQGoMQ
+2026-07-15 16:03:56,533 [chunk_size=5] 96/672: searching ['yhelle.shop', 'mjshop11', 'mommynibailey06', 'millenialmompreneur.ph', 'vanfitdaily']
+2026-07-15 16:03:56,794 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 16:04:11,948 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 16:04:43,887   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:04:43,887     yhelle.shop -> LuScVAAAAACOV4AEeERJl-yievH_HBss_LSLy3b_iHe1vyNY8zL9WQ
+2026-07-15 16:04:43,887     mjshop11 -> lmwUiwAAAACOV4AEeERJl-yievH_HBssGPIVxBbRVbJYf7_ySLnhVQ
+2026-07-15 16:04:43,887     vanfitdaily -> p5mNBAAAAACOV4AEeERJl-yievH_HBss9_-NOCONWPPLJzFr0rkprg
+2026-07-15 16:04:43,887     mommynibailey06 -> 2IjLEwAAAACOV4AEeERJl-yievH_HBssDP5EJnR9JnFQOBu0mKZMqA
+2026-07-15 16:05:13,915 [chunk_size=5] 97/672: searching ['mamiichay_21', 'elladavuet', 'dyemsrr', 'munozissy0', 'horizonl24']
+2026-07-15 16:05:15,538   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:05:15,538     elladavuet -> ZZiFhwAAAACOV4AEeERJl-yievH_HBssehtFRjvw0_CQ4xQ3P_4eJg
+2026-07-15 16:05:15,538     dyemsrr -> sTzjdQAAAACOV4AEeERJl-yievH_HBssuEM4uvbl6tmom-TbSt4-bA
+2026-07-15 16:05:15,538     munozissy0 -> Ea3ZugAAAACOV4AEeERJl-yievH_HBssyPgKHkxNi7tznHtYYgOIOw
+2026-07-15 16:05:15,538     mamiichay_21 -> -FNKYAAAAACOV4AEeERJl-yievH_HBssl3pzKcli04kCnfPIPMTGvQ
+2026-07-15 16:05:15,538     horizonl24 -> t7U0kwAAAACOV4AEeERJl-yievH_HBssh6DY9fat9pkQOC-CQx-XyA
+2026-07-15 16:05:45,540 [chunk_size=5] 98/672: searching ['khylatuazon_', 'itsmekarolinaaaa', 'sulittiktokfinds01', 'sacoyutamulan.sho', 'phakztv']
+2026-07-15 16:05:45,737 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 16:06:02,450   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:06:02,450     itsmekarolinaaaa -> 6HB6awAAAACOV4AEeERJl-yievH_HBssUIDOfgjxz-hox6LBM9vklA
+2026-07-15 16:06:02,452     phakztv -> On4zqQAAAACOV4AEeERJl-yievH_HBssmeDffi6hoYXiRMVgCjdNqQ
+2026-07-15 16:06:02,452     sacoyutamulan.sho -> tHso7gAAAACOV4AEeERJl-yievH_HBssqs-tVfFykb_fAs3QiVF2vw
+2026-07-15 16:06:02,452     khylatuazon_ -> NvLClAAAAACOV4AEeERJl-yievH_HBsstxRTQYwfPNeKdWNupuVYgA
+2026-07-15 16:06:32,470 [chunk_size=5] 99/672: searching ['ms.roseane_official', 'willowandwolfie', 'missallyyyyyy', 'bravocoy18', 'c.cfinds21']
+2026-07-15 16:06:32,713 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 16:06:49,440   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:06:49,440     ms.roseane_official -> lusajgAAAACOV4AEeERJl-yievH_HBssKfIRFQ9DxWQLSvxH5CQ59g
+2026-07-15 16:06:49,440     c.cfinds21 -> E0uZeAAAAACOV4AEeERJl-yievH_HBssZrQULJRdPaflghTbVQtmJg
+2026-07-15 16:06:49,440     missallyyyyyy -> lsqkTQAAAACOV4AEeERJl-yievH_HBssvyrWNub6xZ-ahf9KBPJ1_g
+2026-07-15 16:06:49,440     willowandwolfie -> qiD4SgAAAACOV4AEeERJl-yievH_HBsszVjftCMikctA_TUKtpZZjw
+2026-07-15 16:07:19,456 [chunk_size=5] 100/672: searching ['misspinaypay', 'alagangtama', 'auejelly', 'tf_jann', 'n_n.ugc']
+2026-07-15 16:07:19,684 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 16:07:36,398   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:07:36,398     auejelly -> YO3ymgAAAACOV4AEeERJl-yievH_HBssc66lOEvzksUpTaW9EANeEA
+2026-07-15 16:07:36,398     misspinaypay -> 7JkupAAAAACOV4AEeERJl-yievH_HBssKRJf68_ueQrIcPdjT-T7QA
+2026-07-15 16:07:36,398     tf_jann -> s5as_wAAAACOV4AEeERJl-yievH_HBss9oJCNZPeU1TZosxS6PE76w
+2026-07-15 16:08:06,421 [chunk_size=5] 101/672: searching ['rv.son.oh.gong', 'gabbi_notme', 'doctordelacruz', 'maefindsz', 'iamsofiaganda']
+2026-07-15 16:08:06,563 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 16:08:22,719 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 16:08:54,763   ✅ 1 new handle(s) matched this chunk
+2026-07-15 16:08:54,763     maefindsz -> hex8zwAAAACOV4AEeERJl-yievH_HBssYhLcMLac0A6Iu9ZOhkchgw
+2026-07-15 16:09:24,785 [chunk_size=5] 102/672: searching ['jolensbudolfinds', 'mommy_neri', 'zeniazenn', 'nigelcaden', 'mrsoreopepper']
+2026-07-15 16:09:24,933 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 16:09:41,310   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:09:41,310     mommy_neri -> 7tVaWwAAAACOV4AEeERJl-yievH_HBssCuWogbAR_fO0VNZj3pAPWQ
+2026-07-15 16:09:41,310     nigelcaden -> FGj2zQAAAACOV4AEeERJl-yievH_HBssprMM_Cj2Ow3DrgzHd-TUUQ
+2026-07-15 16:09:41,310     zeniazenn -> Di-VtwAAAACOV4AEeERJl-yievH_HBsshfPoNchbBaxtnaSK8GDAKQ
+2026-07-15 16:10:11,341 [chunk_size=5] 103/672: searching ['yandereefinds.shop', 'xianah.lopez', 'itx_seixkiii', 'mlbm93', 'ms.erikaaa_']
+2026-07-15 16:10:11,541 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 16:10:26,826 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 16:10:58,961   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:10:58,961     ms.erikaaa_ -> faz7uQAAAACOV4AEeERJl-yievH_HBssLJgfx6BHzlNF2dLgjpbNXQ
+2026-07-15 16:10:58,961     xianah.lopez -> CLLsUwAAAACOV4AEeERJl-yievH_HBss6se_ZlqIsArrm6gE6lIJcQ
+2026-07-15 16:10:58,961     yandereefinds.shop -> iXvWdQAAAACOV4AEeERJl-yievH_HBssW6kejvPO0WN77zhGPB0IMQ
+2026-07-15 16:10:58,961     mlbm93 -> sYsFlQAAAACOV4AEeERJl-yievH_HBssHvLC7HDzttl8tLSZ35XweQ
+2026-07-15 16:11:28,981 [chunk_size=5] 104/672: searching ['marylou_dacara', 'shp_me1', 'kingikeike', 'belaestheticfinds', 'btyndhlth']
+2026-07-15 16:11:30,541   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:11:30,541     shp_me1 -> oy5sGwAAAACOV4AEeERJl-yievH_HBssDlRIoHaNVz-fmtHj5XrvHA
+2026-07-15 16:11:30,541     marylou_dacara -> NyPIyQAAAACOV4AEeERJl-yievH_HBssSWiE3ol7SLahDYEdrG9dsw
+2026-07-15 16:11:30,550     belaestheticfinds -> Q-lOZwAAAACOV4AEeERJl-yievH_HBssnpL44kK-HKe_2VGs3XkOiQ
+2026-07-15 16:11:30,550     btyndhlth -> J80oxAAAAACOV4AEeERJl-yievH_HBssLTzh-jIrOrKDsOkqAuBdpw
+2026-07-15 16:11:30,550     kingikeike -> rMpAOgAAAACOV4AEeERJl-yievH_HBssp0TVWplMqrBc3HTedbm5sQ
+2026-07-15 16:12:00,556 [chunk_size=5] 105/672: searching ['raylee.ashton', 'charexurvsc', 'maelrecos', 'hanemieranises', 'anjc_csxs']
+2026-07-15 16:12:00,732 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 16:12:16,718 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 16:12:48,913   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:12:48,913     charexurvsc -> 0VImzgAAAACOV4AEeERJl-yievH_HBsseC1-vv01SYzT1XWRPNUIlw
+2026-07-15 16:12:48,913     anjc_csxs -> BlXxWgAAAACOV4AEeERJl-yievH_HBss62d2jE9ih26Mcg7OqRwC8g
+2026-07-15 16:12:48,913     maelrecos -> jK6tpgAAAACOV4AEeERJl-yievH_HBssz2oW-szNTHzjLcWTCEKTwA
+2026-07-15 16:12:48,913     raylee.ashton -> PrSsCwAAAACOV4AEeERJl-yievH_HBssWFq6Q9GK-6B-FyWKmIp1Ww
+2026-07-15 16:12:48,913     hanemieranises -> j3IDKAAAAACOV4AEeERJl-yievH_HBssEu6jeDTV3WUWgPJ41ya-GA
+2026-07-15 16:13:18,948 [chunk_size=5] 106/672: searching ['janyl_brnrd', 'recosbyjake', 'healtokbymusixan', 'ren.slgao', 'legit_affiliate2']
+2026-07-15 16:13:20,974   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:13:20,974     ren.slgao -> KRkePgAAAACOV4AEeERJl-yievH_HBssgTrrGhfnPYGqr9s-TZFN-g
+2026-07-15 16:13:20,974     legit_affiliate2 -> nnjfxQAAAACOV4AEeERJl-yievH_HBssxj11FaJk1xGKEyqCAL4oHA
+2026-07-15 16:13:20,974     recosbyjake -> gyxPyQAAAACOV4AEeERJl-yievH_HBssp5ZES18s9wQPpGvzuu5oIQ
+2026-07-15 16:13:20,974     janyl_brnrd -> jFlECgAAAACOV4AEeERJl-yievH_HBss1ysoLclPxAd32B67QW_jHA
+2026-07-15 16:13:51,005 [chunk_size=5] 107/672: searching ['jv._.2006', 'mariambailan09', 'jiaups_online_shop', 'manoydabie', 'jomillericamatata']
+2026-07-15 16:13:52,870   ✅ 0 new handle(s) matched this chunk
+2026-07-15 16:14:22,896 [chunk_size=5] 108/672: searching ['kyle_arjay06', 'ashelyvein1', 'checheshop8', 'agsdaily', 'rose.shop01']
+2026-07-15 16:14:25,044   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:14:25,046     checheshop8 -> vbYoUgAAAACOV4AEeERJl-yievH_HBss-A0RTJO5MKrOrPOXC3neVg
+2026-07-15 16:14:25,046     kyle_arjay06 -> kmHo6AAAAACOV4AEeERJl-yievH_HBssdM9n0HTnQhjYXD6Sdc5iLg
+2026-07-15 16:14:25,046     rose.shop01 -> 6HpPjAAAAACOV4AEeERJl-yievH_HBssCxbrBR4HYI0ep1goI9Q1MA
+2026-07-15 16:14:25,046     ashelyvein1 -> J-lQOAAAAACOV4AEeERJl-yievH_HBssFrlVhP4x4ss_S375hyM-Mg
+2026-07-15 16:14:55,058 [chunk_size=5] 109/672: searching ['nyukiefinds', 'ericdelacruz88', 'mr.jepsy', 'chiefer.bridgitstones', 'juderlyn4']
+2026-07-15 16:14:56,528   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:14:56,528     chiefer.bridgitstones -> fby3iAAAAACOV4AEeERJl-yievH_HBssJJVUEiHn8QXDsplqkJsG4A
+2026-07-15 16:14:56,528     nyukiefinds -> a_UWSAAAAACOV4AEeERJl-yievH_HBssPNXcIOtUg91aX72Lh0KEVg
+2026-07-15 16:14:56,528     juderlyn4 -> 605wxAAAAACOV4AEeERJl-yievH_HBssx3XNViYCxnRp53XudeW7nQ
+2026-07-15 16:15:26,542 [chunk_size=5] 110/672: searching ['love_debb', 'markdmart', 'bigsalefinder', 'lovelywenceslaomalazarte', 'liyaha.hm']
+2026-07-15 16:15:27,969   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:15:27,969     liyaha.hm -> JE70TQAAAACOV4AEeERJl-yievH_HBssCViele4tMdGGAYERe3WYeA
+2026-07-15 16:15:27,969     love_debb -> gJzaWwAAAACOV4AEeERJl-yievH_HBss9qeFNHpWdBmRNT_bEtiIOw
+2026-07-15 16:15:27,969     markdmart -> k4fbygAAAACOV4AEeERJl-yievH_HBss8T-ILgCn_-odL0uBwKEgAA
+2026-07-15 16:15:57,995 [chunk_size=5] 111/672: searching ['labravo08', 'jdahpepito', 'kleanpapi', 'doc_ivy', 'jimny.ud']
+2026-07-15 16:16:00,484   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:16:00,484     jdahpepito -> HL7T1QAAAACOV4AEeERJl-yievH_HBssdFiqgq6LhlH2nlI7nUWAng
+2026-07-15 16:16:00,484     doc_ivy -> 7X7CcQAAAACOV4AEeERJl-yievH_HBssYda6Dt0q1rTom7eQjKuj4A
+2026-07-15 16:16:00,496     kleanpapi -> pVwzcgAAAACOV4AEeERJl-yievH_HBssovEUI5-QqDYgjeWqb78-yw
+2026-07-15 16:16:00,496     jimny.ud -> PW9jtAAAAACOV4AEeERJl-yievH_HBssbPVw702h-RHYK2ASrBGeMg
+2026-07-15 16:16:30,509 [chunk_size=5] 112/672: searching ['adeladoria', 'glynissmaruh', 'yellowph5', 'teyarivera28', 'melaniesm_25']
+2026-07-15 16:16:30,723 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 16:16:46,667 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 16:17:18,779   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:17:18,779     yellowph5 -> wAIYlwAAAACOV4AEeERJl-yievH_HBss43uEU5ms0ZVMAmNbJ8pwYg
+2026-07-15 16:17:18,779     glynissmaruh -> T9QpjgAAAACOV4AEeERJl-yievH_HBssETm9pwC0zYUI_f7rpFcXow
+2026-07-15 16:17:18,779     adeladoria -> lI8-BwAAAACOV4AEeERJl-yievH_HBssGuHFMCxwS7qLc0kaY_XWEg
+2026-07-15 16:17:18,779     melaniesm_25 -> Ew87vQAAAACOV4AEeERJl-yievH_HBssKgBOAtSHswT1lFi_fhy2iQ
+2026-07-15 16:17:18,779     teyarivera28 -> 0lJx9gAAAACOV4AEeERJl-yievH_HBssck6lL7Bcx8CbALTSV36ewg
+2026-07-15 16:17:48,811 [chunk_size=5] 113/672: searching ['gwynmarie', 'anneah_b', 'avacadabruhh', 'aljunmendoza', 'ghangzke_1322']
+2026-07-15 16:17:49,001 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 16:18:04,753 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 16:18:35,622   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:18:35,622   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715161835CF40E8FB6DFFBF04A53A'}
+2026-07-15 16:18:35,622   Cooling down an extra 60s before the next chunk...
+2026-07-15 16:20:05,641 [chunk_size=5] 114/672: searching ['kurtfernadez0', 'mama_joycie', 'chelsie_bin', 'lavieestbelle1011', 'lilsakura12']
+2026-07-15 16:20:05,786 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 16:20:22,721   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:20:22,721     lilsakura12 -> Yjjo9wAAAACOV4AEeERJl-yievH_HBssTOhNA91QlMyVwQS_w0kByw
+2026-07-15 16:20:22,721     chelsie_bin -> 1SkB1AAAAACOV4AEeERJl-yievH_HBssW_UYGXQlEW9AZz2cXJ-xuA
+2026-07-15 16:20:22,721     mama_joycie -> l_UWigAAAACOV4AEeERJl-yievH_HBss3PtodL7JrE2Nm_yD-S8TRA
+2026-07-15 16:20:52,752 [chunk_size=5] 115/672: searching ['boknoy_luna', 'himayanafinds', 'yk_jayopciar', 'teodulo_cayjr', 'anieeeee0']
+2026-07-15 16:20:52,955 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 16:21:08,653 Rate limited (attempt 2/3). Waiting 30.5s...
+2026-07-15 16:21:40,550   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:21:40,550     boknoy_luna -> _8mQ9QAAAACOV4AEeERJl-yievH_HBsstELKyLqoMtNo2h6bBM18GQ
+2026-07-15 16:21:40,550     anieeeee0 -> 6sgyMgAAAACOV4AEeERJl-yievH_HBssE1bYy6HMeRTBEd_FjoXdCQ
+2026-07-15 16:21:40,550     himayanafinds -> _UjDTQAAAACOV4AEeERJl-yievH_HBssRi8XsFHCxGmoHlkWNys5Mw
+2026-07-15 16:21:40,550     yk_jayopciar -> ziSLvQAAAACOV4AEeERJl-yievH_HBssBx12aunP-wQtcvzjxuDVrQ
+2026-07-15 16:22:10,558 [chunk_size=5] 116/672: searching ['mamshi_jam', 'mommyregs_shop', 'budolshopping0', 'jolenss_tiktokfinds', 'aidi_dez']
+2026-07-15 16:22:10,749 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 16:22:26,739 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 16:22:58,800   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:22:58,800     budolshopping0 -> D9zMlQAAAACOV4AEeERJl-yievH_HBss3Tzii1vLRbB5gacuT7fhLw
+2026-07-15 16:22:58,811     aidi_dez -> cKC75wAAAACOV4AEeERJl-yievH_HBsseDX2Xp_84sByaNp_SFu6Kw
+2026-07-15 16:22:58,811     mommyregs_shop -> oHqLFAAAAACOV4AEeERJl-yievH_HBssacw8_NpoZotgDUya7qTeAA
+2026-07-15 16:23:28,815 [chunk_size=5] 117/672: searching ['rhabiii_', 'mustikadewauser', 'princeaaronvelar', 'namje15', 'peachykon']
+2026-07-15 16:23:30,487   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:23:30,487     mustikadewauser -> aS__zwAAAACOV4AEeERJl-yievH_HBssG_Tz7b1dW5oUh1HGIpcGfA
+2026-07-15 16:23:30,487     peachykon -> dH5fqQAAAACOV4AEeERJl-yievH_HBssDsDVQ9x0RivCIfPm3kvbXg
+2026-07-15 16:23:30,487     rhabiii_ -> JgZoyQAAAACOV4AEeERJl-yievH_HBss2UQ5vqLUb4wx3V0QK2gSYg
+2026-07-15 16:23:30,487     namje15 -> 6a1ZsgAAAACOV4AEeERJl-yievH_HBss9w3rVORaTrCWE5HQ-z8MXg
+2026-07-15 16:23:30,487     princeaaronvelar -> RgFBXQAAAACOV4AEeERJl-yievH_HBssOiTU0CYqfwyzfzkityMx-Q
+2026-07-15 16:24:00,513 [chunk_size=5] 118/672: searching ['cheenycelleza', 'renxuuu_', 'nurseultimatum', 'ryannahjuliaa', 'helstyle.2']
+2026-07-15 16:24:00,712 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 16:24:16,788 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 16:24:47,699   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:24:47,699   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071516244702AFD8AC52C27B042051'}
+2026-07-15 16:24:47,699   Cooling down an extra 60s before the next chunk...
+2026-07-15 16:26:17,705 [chunk_size=5] 119/672: searching ['dhabellasmith', 'bobbgamingofficial', '.bem11', 'paraaffiliate', 'len_shop16']
+2026-07-15 16:26:17,927 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 16:26:33,893 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 16:27:05,870   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:27:05,870     paraaffiliate -> Pk_91wAAAACOV4AEeERJl-yievH_HBsstDNpymnugN0R2WSj6i0JUA
+2026-07-15 16:27:05,870     dhabellasmith -> _Wgc2gAAAACOV4AEeERJl-yievH_HBssJtgFNH5jmKfbTob2hsSmAA
+2026-07-15 16:27:05,870     .bem11 -> KazN0wAAAACOV4AEeERJl-yievH_HBss5Z_zWmWEEP6RwxBhxbr0LQ
+2026-07-15 16:27:05,870     bobbgamingofficial -> sN7hiwAAAACOV4AEeERJl-yievH_HBss1cekqkMAIoS6-S76gwa9lw
+2026-07-15 16:27:05,870     len_shop16 -> fxiv1wAAAACOV4AEeERJl-yievH_HBssNSCtuugTV83ThTvjsB3tkQ
+2026-07-15 16:27:35,900 [chunk_size=5] 120/672: searching ['chaeyo.cart', 'sairahjoy', 'heeyrosie6', 'bebang850', 'makisdelpilar']
+2026-07-15 16:27:37,797   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:27:37,797     chaeyo.cart -> sR3O6wAAAACOV4AEeERJl-yievH_HBss9LU2Qx7vPi9SQcFlbIQu6Q
+2026-07-15 16:27:37,797     sairahjoy -> 34OxHwAAAACOV4AEeERJl-yievH_HBssypCmN4wyGih7PIAk0GcHNQ
+2026-07-15 16:27:37,797     bebang850 -> qBSMIAAAAACOV4AEeERJl-yievH_HBssNnyPSjXmdfq1OJGBQ1U8Pg
+2026-07-15 16:27:37,797     makisdelpilar -> WlCytAAAAACOV4AEeERJl-yievH_HBsslpKz0DN6YmtoeyvUh2NTGw
+2026-07-15 16:28:07,822 [chunk_size=5] 121/672: searching ['_itsme.kylgxx', 'davidabranilla11', 'emac5770', 'docmia.healthtipsph', 'jeanmorales.batangina']
+2026-07-15 16:28:07,968 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 16:28:24,664   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:28:24,664     emac5770 -> m5ia2AAAAACOV4AEeERJl-yievH_HBss7oZtgyyQHYQ7u1BVOm3f9w
+2026-07-15 16:28:24,664     _itsme.kylgxx -> CLmTtgAAAACOV4AEeERJl-yievH_HBssH1nwSZedm_wqqXFUnn_-Uw
+2026-07-15 16:28:24,664     davidabranilla11 -> NanyHAAAAACOV4AEeERJl-yievH_HBss8zWNQSSLbNW-mGMihXihPw
+2026-07-15 16:28:54,681 [chunk_size=5] 122/672: searching ['babycart01', 'jenzycal', 'aemi_13', 'mavrekta', 'lancediazrevollido']
+2026-07-15 16:28:54,944 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 16:29:10,964 Rate limited (attempt 2/3). Waiting 30.0s...
+2026-07-15 16:29:42,803   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:29:42,803     jenzycal -> iaCMpAAAAACOV4AEeERJl-yievH_HBssTbvjI8_fdOBdod53SNvo_A
+2026-07-15 16:29:42,803     lancediazrevollido -> eyNaDAAAAACOV4AEeERJl-yievH_HBssg4sxksklkjPUJCtF087xCw
+2026-07-15 16:29:42,803     mavrekta -> RPbG0AAAAACOV4AEeERJl-yievH_HBssf7-2eHDyPOLlFKQT_nVXlg
+2026-07-15 16:29:42,803     aemi_13 -> NgY_GwAAAACOV4AEeERJl-yievH_HBssyFJlAAxi2d7zo8FdpGM1lg
+2026-07-15 16:30:12,825 [chunk_size=5] 123/672: searching ['mynlynlysn', 'poigie1', 'llapreciosa', 'analiahacob', 'ahriex18']
+2026-07-15 16:30:12,967 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 16:30:29,465   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:30:29,465     ahriex18 -> I7bJ5QAAAACOV4AEeERJl-yievH_HBss_PsfB-n_5FSMW6mADOMdEg
+2026-07-15 16:30:29,465     analiahacob -> Rulr1AAAAACOV4AEeERJl-yievH_HBss91fBbw2rwD-S0qu-qHViKg
+2026-07-15 16:30:29,465     llapreciosa -> 0Sb91AAAAACOV4AEeERJl-yievH_HBssr1OnAILjDi36atrNv6FhNw
+2026-07-15 16:30:29,465     poigie1 -> rFjdewAAAACOV4AEeERJl-yievH_HBss5uV_tYww0z0C603h44xBCg
+2026-07-15 16:30:29,465     mynlynlysn -> pLN71QAAAACOV4AEeERJl-yievH_HBss6aZX5gpZvS-3_WxjRV4w8g
+2026-07-15 16:30:59,467 [chunk_size=5] 124/672: searching ['charmel1024', 'caths08', 'd1endonlytokyo', 'kateeey67', 'strawberrywaffleurssz']
+2026-07-15 16:30:59,649 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 16:31:14,905 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 16:31:46,674   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:31:46,674     charmel1024 -> xCC-RwAAAACOV4AEeERJl-yievH_HBssBZ_929RtBftGjcPIQTQHhg
+2026-07-15 16:31:46,674     kateeey67 -> 4RrALgAAAACOV4AEeERJl-yievH_HBssy47SKRp0jpXSQpvBriK7ug
+2026-07-15 16:31:46,674     caths08 -> su2y8wAAAACOV4AEeERJl-yievH_HBss2dqyJw-FhbxMO2NWWr9jig
+2026-07-15 16:31:46,674     strawberrywaffleurssz -> qxqnAgAAAACOV4AEeERJl-yievH_HBssLv_Q8dZGmMHF8DUpTxbDYg
+2026-07-15 16:32:16,700 [chunk_size=5] 125/672: searching ['_mariaa.30', 'missjsboutique', 'annfinds8', 'kyu.imnida', 'abanes68']
+2026-07-15 16:32:16,872 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 16:32:32,986 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 16:33:05,363   ✅ 0 new handle(s) matched this chunk
+2026-07-15 16:33:35,385 [chunk_size=5] 126/672: searching ['kittycutteyy', 'just.trecia', 'eleine_017', 'hayleymolly_', 'davidrex_']
+2026-07-15 16:33:35,558 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 16:33:51,584 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 16:34:24,039   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:34:24,040     eleine_017 -> zR1D5AAAAACOV4AEeERJl-yievH_HBsss_r90Wwcc7RD6sJcDKQD3w
+2026-07-15 16:34:24,040     kittycutteyy -> tUjumgAAAACOV4AEeERJl-yievH_HBss5Y1RGo1tHiZ7I7CUYfzlBg
+2026-07-15 16:34:24,040     hayleymolly_ -> 0JBn7QAAAACOV4AEeERJl-yievH_HBsslPwAjyzEllzIW7WU7V38IA
+2026-07-15 16:34:24,040     davidrex_ -> rjZ2gwAAAACOV4AEeERJl-yievH_HBssNxzf8kb7Yef-EMpJDkq5tQ
+2026-07-15 16:34:54,057 [chunk_size=5] 127/672: searching ['vherl96', 'sweet.yaly', 'acaiberryjuiceorganic', 'best.life.ever_1111', 'yujinnshi']
+2026-07-15 16:34:55,704   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:34:55,706     sweet.yaly -> la-nKAAAAACOV4AEeERJl-yievH_HBssCv5SZAd3WMsvxv-U1qn0cA
+2026-07-15 16:34:55,706     acaiberryjuiceorganic -> izH8lwAAAACOV4AEeERJl-yievH_HBssw9vogqagtKVOB3O6_yJRcA
+2026-07-15 16:34:55,706     yujinnshi -> mO2nMwAAAACOV4AEeERJl-yievH_HBssgt_43F2bBBbCxegXh-lXqA
+2026-07-15 16:34:55,706     vherl96 -> VB6NowAAAACOV4AEeERJl-yievH_HBssBg5669NLjaRxd-hjpqBzxg
+2026-07-15 16:35:25,733 [chunk_size=5] 128/672: searching ['momshielhuz_babyrafa', 'charlemagneoyan12', 'u_marie02', 'jaysellekatrinna', 'andabe.socializta']
+2026-07-15 16:35:25,917 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 16:35:41,729 Rate limited (attempt 2/3). Waiting 31.0s...
+2026-07-15 16:36:12,877   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:36:12,877   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151636123453115770E26A04A1DE'}
+2026-07-15 16:36:12,877   Cooling down an extra 60s before the next chunk...
+2026-07-15 16:37:42,892 [chunk_size=5] 129/672: searching ['ehh.trends', 'nassiffinds', 'missjenika19', 'its.kimhajin_', 'fhjaffordablefinds']
+2026-07-15 16:37:44,410   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:37:44,411     fhjaffordablefinds -> f8xZ7QAAAACOV4AEeERJl-yievH_HBss4gd6RjPIYLfWk_5o0zTDXg
+2026-07-15 16:37:44,411     its.kimhajin_ -> 0LDImwAAAACOV4AEeERJl-yievH_HBssqjwDT8cR1sScC4OcQMJZ_w
+2026-07-15 16:37:44,411     nassiffinds -> XidMNAAAAACOV4AEeERJl-yievH_HBsshjz-Lkle3k0zjCWWkPIiDQ
+2026-07-15 16:37:44,411     missjenika19 -> NqH6KwAAAACOV4AEeERJl-yievH_HBssd-eQmLaX-I-SxnEFZXuobA
+2026-07-15 16:38:14,440 [chunk_size=5] 130/672: searching ['nikapatootie', 'mommyayriri', 'oweng313', 'judith01032023', 'mimijoyceee']
+2026-07-15 16:38:14,595 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 16:38:30,472 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 16:39:02,586   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:39:02,586     oweng313 -> 12OOZAAAAACOV4AEeERJl-yievH_HBssERx1gCN7MLxXhBdzZV6O_w
+2026-07-15 16:39:02,591     mommyayriri -> fnRKJgAAAACOV4AEeERJl-yievH_HBssHBIFrR5897oXT_9WIaRCxQ
+2026-07-15 16:39:02,591     nikapatootie -> 53FLbgAAAACOV4AEeERJl-yievH_HBssOgZPNficNuyaj2ShZwi_wg
+2026-07-15 16:39:02,591     mimijoyceee -> qusmkwAAAACOV4AEeERJl-yievH_HBssh9Nu1WAcxupZctp_KjPkmg
+2026-07-15 16:39:02,591     judith01032023 -> _41xdwAAAACOV4AEeERJl-yievH_HBssYgn0cc-pztFG6bSD1jNBEQ
+2026-07-15 16:39:32,613 [chunk_size=5] 131/672: searching ['bellekimmy', 'khaylibmalazarte', 'capyburat', 'wildwaves1110', 'annalyn294']
+2026-07-15 16:39:32,789 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 16:39:49,396   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:39:49,398     capyburat -> i7bTOQAAAACOV4AEeERJl-yievH_HBssQ9EvaOD0ScAVuEXOla9MmA
+2026-07-15 16:39:49,398     bellekimmy -> qIRfhwAAAACOV4AEeERJl-yievH_HBssQCDCUVA-ty9xWrTcYxcY8g
+2026-07-15 16:39:49,398     wildwaves1110 -> oez6NgAAAACOV4AEeERJl-yievH_HBssrfX-MhHmp-eVBjkj__Z5WA
+2026-07-15 16:39:49,398     annalyn294 -> r20IhQAAAACOV4AEeERJl-yievH_HBssq0J32DFYDspU4EWNlMFkWw
+2026-07-15 16:40:19,414 [chunk_size=5] 132/672: searching ['kuromi.find5', 'mmm_butterfly', 'dailyfinds.here', 'krisshav', 'team_famzo']
+2026-07-15 16:40:21,035   ✅ 0 new handle(s) matched this chunk
+2026-07-15 16:40:51,053 [chunk_size=5] 133/672: searching ['prettygoods.plug', 'marielcunanan177', 'byuti_finds', 'atehans', 'macalawiiimisug']
+2026-07-15 16:40:52,687   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:40:52,687     byuti_finds -> CeBHVwAAAACOV4AEeERJl-yievH_HBsspUyPRBcgvXUkBfc0g30FMg
+2026-07-15 16:40:52,687     atehans -> YwL3OgAAAACOV4AEeERJl-yievH_HBssM7tJ9ChgBfq6KCw6PNU0Sg
+2026-07-15 16:40:52,687     macalawiiimisug -> AXdwggAAAACOV4AEeERJl-yievH_HBssrHdqpfd7EDNXzPeFPbf2EA
+2026-07-15 16:41:22,702 [chunk_size=5] 134/672: searching ['happypinay.com', 'luvv_aiz', 'sap.nut', 'daiseevalentin', 'erma.finds']
+2026-07-15 16:41:22,826 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 16:41:38,630 Rate limited (attempt 2/3). Waiting 30.7s...
+2026-07-15 16:42:09,517   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:42:09,519   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151642092D6FAA90AFB3E4058904'}
+2026-07-15 16:42:09,519   Cooling down an extra 60s before the next chunk...
+2026-07-15 16:43:39,521 [chunk_size=5] 135/672: searching ['lhouiseque', 'selfwort09', 'itsyourboylevy', 'myoungjabierdecolas', 'jayvee_wright6']
+2026-07-15 16:43:39,773 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 16:43:54,884 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 16:44:26,263   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:44:26,264     myoungjabierdecolas -> DZggwgAAAACOV4AEeERJl-yievH_HBsshYRWENfs_MjykswqsewQbg
+2026-07-15 16:44:26,265     itsyourboylevy -> dovt1wAAAACOV4AEeERJl-yievH_HBsslX1RwxJIMPoS7XEO1KE_mA
+2026-07-15 16:44:26,265     jayvee_wright6 -> BJoYAgAAAACOV4AEeERJl-yievH_HBssWPc8TSvLO54q2tEWmgBQWQ
+2026-07-15 16:44:56,291 [chunk_size=5] 136/672: searching ['jinkikaykay', 'jc.affiliator', 'xechardfam', 'paudums', 'mamisheena0']
+2026-07-15 16:44:56,449 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 16:45:13,857   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:45:13,858     mamisheena0 -> uKcCHwAAAACOV4AEeERJl-yievH_HBssvHvKozln632SEXvl2mpEFA
+2026-07-15 16:45:13,858     jinkikaykay -> lW1a8gAAAACOV4AEeERJl-yievH_HBsskSybCnyMF2cSjvH5I_7edA
+2026-07-15 16:45:13,858     jc.affiliator -> ZVLpnQAAAACOV4AEeERJl-yievH_HBssRadGd5woAcn_gQXYEqbHtQ
+2026-07-15 16:45:13,859     paudums -> o0k_-wAAAACOV4AEeERJl-yievH_HBssuEq7QL6g_A3ufeU7mavQew
+2026-07-15 16:45:43,881 [chunk_size=5] 137/672: searching ['jayden.valdez15', 'missbicolanaa', 'miss_wu7', 'yuhenrick', 'chem.xxx']
+2026-07-15 16:45:46,221   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:45:46,221     miss_wu7 -> GzNdIgAAAACOV4AEeERJl-yievH_HBssVK7NQ-kHHZTOWseXaMefcg
+2026-07-15 16:45:46,222     chem.xxx -> qemiKgAAAACOV4AEeERJl-yievH_HBssw3GLZizASCK71dBHgoEkug
+2026-07-15 16:45:46,222     missbicolanaa -> wvcvaQAAAACOV4AEeERJl-yievH_HBssMhgfQ-FXp6XELjjLaJtXfw
+2026-07-15 16:46:16,240 [chunk_size=5] 138/672: searching ['loydii.shop', 'mcy.hrnndz', 'boby_the_builder_369', 'verytammy', 'yamaryam118']
+2026-07-15 16:46:17,710   ✅ 2 new handle(s) matched this chunk
+2026-07-15 16:46:17,710     boby_the_builder_369 -> afX6AAAAAACOV4AEeERJl-yievH_HBssNMQT9A9bBzREj-LMc8o2fg
+2026-07-15 16:46:17,710     verytammy -> CTjMSAAAAACOV4AEeERJl-yievH_HBssfk7IuDduG7XgEWTKnKzJ0g
+2026-07-15 16:46:47,730 [chunk_size=5] 139/672: searching ['kanoshop3r', 'iamyourkrypton', 'user.redski', 'maetenorio_', 'naeannnn']
+2026-07-15 16:46:47,911 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 16:47:05,093   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:47:05,093     iamyourkrypton -> gRGNjQAAAACOV4AEeERJl-yievH_HBssnSShqT4PjBGu7XzE7PkIpw
+2026-07-15 16:47:05,095     user.redski -> 6RB1GwAAAACOV4AEeERJl-yievH_HBss-3jJ73XDoKErWI-PXFZ9xA
+2026-07-15 16:47:05,095     naeannnn -> Z8jxFAAAAACOV4AEeERJl-yievH_HBssZ0FkvbQ0KW02FIapNY11TQ
+2026-07-15 16:47:05,095     maetenorio_ -> NYRtSQAAAACOV4AEeERJl-yievH_HBss7PiDTwj8UbXgHLFMASfSqA
+2026-07-15 16:47:35,120 [chunk_size=5] 140/672: searching ['maryjanebalaga24', 'undoy.2', 'mommyangie32', 'erianeeshopp', 'kuysgen07']
+2026-07-15 16:47:37,011   ✅ 0 new handle(s) matched this chunk
+2026-07-15 16:48:07,025 [chunk_size=5] 141/672: searching ['mamacharie2', 'cathrinepb', 'raromia__', 'maemallari05', 'rutcharong']
+2026-07-15 16:48:08,487   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:48:08,487     cathrinepb -> uYKmWwAAAACOV4AEeERJl-yievH_HBssP_iOJoEOKaJzmEKK6oLxBw
+2026-07-15 16:48:08,487     rutcharong -> trshOAAAAACOV4AEeERJl-yievH_HBssJKDO7Og6PzYou52gHN6R5A
+2026-07-15 16:48:08,487     mamacharie2 -> ZBd1CgAAAACOV4AEeERJl-yievH_HBsse9-bWcFEroGxfnWaC-iVWA
+2026-07-15 16:48:38,505 [chunk_size=5] 142/672: searching ['rossyalmonds', 'jellyeugenio', 'beautyessentialatibapa', 'j.llian11', '_kyladeleon']
+2026-07-15 16:48:38,661 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 16:48:55,481   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:48:55,487     j.llian11 -> rWrDjwAAAACOV4AEeERJl-yievH_HBssvh75fdvtZ7Ylxea5V0OZ5g
+2026-07-15 16:48:55,487     rossyalmonds -> tMEeMgAAAACOV4AEeERJl-yievH_HBssTkS2OaddvOZexHEqj7Wwvg
+2026-07-15 16:48:55,487     jellyeugenio -> YfizQAAAAACOV4AEeERJl-yievH_HBssWtxbR09QlO4Qn9oisg5-9g
+2026-07-15 16:49:25,501 [chunk_size=5] 143/672: searching ['_watchme69', 'anjelaespinas', 'metroogym', 'isang_xxiv16', 'skellym4ne']
+2026-07-15 16:49:25,661 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 16:49:40,773 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 16:50:12,234   ✅ 1 new handle(s) matched this chunk
+2026-07-15 16:50:12,234     skellym4ne -> -HSLRgAAAACOV4AEeERJl-yievH_HBssQFs4AKHDlbl8W28ZnaFpfQ
+2026-07-15 16:50:42,246 [chunk_size=5] 144/672: searching ['denixxyz', 'chrysslerp', 'boss.mayk.official', 'leinesophia', 'kittyrivers2']
+2026-07-15 16:50:42,529 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 16:50:59,173   ✅ 5 new handle(s) matched this chunk
+2026-07-15 16:50:59,174     kittyrivers2 -> JZvKOAAAAACOV4AEeERJl-yievH_HBssXWkpuq6hJ987VxikOd4--A
+2026-07-15 16:50:59,174     denixxyz -> tkF-KgAAAACOV4AEeERJl-yievH_HBssZaLT7LUvRGQ20NDvEi9hNw
+2026-07-15 16:50:59,175     leinesophia -> uMGT0gAAAACOV4AEeERJl-yievH_HBssC9ca_VNIkgLPhzFOo1o_CQ
+2026-07-15 16:50:59,175     chrysslerp -> FL6QlwAAAACOV4AEeERJl-yievH_HBssgvi3xGSYS6-Mpqe16ifcbw
+2026-07-15 16:50:59,175     boss.mayk.official -> OJY8TQAAAACOV4AEeERJl-yievH_HBssd5UbfFiNkRSGlz_ZW-QSLA
+2026-07-15 16:51:29,183 [chunk_size=5] 145/672: searching ['itsmaine11', 'ladygirl1983', 'pinoy_wellness', 'mayfinds11', '_lorena255']
+2026-07-15 16:51:29,348 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 16:51:44,938 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 16:52:15,456   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:52:15,456   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715165215D44BA0ECEE8DE8039A2E'}
+2026-07-15 16:52:15,456   Cooling down an extra 60s before the next chunk...
+2026-07-15 16:53:45,467 [chunk_size=5] 146/672: searching ['jannizshop', 'akosiernanshea', 'liloshopp22', 'rochelle.bebing', 'itsjudzzz123']
+2026-07-15 16:53:45,658 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 16:54:01,527 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 16:54:32,474   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:54:32,476   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715165432A5D0DF6AE3F55B0367CB'}
+2026-07-15 16:54:32,476   Cooling down an extra 60s before the next chunk...
+2026-07-15 16:56:02,489 [chunk_size=5] 147/672: searching ['rhiannee24', 'jeriellepd', 'arlenerimano', 'aureliaskiees', 'jambashop17']
+2026-07-15 16:56:02,632 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 16:56:18,731 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 16:56:50,852   ✅ 3 new handle(s) matched this chunk
+2026-07-15 16:56:50,852     jambashop17 -> fTGlCQAAAACOV4AEeERJl-yievH_HBss9G9_UzvNXyLbfy5sUGZYow
+2026-07-15 16:56:50,853     aureliaskiees -> g_Fb9gAAAACOV4AEeERJl-yievH_HBssaa6AU5ApNjQZ4GjZgqgmhA
+2026-07-15 16:56:50,853     arlenerimano -> pFMyGQAAAACOV4AEeERJl-yievH_HBssYLud99eVyp281SRxP9Hkvw
+2026-07-15 16:57:20,864 [chunk_size=5] 148/672: searching ['mk.shop02', 'grace_recos', 'wishlistcorner', 'unknownjenny', 'myeaffi']
+2026-07-15 16:57:22,618   ✅ 4 new handle(s) matched this chunk
+2026-07-15 16:57:22,618     grace_recos -> qL-ttgAAAACOV4AEeERJl-yievH_HBssutQ8T6h1usT-fJAsD9dGOg
+2026-07-15 16:57:22,618     mk.shop02 -> DWscFgAAAACOV4AEeERJl-yievH_HBssHNEolC4pmv-9U2etbM6IWQ
+2026-07-15 16:57:22,619     unknownjenny -> tFblRgAAAACOV4AEeERJl-yievH_HBssHOHlQvBFrYQ5neaZ3R0Qtw
+2026-07-15 16:57:22,619     myeaffi -> ps2dSgAAAACOV4AEeERJl-yievH_HBssRBszSoKZGvmTRSiES4h1kg
+2026-07-15 16:57:52,630 [chunk_size=5] 149/672: searching ['ummofatimah15', 'strawberrrycig', 'findsandfaves4', 'anajeanmayao', 'recomeys']
+2026-07-15 16:57:52,862 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 16:58:08,977 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 16:58:40,043   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 16:58:40,043   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715165839C0D0517E6478CF06F244'}
+2026-07-15 16:58:40,043   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:00:10,065 [chunk_size=5] 150/672: searching ['ms.jane.29', 'xen6651', 'yourlvetito', 'angeline.emmanuel8', 'clariza.shop.ph']
+2026-07-15 17:00:12,437   ✅ 0 new handle(s) matched this chunk
+2026-07-15 17:00:42,453 [chunk_size=5] 151/672: searching ['nonigon', 'ariella_820', 'ktrnprn_21', 'kalist_a24', 'angel.fab4']
+2026-07-15 17:00:42,605 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 17:01:00,057   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:01:00,057     ktrnprn_21 -> 1i0okAAAAACOV4AEeERJl-yievH_HBssm441EKsSPRiAsUG9WM4Uzg
+2026-07-15 17:01:00,059     nonigon -> TAiyQAAAAACOV4AEeERJl-yievH_HBssy3GLkFhlnzqaD0aTcfcxgw
+2026-07-15 17:01:00,059     angel.fab4 -> IU0y-AAAAACOV4AEeERJl-yievH_HBsshKqwdMkOdOueuddJxutDpg
+2026-07-15 17:01:00,059     ariella_820 -> wt_-mAAAAACOV4AEeERJl-yievH_HBss4BOWFrh4Q-gIZMnDeTbDBw
+2026-07-15 17:01:00,059     kalist_a24 -> Ple-RgAAAACOV4AEeERJl-yievH_HBssVT5GOa2A8usyoaBiZtLrEA
+2026-07-15 17:01:30,078 [chunk_size=5] 152/672: searching ['1998aiza', 'itsviagacayan', 'dels6969', 'alyanna0842', 'zaharabee_1403']
+2026-07-15 17:01:31,601   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:01:31,601     zaharabee_1403 -> FmkdtgAAAACOV4AEeERJl-yievH_HBss8kwCkOoPhH_64HrWNrLawg
+2026-07-15 17:01:31,601     alyanna0842 -> DqAQIgAAAACOV4AEeERJl-yievH_HBssfdjZ3OcsZq-tTgA7MefSPQ
+2026-07-15 17:01:31,601     dels6969 -> 8KXxDwAAAACOV4AEeERJl-yievH_HBssqFYvuNZbPvEnGtvMrhWTpA
+2026-07-15 17:01:31,601     1998aiza -> Qtt9uQAAAACOV4AEeERJl-yievH_HBssRxQpn-SnjmXPrCyEeWXdIQ
+2026-07-15 17:02:01,616 [chunk_size=5] 153/672: searching ['mommycecile888', 'powtato23', 'picksbyang', 'dang.mauro', 'carhissa.updates']
+2026-07-15 17:02:01,782 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 17:02:17,812 Rate limited (attempt 2/3). Waiting 30.6s...
+2026-07-15 17:02:48,629   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:02:48,629   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715170248388C7E0D8460F904122E'}
+2026-07-15 17:02:48,629   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:04:18,651 [chunk_size=5] 154/672: searching ['aieourecos', 'kevinguillermouy', 'joslea17', 'ish.finds26', 'ambrayl22']
+2026-07-15 17:04:18,870 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 17:04:34,729 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 17:05:06,595   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:05:06,597     joslea17 -> 90qb_AAAAACOV4AEeERJl-yievH_HBssHX_ZT5rrTara2O9ZeQ7Q7g
+2026-07-15 17:05:06,597     aieourecos -> dTD0lAAAAACOV4AEeERJl-yievH_HBssQp12SYSfylWEZI9xugHx-Q
+2026-07-15 17:05:06,597     kevinguillermouy -> Z4W4gwAAAACOV4AEeERJl-yievH_HBssPg66yz9jjD2ahBDZXKA0aQ
+2026-07-15 17:05:06,598     ambrayl22 -> 497qLAAAAACOV4AEeERJl-yievH_HBssayE7DsNNE0WrDxQm5ESjFg
+2026-07-15 17:05:06,598     ish.finds26 -> P8CL6gAAAACOV4AEeERJl-yievH_HBssf3EniTw8QlPXa3qtAcICrw
+2026-07-15 17:05:36,608 [chunk_size=5] 155/672: searching ['itsmeliza02', 'dailydeals_fy', 'yoitsmeyvn', 'kizelrapirap', 'harvsyo2']
+2026-07-15 17:05:36,796 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 17:05:51,983 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 17:06:24,378   ✅ 2 new handle(s) matched this chunk
+2026-07-15 17:06:24,378     kizelrapirap -> yWpHhwAAAACOV4AEeERJl-yievH_HBssvcnoMnb01SzAZPyT-iVmtQ
+2026-07-15 17:06:24,378     harvsyo2 -> X2uMogAAAACOV4AEeERJl-yievH_HBssBb-NK7xLiOO1k1ePLfU26A
+2026-07-15 17:06:54,391 [chunk_size=5] 156/672: searching ['janellebutial', 'shopwithkaren15', 'kimjichu_03', 'adsayangelina', 'vlnciaas']
+2026-07-15 17:06:54,693 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 17:07:11,831   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:07:11,832     adsayangelina -> iQkpRAAAAACOV4AEeERJl-yievH_HBssl8Y8u9l3DyzI0RfZNsSgsQ
+2026-07-15 17:07:11,832     kimjichu_03 -> FB1h4gAAAACOV4AEeERJl-yievH_HBssyoJlGGDY-0vHn4q_im70jg
+2026-07-15 17:07:11,833     vlnciaas -> UmUnIAAAAACOV4AEeERJl-yievH_HBssVqsvyXXFcg1iZtdvRx_Unw
+2026-07-15 17:07:11,833     janellebutial -> hyKzkAAAAACOV4AEeERJl-yievH_HBssbE1zu1JkU2LtKEd6SF6wKA
+2026-07-15 17:07:41,858 [chunk_size=5] 157/672: searching ['deyvfinds', 'jonel_066', 'tala.lets', 'kittyfinds__', 'musclefuelph']
+2026-07-15 17:07:42,070 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 17:07:57,806 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 17:08:29,484   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:08:29,485     tala.lets -> 4aQtfgAAAACOV4AEeERJl-yievH_HBssez8ErhVEcEVLQow4uGj7Qw
+2026-07-15 17:08:29,485     deyvfinds -> 1yNl7gAAAACOV4AEeERJl-yievH_HBsspwHPmQh0uq8TUrHIsqQtAQ
+2026-07-15 17:08:29,485     jonel_066 -> f9DZNQAAAACOV4AEeERJl-yievH_HBssBVDNwndFjZUDtWhE4MdT-Q
+2026-07-15 17:08:29,486     kittyfinds__ -> LFW6jgAAAACOV4AEeERJl-yievH_HBssM-FLkcrvM1F243BXmeml7g
+2026-07-15 17:08:29,486     musclefuelph -> _SIiqwAAAACOV4AEeERJl-yievH_HBssp1ChtJUSJ4x9VHFxx1580Q
+2026-07-15 17:08:59,506 [chunk_size=5] 158/672: searching ['asawani_richard', 'izzaynshie', 'your.running.shop', 'zariiiishopp', 'awesomesince1992']
+2026-07-15 17:08:59,786 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 17:09:16,315   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:09:16,315     izzaynshie -> eJKekAAAAACOV4AEeERJl-yievH_HBssjYPaov5F9P_7GGS2QH-Bgw
+2026-07-15 17:09:16,315     awesomesince1992 -> xAwlAwAAAACOV4AEeERJl-yievH_HBssYjjifzHnaAA0WSv-rTx03Q
+2026-07-15 17:09:16,315     your.running.shop -> xbWOiAAAAACOV4AEeERJl-yievH_HBssGl_vlaprOnBkhSDSD6H9_w
+2026-07-15 17:09:16,315     asawani_richard -> _S5p0QAAAACOV4AEeERJl-yievH_HBssjNRH19ZL5gD6yzlWOEkw8w
+2026-07-15 17:09:46,340 [chunk_size=5] 159/672: searching ['jhonrix17', 'jayjaytrends20', 'mamsershop', 'gazel1992', 'satgztriana']
+2026-07-15 17:09:46,540 Rate limited (attempt 1/3). Waiting 15.1s...
+2026-07-15 17:10:01,816 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 17:10:34,896   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:10:34,896     jhonrix17 -> srl98AAAAACOV4AEeERJl-yievH_HBss31I127jayOVvFeyBAEJ4UA
+2026-07-15 17:10:34,896     satgztriana -> qqvV0AAAAACOV4AEeERJl-yievH_HBss19jW21PLYXFGwodTUn9Qew
+2026-07-15 17:10:34,896     mamsershop -> EwOoFAAAAACOV4AEeERJl-yievH_HBssjfN4vSi7QI8tluQToKmdZQ
+2026-07-15 17:10:34,896     gazel1992 -> RuxJPgAAAACOV4AEeERJl-yievH_HBssFIMmDgSNpHChjzggOgQT0A
+2026-07-15 17:10:34,896     jayjaytrends20 -> JNM-KwAAAACOV4AEeERJl-yievH_HBssI3VQgS5zjKI4FRH6ftUYtQ
+2026-07-15 17:11:04,916 [chunk_size=5] 160/672: searching ['kulay4263', 'hajie_alejandro', 'hularjordan23', 'theobrown72', 'hypermelss']
+2026-07-15 17:11:06,513   ✅ 3 new handle(s) matched this chunk
+2026-07-15 17:11:06,513     hypermelss -> cb8UyQAAAACOV4AEeERJl-yievH_HBssXO2OoEbPD0tUN5qbwN_NQg
+2026-07-15 17:11:06,513     hularjordan23 -> N07gpQAAAACOV4AEeERJl-yievH_HBssnaHUBnuYXhc7r_w1oEzCtw
+2026-07-15 17:11:06,513     hajie_alejandro -> LX1APQAAAACOV4AEeERJl-yievH_HBssruCCd-3K-XX4PLwlxdReoQ
+2026-07-15 17:11:36,537 [chunk_size=5] 161/672: searching ['corienbolocano', 'raelyoo', 'mommy.ste', 'dailycrowncare', '_gellybellsss']
+2026-07-15 17:11:36,793 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 17:11:53,149   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:11:53,152     mommy.ste -> eA6Q0wAAAACOV4AEeERJl-yievH_HBssUUkrbBAkPOTb9fCEh2499A
+2026-07-15 17:11:53,152     raelyoo -> H0fn4AAAAACOV4AEeERJl-yievH_HBssL9ILo2AisehSuphnuUATGQ
+2026-07-15 17:11:53,152     dailycrowncare -> bbM1rAAAAACOV4AEeERJl-yievH_HBssN0F7YbylERiu8cjpYdXHMA
+2026-07-15 17:11:53,152     corienbolocano -> 29Ne7wAAAACOV4AEeERJl-yievH_HBsszvnohYvegU2zv5pibZfENQ
+2026-07-15 17:12:23,174 [chunk_size=5] 162/672: searching ['ursxy_yeng', 'gley_pg', 'tsueshop0', 'makeph0', 'anndoroteo']
+2026-07-15 17:12:24,704   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:12:24,704     makeph0 -> uE9lTQAAAACOV4AEeERJl-yievH_HBssVJDdgrPcP7--zbvBlhKU0g
+2026-07-15 17:12:24,704     ursxy_yeng -> HEUCEgAAAACOV4AEeERJl-yievH_HBsslpbK07JrbkczMjcE0tLV8w
+2026-07-15 17:12:24,704     gley_pg -> opJRKgAAAACOV4AEeERJl-yievH_HBss_3nTQ7OZap2AKvATxZzX1g
+2026-07-15 17:12:24,704     anndoroteo -> f1cy1QAAAACOV4AEeERJl-yievH_HBssbkFE1j4CbCsUuENuhzqdPw
+2026-07-15 17:12:54,734 [chunk_size=5] 163/672: searching ['hamchizpimallshop', 'mrs.vi0208', 'tinfinds.ph', 'elliotellie24', 'em_ey02']
+2026-07-15 17:12:54,916 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 17:13:10,648 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 17:13:42,579   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:13:42,579     em_ey02 -> 0Q6Q8QAAAACOV4AEeERJl-yievH_HBsstcGQEvU2LJIPBsL834c3Fw
+2026-07-15 17:13:42,591     mrs.vi0208 -> o7VDHQAAAACOV4AEeERJl-yievH_HBsshQhw2Py4cNFatoBS_sRFSw
+2026-07-15 17:13:42,591     tinfinds.ph -> 67ChiAAAAACOV4AEeERJl-yievH_HBssWJ7qgxp0OMEg-0L8oeIwBw
+2026-07-15 17:13:42,591     elliotellie24 -> 5wDjBAAAAACOV4AEeERJl-yievH_HBss7Jn9JtqZf2YJU17RHn2PLA
+2026-07-15 17:14:12,612 [chunk_size=5] 164/672: searching ['noriemomlife', 'kuyaalejo', 'cycyi8', 'mommyevey5', 'mal0u_1893']
+2026-07-15 17:14:12,868 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 17:14:29,637   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:14:29,640     kuyaalejo -> VZ984QAAAACOV4AEeERJl-yievH_HBss44lIc2vMtRfOKXRzlwR1_w
+2026-07-15 17:14:29,640     mommyevey5 -> aHyMfgAAAACOV4AEeERJl-yievH_HBssNEZ7J9LvNxmrs03iuzlV8w
+2026-07-15 17:14:29,640     noriemomlife -> EHVJkwAAAACOV4AEeERJl-yievH_HBssDRXNs6ityfwW-wDwR95rmw
+2026-07-15 17:14:29,640     cycyi8 -> zsFHmAAAAACOV4AEeERJl-yievH_HBss_ffqn6e7zYBJDiQPl_5vIw
+2026-07-15 17:14:59,663 [chunk_size=5] 165/672: searching ['jasmine.findsz', 'hifuleeng', 'pauu.dcn', 'offic1al.ash', 'andrearandomrecos']
+2026-07-15 17:15:00,004 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 17:15:15,992 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 17:15:46,501   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:15:46,506   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715171546293354C5EC2095043EB9'}
+2026-07-15 17:15:46,506   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:17:16,515 [chunk_size=5] 166/672: searching ['triple_hnj', 'markrecom', 'arvinions', 'krstin.gela', 'just.maei_']
+2026-07-15 17:17:16,742 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 17:17:32,543 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 17:18:04,893   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:18:04,893     markrecom -> O4Sc8wAAAACOV4AEeERJl-yievH_HBssvpthGX4M83AgdhtD01jkJw
+2026-07-15 17:18:04,893     triple_hnj -> gXT8dwAAAACOV4AEeERJl-yievH_HBss095z1eEm7YdmL26IaXCUDw
+2026-07-15 17:18:04,893     krstin.gela -> Aj4vUQAAAACOV4AEeERJl-yievH_HBsse6INcPpb4ymezNDdY6Jj5g
+2026-07-15 17:18:04,893     just.maei_ -> IY9qEwAAAACOV4AEeERJl-yievH_HBssVAGN2iape4DvHzESDfKtLA
+2026-07-15 17:18:04,893     arvinions -> KgKc9QAAAACOV4AEeERJl-yievH_HBssFlCj6NBj9ZMRYAsEI_lsmw
+2026-07-15 17:18:34,914 [chunk_size=5] 167/672: searching ['teacherjecaa', 'jiaa659', 'mommybee38', 'seergeybin', 'villa.mars5']
+2026-07-15 17:18:36,589   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:18:36,589     villa.mars5 -> He4b9AAAAACOV4AEeERJl-yievH_HBss2BO7HM3wglqAZ0QanlmXKQ
+2026-07-15 17:18:36,589     jiaa659 -> 7D7UEgAAAACOV4AEeERJl-yievH_HBssYQNSma5gj8RSfENSlrmCzQ
+2026-07-15 17:18:36,597     teacherjecaa -> g75ZxwAAAACOV4AEeERJl-yievH_HBsss_gqhOOp0TVJO0n2NadD0g
+2026-07-15 17:18:36,597     seergeybin -> 6_agUgAAAACOV4AEeERJl-yievH_HBssi-UVcPYrA6Pujp1TIw1iGw
+2026-07-15 17:18:36,598     mommybee38 -> 0P9qAAAAAACOV4AEeERJl-yievH_HBssxvxPwpf-ud67cw8_9jvyCw
+2026-07-15 17:19:06,617 [chunk_size=5] 168/672: searching ['khiyamsshi', 'empressmama26', 'ford.shelbys', 'itsmefreyo', 'haileyreese18']
+2026-07-15 17:19:06,789 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 17:19:24,069   ✅ 3 new handle(s) matched this chunk
+2026-07-15 17:19:24,069     ford.shelbys -> ZlaTcgAAAACOV4AEeERJl-yievH_HBssDQxLhifSvSpFY1WxF4mvSg
+2026-07-15 17:19:24,069     khiyamsshi -> _Yod5AAAAACOV4AEeERJl-yievH_HBss-ASDAhVUj63eFrz4VybO5w
+2026-07-15 17:19:24,070     haileyreese18 -> KCVVDgAAAACOV4AEeERJl-yievH_HBssrYwnSNFHex_n1Dh1i-bqWQ
+2026-07-15 17:19:54,084 [chunk_size=5] 169/672: searching ['shefinds831', 'miss_arl', 'denmark_editz', 'xoxo.zxdrmrs', 'mommikes8']
+2026-07-15 17:19:55,715   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:19:55,715     xoxo.zxdrmrs -> 8gIDNwAAAACOV4AEeERJl-yievH_HBss-OYuWfFxUZ_2mv_9TP8qGQ
+2026-07-15 17:19:55,715     mommikes8 -> O7zfeAAAAACOV4AEeERJl-yievH_HBssmSciVTyx5SHYyLx5bHW0Bg
+2026-07-15 17:19:55,716     miss_arl -> fMofbQAAAACOV4AEeERJl-yievH_HBsspUF0ifGcZ7WW5Fdh19pIYQ
+2026-07-15 17:19:55,716     denmark_editz -> kplRwAAAAACOV4AEeERJl-yievH_HBssOlayLC_Ep7XpkbHU3QttLg
+2026-07-15 17:20:25,742 [chunk_size=5] 170/672: searching ['didaysatur', 'natureskey.ph.health', 'itsusdazel', 'nurzchelle', 'artierri']
+2026-07-15 17:20:26,017 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 17:20:42,746   ✅ 2 new handle(s) matched this chunk
+2026-07-15 17:20:42,746     nurzchelle -> TcEiagAAAACOV4AEeERJl-yievH_HBssgOmdaVmqUheaNMv7jtloPw
+2026-07-15 17:20:42,746     artierri -> ZLUZpgAAAACOV4AEeERJl-yievH_HBssj-1lJoNm9aDFY-40pWY6rw
+2026-07-15 17:21:12,775 [chunk_size=5] 171/672: searching ['queen2_corner', 'luffy_kingy00', 'kenzzysatto', 'alymjj', '_urnommi']
+2026-07-15 17:21:13,025 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 17:21:28,497 Rate limited (attempt 2/3). Waiting 31.0s...
+2026-07-15 17:21:59,730   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:21:59,730   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715172159F270BCDA79ECD107B1B5'}
+2026-07-15 17:21:59,730   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:23:29,745 [chunk_size=5] 172/672: searching ['aveey15', 'russel.an', 'sandowatch', '.gorya08', 'zayvee.245']
+2026-07-15 17:23:29,933 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 17:23:47,502   ✅ 0 new handle(s) matched this chunk
+2026-07-15 17:24:17,526 [chunk_size=5] 173/672: searching ['marikosvault', 'johnnydalisan', 'peachlore27', 'ayntiktokshop', 'taylorhazlee']
+2026-07-15 17:24:17,787 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 17:24:33,084 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 17:25:05,549   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:25:05,550     taylorhazlee -> cltifAAAAACOV4AEeERJl-yievH_HBssFutuyy4ydsl0tICbA7iNDw
+2026-07-15 17:25:05,550     johnnydalisan -> YVdRZgAAAACOV4AEeERJl-yievH_HBssD8rYNou2pLfPLfmd2v3a8Q
+2026-07-15 17:25:05,550     peachlore27 -> WJOisAAAAACOV4AEeERJl-yievH_HBss4O_vx6AKKLNjK2fmQRxZJg
+2026-07-15 17:25:05,550     ayntiktokshop -> ILvnngAAAACOV4AEeERJl-yievH_HBss2kFOQ8hM05rlm_QsKcxecA
+2026-07-15 17:25:35,567 [chunk_size=5] 174/672: searching ['mommyrizshop', 'binibining_hulyana', 'meradrian', 'glenliyo03', 'vernonpauljacob']
+2026-07-15 17:25:35,792 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 17:25:52,873   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:25:52,873     mommyrizshop -> u9pk_QAAAACOV4AEeERJl-yievH_HBssDpbFy-bxdBB1Wqf0dZGKYA
+2026-07-15 17:25:52,873     vernonpauljacob -> JNRfWwAAAACOV4AEeERJl-yievH_HBssBKeqaDgD9DJpjYjm-PAuJA
+2026-07-15 17:25:52,873     glenliyo03 -> A5zReAAAAACOV4AEeERJl-yievH_HBssKuVqH2jFyVNmE6FFtMJFBg
+2026-07-15 17:25:52,873     meradrian -> UzQ-XQAAAACOV4AEeERJl-yievH_HBssxi5ZgojK6HZh5WtjDhc-5Q
+2026-07-15 17:26:22,905 [chunk_size=5] 175/672: searching ['yanna_dreanna', 'maecolis19', 'delvran7', 'paulisabeeel', 'rudede']
+2026-07-15 17:26:23,070 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 17:26:38,929 Rate limited (attempt 2/3). Waiting 30.0s...
+2026-07-15 17:27:09,081   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:27:09,083   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715172708878362F085C86E05CE61'}
+2026-07-15 17:27:09,083   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:28:39,089 [chunk_size=5] 176/672: searching ['kebbilicious', 'azaleyashley', 'mikkotan', 'jpt.rph', 'angel_aika05']
+2026-07-15 17:28:40,583   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:28:40,584     jpt.rph -> 9RDQ9AAAAACOV4AEeERJl-yievH_HBssfR1brSRWJO1CiPhZaaxvXg
+2026-07-15 17:28:40,584     kebbilicious -> _lPzFAAAAACOV4AEeERJl-yievH_HBssLY5V7hZ3CcY36YlE9IcFQw
+2026-07-15 17:28:40,584     azaleyashley -> z-AhRAAAAACOV4AEeERJl-yievH_HBssqi58fv8eA3feY_85TPI2EQ
+2026-07-15 17:28:40,584     mikkotan -> 3lEYMgAAAACOV4AEeERJl-yievH_HBsskgqPAXhlYyYfICcq886TqQ
+2026-07-15 17:29:10,610 [chunk_size=5] 177/672: searching ['jehminhorevamp', 'jessa.baat', 'solennluver', 'its.andigurl', 'titojoeybuilds']
+2026-07-15 17:29:10,789 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 17:29:25,945 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 17:30:01,451   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:30:01,453   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071517300156DD605CE40BCF043954'}
+2026-07-15 17:30:01,453   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:31:31,467 [chunk_size=5] 178/672: searching ['jeremipres', 'emelynviloria3', 'lourj_', 'the1nonlyshan', 'alliahperezoliver']
+2026-07-15 17:31:31,687 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 17:31:49,388   ✅ 1 new handle(s) matched this chunk
+2026-07-15 17:31:49,389     jeremipres -> iNuXNgAAAACOV4AEeERJl-yievH_HBssbIgvU30TquijR2RnaehZqA
+2026-07-15 17:32:19,405 [chunk_size=5] 179/672: searching ['kamotesikram', 'allancardenas1986', 'mskath.z', 'missjaiiiiii', 'ito.airah']
+2026-07-15 17:32:19,822 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 17:32:37,243   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:32:37,243     allancardenas1986 -> GLIrbwAAAACOV4AEeERJl-yievH_HBssgkKekBJJPkqVWSZR4XJVtw
+2026-07-15 17:32:37,243     missjaiiiiii -> cqdJewAAAACOV4AEeERJl-yievH_HBsst0ZBM6wkZwcpIr6D33x7xg
+2026-07-15 17:32:37,243     ito.airah -> WPELhwAAAACOV4AEeERJl-yievH_HBss0Ny9MCG1oQgsqv-i4bYnWQ
+2026-07-15 17:32:37,246     kamotesikram -> LSohFAAAAACOV4AEeERJl-yievH_HBssp9FgIVGI80KdWEDCLFouxA
+2026-07-15 17:32:37,246     mskath.z -> 55O04QAAAACOV4AEeERJl-yievH_HBssdeMfWjlfgQZRhyvxXXIaGA
+2026-07-15 17:33:07,268 [chunk_size=5] 180/672: searching ['itsnicedough', 'xelinvitamins', 'itsmeever17', 'angelcapucion_', 'mcyra_']
+2026-07-15 17:33:09,057   ✅ 3 new handle(s) matched this chunk
+2026-07-15 17:33:09,057     angelcapucion_ -> rigqjgAAAACOV4AEeERJl-yievH_HBsstPLEDCmQIV0qKGUZRrR_4w
+2026-07-15 17:33:09,058     mcyra_ -> mRSs-gAAAACOV4AEeERJl-yievH_HBssMpRgxVY8o9VZ7i6Zssx2zQ
+2026-07-15 17:33:09,058     xelinvitamins -> 2YnG1gAAAACOV4AEeERJl-yievH_HBss38X_TuTVVzt5lFl88VhujQ
+2026-07-15 17:33:39,071 [chunk_size=5] 181/672: searching ['may_d08', 'nikkiiidy', 'laykamangontra', 'lieng_17', 'trishamaegecale']
+2026-07-15 17:33:40,767   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:33:40,767     nikkiiidy -> fYyOFAAAAACOV4AEeERJl-yievH_HBssnu0Bs432YBqWB0kmuZWNGg
+2026-07-15 17:33:40,768     trishamaegecale -> Q3ghzAAAAACOV4AEeERJl-yievH_HBssUhJ8tiL7oiv0gzI0OE8rQA
+2026-07-15 17:33:40,768     lieng_17 -> 294kVQAAAACOV4AEeERJl-yievH_HBssS5wk5Cjd4yKy_CZHhElbGg
+2026-07-15 17:33:40,768     may_d08 -> PmfsagAAAACOV4AEeERJl-yievH_HBssvDPWHB-rAAgIUYQg4wAYhQ
+2026-07-15 17:34:10,785 [chunk_size=5] 182/672: searching ['ms.jincky', 'ourshop.best.shop', 'ayzelll_', 'jmatotino', 'thebutchtan']
+2026-07-15 17:34:10,960 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 17:34:26,847 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 17:34:57,602   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:34:57,617   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151734579D015E4BF3CA9A026EBE'}
+2026-07-15 17:34:57,617   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:36:27,630 [chunk_size=5] 183/672: searching ['jiesnchz', 'neilsky47', 'mamshieada88', 'heyapatty', 'belmartph']
+2026-07-15 17:36:27,874 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 17:36:44,535   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:36:44,535     neilsky47 -> Cvz4hQAAAACOV4AEeERJl-yievH_HBssN8lEZ6K-C1TcxEQWLfnmMA
+2026-07-15 17:36:44,535     belmartph -> J2AMFQAAAACOV4AEeERJl-yievH_HBssKk1ilpg6mIDoXLFYVGxUtA
+2026-07-15 17:36:44,535     jiesnchz -> 8vRNTwAAAACOV4AEeERJl-yievH_HBssj4Kgxe-H8HPG_dOsllThuw
+2026-07-15 17:36:44,535     mamshieada88 -> MwtaRAAAAACOV4AEeERJl-yievH_HBss9YAzOwJqvyu-ZOsEoWFVAw
+2026-07-15 17:36:44,535     heyapatty -> v-jqxAAAAACOV4AEeERJl-yievH_HBssz9N5A5moIrjdG4JBG6jd0A
+2026-07-15 17:37:14,558 [chunk_size=5] 184/672: searching ['cristinemayeleuterio', 'cathydeleon_1978', '_coleenjam', 'helloimsammy0', 'mollieann168']
+2026-07-15 17:37:14,755 Rate limited (attempt 1/3). Waiting 15.7s...
+2026-07-15 17:37:30,671 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 17:38:02,559   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:38:02,559     cristinemayeleuterio -> Ohd1EAAAAACOV4AEeERJl-yievH_HBssuct4dnO8OVY2lEPsMbGOmg
+2026-07-15 17:38:02,559     mollieann168 -> 9hdJ4gAAAACOV4AEeERJl-yievH_HBssgydDM9Ph-OurzeldUYaPJw
+2026-07-15 17:38:02,559     cathydeleon_1978 -> a8DmxwAAAACOV4AEeERJl-yievH_HBss04AcgrxQoXjktkIcagys7A
+2026-07-15 17:38:02,559     helloimsammy0 -> uRJ6IQAAAACOV4AEeERJl-yievH_HBssnC65djUBULkV_fpi021SzA
+2026-07-15 17:38:32,576 [chunk_size=5] 185/672: searching ['herbudolero', 'imclaudiajeon', 'veloso.lester', 'dishing97', 'jereiaj.j']
+2026-07-15 17:38:32,827 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 17:38:48,771 Rate limited (attempt 2/3). Waiting 30.0s...
+2026-07-15 17:39:18,966   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:39:18,968   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715173918FFC4C73E3F4248084031'}
+2026-07-15 17:39:18,968   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:40:48,971 [chunk_size=5] 186/672: searching ['marialouisacale04', 'ligetshop10', 'helloitsmelorie', 'bella.mabuti', 'lovelotsfinds98']
+2026-07-15 17:40:50,544   ✅ 3 new handle(s) matched this chunk
+2026-07-15 17:40:50,544     bella.mabuti -> nZnJEgAAAACOV4AEeERJl-yievH_HBssTM-AQAxg18h-__f9HR_9Zw
+2026-07-15 17:40:50,544     lovelotsfinds98 -> zLY4yAAAAACOV4AEeERJl-yievH_HBssLIxIFXizJSCVBTtYJlIspQ
+2026-07-15 17:40:50,544     ligetshop10 -> idaOMgAAAACOV4AEeERJl-yievH_HBssa1xfQKC7e4_buxwboBqTBA
+2026-07-15 17:41:20,562 [chunk_size=5] 187/672: searching ['mommahrhy', 'sirhealthy1', 'supertwinx', 'inyoureyes162', 'jeeyasboutiquee']
+2026-07-15 17:41:20,706 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 17:41:36,055 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 17:42:08,459   ✅ 3 new handle(s) matched this chunk
+2026-07-15 17:42:08,460     sirhealthy1 -> P3sDvQAAAACOV4AEeERJl-yievH_HBssl_rvs1RbmipHgs0m7Qr9Yg
+2026-07-15 17:42:08,460     mommahrhy -> onUymQAAAACOV4AEeERJl-yievH_HBssMn4Q_P3tUHTxsh1cdzqdHQ
+2026-07-15 17:42:08,461     supertwinx -> 7WC87wAAAACOV4AEeERJl-yievH_HBsswQEhpUuJG4gG1qNMnJM1iw
+2026-07-15 17:42:38,479 [chunk_size=5] 188/672: searching ['cecilleramirez46', 'carterpj_', 'nocturnal_00', 'mariaysabella018', 'jijidenalo']
+2026-07-15 17:42:38,670 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 17:42:54,768 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 17:43:26,908   ✅ 2 new handle(s) matched this chunk
+2026-07-15 17:43:26,908     jijidenalo -> 6pm3FwAAAACOV4AEeERJl-yievH_HBssZ-zTYtG8IRccrLwoShekDQ
+2026-07-15 17:43:26,909     carterpj_ -> FximmAAAAACOV4AEeERJl-yievH_HBssKKcTLKCUtDQcJKOqxdkUzQ
+2026-07-15 17:43:56,923 [chunk_size=5] 189/672: searching ['ryanradz26', 'mommycharm0912', 'rosemarie_molina00', 'yannayan28', 'sophiapraisee']
+2026-07-15 17:43:57,083 Rate limited (attempt 1/3). Waiting 15.3s...
+2026-07-15 17:44:12,511 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 17:44:42,970   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:44:42,972   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715174442DDE02AC126341904F7FB'}
+2026-07-15 17:44:42,972   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:46:12,982 [chunk_size=5] 190/672: searching ['erickvon10', 'momshie.rlyn', '4uri.6', 'aki_xxxx00', 'zvor_rovz']
+2026-07-15 17:46:14,889   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:46:14,890     erickvon10 -> 15mOwgAAAACOV4AEeERJl-yievH_HBssbCNYK9BvirPx_Y7mHEPxFA
+2026-07-15 17:46:14,890     4uri.6 -> V3BO1QAAAACOV4AEeERJl-yievH_HBssyn-WTfnbFgIjF0nde23GZQ
+2026-07-15 17:46:14,890     aki_xxxx00 -> axwixgAAAACOV4AEeERJl-yievH_HBssdxwD4vNvddQ6hvX7IKxKBg
+2026-07-15 17:46:14,890     zvor_rovz -> xwc9xwAAAACOV4AEeERJl-yievH_HBss8blD3ANxvJjkiwjHQNPg2A
+2026-07-15 17:46:14,891     momshie.rlyn -> 8BZjOwAAAACOV4AEeERJl-yievH_HBssU4J3J-WZZZjZGUcq_UU25w
+2026-07-15 17:46:44,914 [chunk_size=5] 191/672: searching ['zerrapocalypse', 'vanillacaramel118', 'caramelmacc1823', 'geneeeva', 'dailytrendyfinds']
+2026-07-15 17:46:45,101 Rate limited (attempt 1/3). Waiting 15.5s...
+2026-07-15 17:47:00,834 Rate limited (attempt 2/3). Waiting 30.9s...
+2026-07-15 17:47:32,097   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:47:32,098   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715174731DD426BDC99CDFD058415'}
+2026-07-15 17:47:32,098   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:49:02,120 [chunk_size=5] 192/672: searching ['louietinio', 'iamdivergent80', '_hacim9_1', 'kimmywap', 'budolfindsbyjhgb']
+2026-07-15 17:49:03,677   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:49:03,677     louietinio -> jltYkAAAAACOV4AEeERJl-yievH_HBssQ6RU6uaoSpAaOtx51NdYpQ
+2026-07-15 17:49:03,677     iamdivergent80 -> 7-y2WwAAAACOV4AEeERJl-yievH_HBss7LXsWjm7VwscvBaTsdnuWg
+2026-07-15 17:49:03,678     budolfindsbyjhgb -> NsFbaQAAAACOV4AEeERJl-yievH_HBssc8CMod_VoKoE_GETRAnBjA
+2026-07-15 17:49:03,678     kimmywap -> fvNkBwAAAACOV4AEeERJl-yievH_HBssHpidJD-lMk6Cgpl4vIygkw
+2026-07-15 17:49:33,713 [chunk_size=5] 193/672: searching ['juveebudolfinds', 'user9530555509088', 'gerlymags', 'dabeydabie', 'ashjewe1']
+2026-07-15 17:49:33,922 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 17:49:49,625 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 17:50:20,020   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:50:20,020   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151750193216FFD5ED508D051199'}
+2026-07-15 17:50:20,020   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:51:50,037 [chunk_size=5] 194/672: searching ['lfindsaffi', 'macha0403', 'r_morales28', 'ms.tinneshop', 'pepperfindsss']
+2026-07-15 17:51:51,452   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:51:51,474     lfindsaffi -> DgjKggAAAACOV4AEeERJl-yievH_HBssAdSeShe6tDgVZtMG2nNp8A
+2026-07-15 17:51:51,474     ms.tinneshop -> AzCEbAAAAACOV4AEeERJl-yievH_HBssrZ86EaavMk_BfzwTciqJaQ
+2026-07-15 17:51:51,474     macha0403 -> i8w5yAAAAACOV4AEeERJl-yievH_HBss8iN5GNP5SrOAYfEG5rgGAw
+2026-07-15 17:51:51,474     pepperfindsss -> -lQ6twAAAACOV4AEeERJl-yievH_HBsskqwp7xiqCyoyK-u7w0WGhw
+2026-07-15 17:52:21,485 [chunk_size=5] 195/672: searching ['ms.kathleen16', 'dhel_tamayo', 'immaybeperez', 'daisyonlineshop32', 'findsjeyarph']
+2026-07-15 17:52:21,609 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 17:52:37,706 Rate limited (attempt 2/3). Waiting 30.3s...
+2026-07-15 17:53:09,605   ✅ 3 new handle(s) matched this chunk
+2026-07-15 17:53:09,606     immaybeperez -> Eoa_YAAAAACOV4AEeERJl-yievH_HBssAs77PGJYUVwqkSykw9tlQw
+2026-07-15 17:53:09,606     ms.kathleen16 -> _W-ckgAAAACOV4AEeERJl-yievH_HBssZGnuskggNZXAY_AIDmeEsA
+2026-07-15 17:53:09,606     dhel_tamayo -> zo1CeAAAAACOV4AEeERJl-yievH_HBss-MXa3KxH7T9_tliTPf59OQ
+2026-07-15 17:53:39,629 [chunk_size=5] 196/672: searching ['lunasrnty', 'alierachin09', 'ronnel.manrique', '_chay.aff2', 'yhenancheta702']
+2026-07-15 17:53:39,920 Rate limited (attempt 1/3). Waiting 16.0s...
+2026-07-15 17:53:56,016 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 17:54:26,919   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 17:54:26,919   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151754260D8B6683504F8100079B'}
+2026-07-15 17:54:26,919   Cooling down an extra 60s before the next chunk...
+2026-07-15 17:55:56,932 [chunk_size=5] 197/672: searching ['_mommyshai0', 'iamkyla0', 'yourshopmall', 'mommychen10', 'vanessaambayanigcas']
+2026-07-15 17:55:57,112 Rate limited (attempt 1/3). Waiting 15.0s...
+2026-07-15 17:56:13,587   ✅ 4 new handle(s) matched this chunk
+2026-07-15 17:56:13,588     iamkyla0 -> ZEJTUgAAAACOV4AEeERJl-yievH_HBsstfm7Ayw7dOIKCxIBZ47Msg
+2026-07-15 17:56:13,589     mommychen10 -> CgJ6iwAAAACOV4AEeERJl-yievH_HBss4mMibmtGeYPVC_tMn3rC2Q
+2026-07-15 17:56:13,589     vanessaambayanigcas -> ulf8IQAAAACOV4AEeERJl-yievH_HBssHS2mYjyEisRUztZaqHNENg
+2026-07-15 17:56:13,589     _mommyshai0 -> n9QrXwAAAACOV4AEeERJl-yievH_HBssEyLmOIOQV3IbrJ1ZAcirWg
+2026-07-15 17:56:43,611 [chunk_size=5] 198/672: searching ['ashly29.1214', '_ankleyn', 'kittyyodie', '_itskathdc', 'jaykurtofficial']
+2026-07-15 17:56:43,767 Rate limited (attempt 1/3). Waiting 15.4s...
+2026-07-15 17:57:00,418   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:57:00,422     kittyyodie -> GsZKfAAAAACOV4AEeERJl-yievH_HBsssbcza5OCrTchPG9FqT_Eaw
+2026-07-15 17:57:00,422     _itskathdc -> 9taUxAAAAACOV4AEeERJl-yievH_HBssMH4_8VIJhYULNxH3gWdJPA
+2026-07-15 17:57:00,422     _ankleyn -> SX7EAwAAAACOV4AEeERJl-yievH_HBssRgaW59CDiT61U0YAigOuqg
+2026-07-15 17:57:00,422     jaykurtofficial -> oKnsdQAAAACOV4AEeERJl-yievH_HBss9fBrvBBcNySD9qnzgBEkUA
+2026-07-15 17:57:00,422     ashly29.1214 -> xmP-EQAAAACOV4AEeERJl-yievH_HBssSrLXFKoDE5ClCXZ62S8hqg
+2026-07-15 17:57:30,436 [chunk_size=5] 199/672: searching ['bcolanashop', 'mm.finds7', 'sungdripwoo33', 'missviojan26', 'thesuperbshop']
+2026-07-15 17:57:30,655 Rate limited (attempt 1/3). Waiting 15.8s...
+2026-07-15 17:57:46,647 Rate limited (attempt 2/3). Waiting 30.4s...
+2026-07-15 17:58:19,038   ✅ 5 new handle(s) matched this chunk
+2026-07-15 17:58:19,039     sungdripwoo33 -> cyfMkAAAAACOV4AEeERJl-yievH_HBss8APjZmuCdjYTFdmta8pJVg
+2026-07-15 17:58:19,039     bcolanashop -> 9ku4_wAAAACOV4AEeERJl-yievH_HBssjbg_egZGVJ60DdTQN1rQzw
+2026-07-15 17:58:19,039     thesuperbshop -> NBRl0wAAAACOV4AEeERJl-yievH_HBssjJi4-FQZZfjarwtYsKjDGw
+2026-07-15 17:58:19,040     mm.finds7 -> cH4AigAAAACOV4AEeERJl-yievH_HBssEW2KJTibgZQy7Xtfi-XR4w
+2026-07-15 17:58:19,040     missviojan26 -> qwXZYQAAAACOV4AEeERJl-yievH_HBssLj3w6Dny_suL4NSJCbiB_A
+2026-07-15 17:58:49,059 [chunk_size=5] 200/672: searching ['shopwise4', 'ldr901', 'solsticeze', 'zeinabbudolshop', 'thrshhates.u']
+2026-07-15 17:58:50,799   ✅ 0 new handle(s) matched this chunk
+2026-07-15 17:59:20,815 [chunk_size=5] 201/672: searching ['promaxxnutricmaxxvitamin', 'shimellee', 'mommi_honey97', 'zzel.pm', 'mommybebs01']
+2026-07-15 17:59:20,932 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 17:59:36,724 Rate limited (attempt 2/3). Waiting 30.2s...
+2026-07-15 18:00:07,076   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 18:00:07,076   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715180006636BD0221DB5FF06680C'}
+2026-07-15 18:00:07,076   Cooling down an extra 60s before the next chunk...
+2026-07-15 18:01:37,087 [chunk_size=5] 202/672: searching ['arcellenee', 'ayveel8', 'shiaaaaa._.09', 'r.m.a.b.y', 'ayeppp280']
+2026-07-15 18:01:37,331 Rate limited (attempt 1/3). Waiting 15.2s...
+2026-07-15 18:01:52,697 Rate limited (attempt 2/3). Waiting 30.1s...
+2026-07-15 18:02:22,993   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 18:02:22,995   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '20260715180222B94BC33957FA7105E608'}
+2026-07-15 18:02:22,995   Cooling down an extra 60s before the next chunk...
+2026-07-15 18:03:53,012 [chunk_size=5] 203/672: searching ['pat_session', 'ms.althea0410', 'regenttito', 'moneyfesthingg', 'jarg1203']
+2026-07-15 18:03:54,935   ✅ 3 new handle(s) matched this chunk
+2026-07-15 18:03:54,937     moneyfesthingg -> OwF26AAAAACOV4AEeERJl-yievH_HBssNz8nSNYYvExZh1_JTNEiZA
+2026-07-15 18:03:54,937     ms.althea0410 -> j-015QAAAACOV4AEeERJl-yievH_HBssq4m4j6UR2HA5JAHwRZ0z_Q
+2026-07-15 18:03:54,937     regenttito -> aD38oAAAAACOV4AEeERJl-yievH_HBss4gPVrWR6zygEBokXfMsItw
+2026-07-15 18:04:24,950 [chunk_size=5] 204/672: searching ['its_ja.ja', 'reeeyn.08', 'nancy73627', 'urasianchix', 'iamhoca']
+2026-07-15 18:04:26,874   ✅ 1 new handle(s) matched this chunk
+2026-07-15 18:04:26,874     its_ja.ja -> O3Y6cQAAAACOV4AEeERJl-yievH_HBss5-Cm8GSiDesHcHNiZdWnmw
+2026-07-15 18:04:56,898 [chunk_size=5] 205/672: searching ['outfitrecobyme', 'yangespejo', 'heyyitsarci', '281vlogs', 'gmban92']
+2026-07-15 18:04:57,074 Rate limited (attempt 1/3). Waiting 15.6s...
+2026-07-15 18:05:12,753 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 18:05:43,686   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 18:05:43,686   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '202607151805438D96EF5093170F03691E'}
+2026-07-15 18:05:43,686   Cooling down an extra 60s before the next chunk...
+2026-07-15 18:07:13,708 [chunk_size=5] 206/672: searching ['mikee.babia', 'tiktok_finds43', 'lhoreviemortegaba', 'nidzkyg', 'ms.erickabhyvaine']
+2026-07-15 18:07:13,894 Rate limited (attempt 1/3). Waiting 15.9s...
+2026-07-15 18:07:29,975 Rate limited (attempt 2/3). Waiting 30.8s...
+2026-07-15 18:08:00,885   ⚠️  Still failing after 3 attempts — giving up for now. Last error: Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW
+2026-07-15 18:08:00,885   ⚠️  Search failed: {'code': 36009002, 'data': None, 'message': 'Too many requests for downstream. You’ve made too many requests in a short period of time. For more details: https://m.tiktok.shop/s/AIu6dbFhs2XW', 'request_id': '2026071518080033F1523344071000B760'}
+2026-07-15 18:08:00,885   Cooling down an extra 60s before the next chunk...
