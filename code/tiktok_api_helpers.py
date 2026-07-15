@@ -36,6 +36,7 @@ MANIFEST_CSV = "creators_manifest.csv"
 TARGET_COLLAB_MANIFEST_CSV = "collabs/target_collaboration_manifest.csv"
 TARGET_COLLAB_CREATORS_CSV = "collabs/target_collaboration_creators.csv"
 CONFLICTS_MANIFEST_CSV = "collabs/collab_conflicts_manifest.csv"
+SAMPLE_APPLICATIONS_CSV = "messaging/all_sample_applications.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 30.0  # seconds between successful chunk calls — raised again: even 15s still needed a retry on nearly every chunk
