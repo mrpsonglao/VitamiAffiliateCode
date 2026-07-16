@@ -27,6 +27,7 @@ QUERY_TARGET_COLLABORATION_PATH_TEMPLATE = "/affiliate_seller/202508/target_coll
 CHECK_TARGET_COLLABORATION_CONFLICTS_PATH = "/affiliate_seller/202605/target_collaborations/conflicts/check"
 CREATE_CONVERSATION_PATH = "/affiliate_seller/202508/conversations"
 GET_CONVERSATION_LIST_PATH = "/affiliate_seller/202412/conversations"
+GET_CONVERSATION_MESSAGES_PATH_TEMPLATE = "/affiliate_seller/202412/conversation/{}/messages"
 SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messages"
 UPLOAD_MESSAGE_IMAGE_PATH = "/affiliate_seller/202511/images/upload"
 SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/search"
@@ -418,6 +419,25 @@ def get_conversation_list(
         query_params["conversation_status"] = conversation_status
 
     return call_api("GET", GET_CONVERSATION_LIST_PATH, query_params, body_dict=None, **retry_kwargs)
+
+
+def get_conversation_messages(conversation_id: str, page_size: int = 20, page_token: str = "", **retry_kwargs) -> dict:
+    """
+    Get Message in the Conversation. page_size max is 20 (note: different
+    max from get_conversation_list, which allows up to 50).
+
+    Returns data.has_more, data.next_page_token, data.messages (list of
+    {conversation_index, message_body: {id, conversation_id, type, content, create_time, sender_id}}).
+    """
+    if not 0 < page_size <= 20:
+        raise ValueError("page_size must be greater than 0 and at most 20")
+
+    path = GET_CONVERSATION_MESSAGES_PATH_TEMPLATE.format(conversation_id)
+    query_params = {"page_size": page_size}
+    if page_token:
+        query_params["page_token"] = page_token
+
+    return call_api("GET", path, query_params, body_dict=None, **retry_kwargs)
 
 
 def send_im_message(conversation_id: str, msg_type: str, content: dict, **retry_kwargs) -> dict:
