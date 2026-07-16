@@ -41,6 +41,7 @@ CONFLICTS_MANIFEST_CSV = "collabs/collab_conflicts_manifest.csv"
 
 SAMPLE_APPLICATIONS_CSV = "messaging/all_sample_applications.csv"
 ALL_CONVERSATIONS_CSV = "messaging/all_conversations.csv"
+ALL_CONVERSATIONS_NEW_CSV = "messaging/all_conversations_new.csv"
 CONVERSATIONS_MANIFEST_CSV = "messaging/creators_conversations_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
