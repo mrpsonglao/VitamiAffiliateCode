@@ -43,6 +43,8 @@ SAMPLE_APPLICATIONS_CSV = "messaging/all_sample_applications.csv"
 ALL_CONVERSATIONS_CSV = "messaging/all_conversations.csv"
 ALL_CONVERSATIONS_NEW_CSV = "messaging/all_conversations_new.csv"
 CONVERSATIONS_MANIFEST_CSV = "messaging/creators_conversations_manifest.csv"
+VIBER_INVITE_MANIFEST_CSV = "messaging/message_viber_invite_manifest.csv"
+COLLAB_INVITE_MANIFEST_CSV = "messaging/message_collab_invite_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 30.0  # seconds between successful chunk calls — raised again: even 15s still needed a retry on nearly every chunk
