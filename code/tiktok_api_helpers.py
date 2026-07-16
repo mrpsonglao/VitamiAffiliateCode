@@ -34,14 +34,19 @@ SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/
 
 CONSOLIDATED_CSV = "creators_found.csv"
 MANIFEST_CSV = "creators_manifest.csv"
+
 TARGET_COLLAB_MANIFEST_CSV = "collabs/target_collaboration_manifest.csv"
 TARGET_COLLAB_CREATORS_CSV = "collabs/target_collaboration_creators.csv"
 CONFLICTS_MANIFEST_CSV = "collabs/collab_conflicts_manifest.csv"
+
 SAMPLE_APPLICATIONS_CSV = "messaging/all_sample_applications.csv"
+ALL_CONVERSATIONS_CSV = "messaging/all_conversations.csv"
+CONVERSATIONS_MANIFEST_CSV = "messaging/creators_conversations_manifest.csv"
 
 RATE_LIMIT_CODE = 36009002
 DELAY_BETWEEN_CALLS = 30.0  # seconds between successful chunk calls — raised again: even 15s still needed a retry on nearly every chunk
 DELAY_BETWEEN_QUERIES = 5.0  # seconds between calls, to be gentle on rate limits
+DELAY_BETWEEN_PAGES = 1.0  # seconds between page requests
 
 LOG_FILE = "run_pass.log"
 
@@ -439,6 +444,36 @@ def get_conversation_messages(conversation_id: str, page_size: int = 20, page_to
 
     return call_api("GET", path, query_params, body_dict=None, **retry_kwargs)
 
+def get_all_messages(conversation_id: str) -> list[dict]:
+    """Paginates through ALL messages for a single conversation_id."""
+    messages = []
+    page_token = ""
+    page_num = 1
+
+    while True:
+        result = get_conversation_messages(conversation_id, page_size=20, page_token=page_token)
+
+        if result.get("code") != 0:
+            print(f"    ⚠️  Page {page_num} failed, stopping here: {result}")
+            break
+
+        data = result.get("data", {}) or {}
+        page_messages = data.get("messages", [])
+        messages.extend(page_messages)
+
+        print(f"    Page {page_num}: {len(page_messages)} message(s) (total so far: {len(messages)})")
+
+        if not data.get("has_more"):
+            break
+
+        page_token = data.get("next_page_token", "")
+        if not page_token:
+            break
+
+        page_num += 1
+        time.sleep(DELAY_BETWEEN_CALLS)
+
+    return messages
 
 def send_im_message(conversation_id: str, msg_type: str, content: dict, **retry_kwargs) -> dict:
     """
