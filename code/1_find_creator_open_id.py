@@ -80,7 +80,7 @@ df_creators_list = df_creators_list.merge(manifest, how='left', left_on='usernam
 target_batches = [
     'Health_202606_00k-02k', 'All_202606_00k-02k',
        'Health_202606_02k-04k', 'All_202606_02k-04k',
-    #    'Health_202606_04k-06k', 'All_202606_04k-06k',
+       'Health_202606_04k-06k', 'All_202606_04k-06k',
     #    'Health_202606_06k-08k', 'All_202606_06k-08k',
     #    'Health_202606_08k-10k', 'All_202606_08k-10k',
     #    'Health_202606_10k-12k', 'All_202606_10k-12k'
