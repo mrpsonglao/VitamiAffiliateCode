@@ -100,25 +100,25 @@ df_viber_invite = pd.read_csv(VIBER_INVITE_MANIFEST_CSV)
 df_creators_messaging['invited_to_join_collab'] =  df_creators_messaging['conversation_id'].isin(df_collab_invite['conversation_id'].astype(str))
 df_creators_messaging['invited_to_viber_grp'] =  df_creators_messaging['conversation_id'].isin(df_viber_invite['conversation_id'].astype(str))
 
+print("\n>>> Reviewing new conversations and messages to send.")
+list_create_conversation = df_creators_messaging.loc[
+    (df_creators_messaging['target_collaboration_id'].notnull() | df_creators_messaging['sample_status'].notnull())
+    & df_creators_messaging['conversation_id'].isnull(),
+    'creator_open_id'
+].tolist()
+print(f"- To create: {len(list_create_conversation)} new conversations.")
 count_viber_invite = df_creators_messaging.loc[df_creators_messaging['sample_status'].notnull() & ~df_creators_messaging['invited_to_viber_grp']].shape[0]
-print(f"To send: Viber invites for {count_viber_invite} new creators.")
+print(f"- To send: Viber invites for {count_viber_invite} new creators.")
 count_collab_invite = df_creators_messaging.loc[~df_creators_messaging['invited_to_join_collab'] & df_creators_messaging['target_collaboration_id'].notnull()].shape[0]
-print(f"To send: collab invites for {count_collab_invite} new creators.")
+print(f"- To send: collab invites for {count_collab_invite} new creators.")
 
 proceed = input("Proceed with sending messages to creators? (y/n): ").strip().lower()
 if proceed != "y":
     raise SystemExit("Stopped by user.")
 
 # ## [Optional] Create Conversation if no conversation_id but has target_collaboration_id or has sample application
-list_create_conversation = df_creators_messaging.loc[
-    (df_creators_messaging['target_collaboration_id'].notnull() | df_creators_messaging['sample_status'].notnull())
-    & df_creators_messaging['conversation_id'].isnull(),
-    'creator_open_id'
-].tolist()
-print(f"\n>>> Generating conversation IDs for {len(list_create_conversation)} new creators.")
-
 if list_create_conversation:
-    print("Generating conversations...")
+    print(f"\n>>> Generating conversation IDs for {len(list_create_conversation)} new creators.")
     conversation_rows = []
     failed_conversations = create_conversations_with_retry(list_create_conversation, conversation_rows, max_passes=3, delay=0.5)
     
