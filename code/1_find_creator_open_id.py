@@ -98,6 +98,10 @@ print(f"{len(still_not_found)} handles to find for these batches.\n")
 print(f"Sample IDs: {still_not_found[:10]}")
 print(df_tofind)
 
+proceed = input("Proceed with finding creator open IDs? (y/n): ").strip().lower()
+if proceed != "y":
+    raise SystemExit("Stopped by user.")
+
 # ## First-pass: Chunk size = 5
 # Phase 1: chunk_size=5, single pass through everything not yet found
 print("\n\n\n>>> Starting Phase 1 (chunksize = 5)")
