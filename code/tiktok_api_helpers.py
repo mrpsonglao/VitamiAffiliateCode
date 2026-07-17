@@ -329,7 +329,7 @@ def search_all_sample_applications(
         applications = data.get("sample_applications", [])
         all_applications.extend(applications)
 
-        print(f"Page {page_num}: {len(applications)} application(s) (total so far: {len(all_applications)})")
+        # print(f"Page {page_num}: {len(applications)} application(s) (total so far: {len(all_applications)})")
 
         page_token = data.get("next_page_token", "")
         if not page_token:

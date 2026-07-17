@@ -65,7 +65,7 @@ statuses = [
 ]
 all_sample_applications = []
 for status in statuses:
-    print(f"Fetching status: {status}")
+    # print(f"Fetching status: {status}")
     results = search_all_sample_applications(status=status)
     all_sample_applications.extend(results)
 
