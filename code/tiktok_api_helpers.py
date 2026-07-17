@@ -662,3 +662,51 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
     still_not_found = [h for h in handles_to_find if h not in found_usernames]
 
     return still_not_found, found_usernames, df_creators
+
+def create_conversations_with_retry(creator_ids, conversation_rows, max_passes=3, delay=0.5):
+    """
+    Creates conversations for creator_ids, retrying failures across up to
+    max_passes total passes. Successes are appended directly into
+    conversation_rows (mutated in place). Returns the list of creator_open_ids
+    still failed after all passes.
+
+    Stops early if a pass makes zero progress (every creator in that pass
+    still failed) — retrying again likely won't help if nothing improved.
+    """
+    remaining = list(creator_ids)
+
+    for pass_num in range(1, max_passes + 1):
+        if not remaining:
+            break
+
+        print(f">>> Pass {pass_num}/{max_passes}: creating conversations for {len(remaining)} creator(s).")
+        still_failed = []
+
+        for i, creator_open_id in enumerate(remaining, start=1):
+            result = create_conversation_with_creator(creator_open_id, only_need_conversation_id=False)
+
+            if result.get("code") != 0:
+                print(f"  ⚠️  Failed: {result}")
+                still_failed.append(creator_open_id)
+            else:
+                data = result["data"]
+                conversation_rows.append({
+                    "creator_open_id": creator_open_id,
+                    "conversation_id": data.get("conversation_id"),
+                    "creator_im_id": data.get("creator_im_id"),
+                })
+                print(f"  ✅ {creator_open_id} -> conversation_id: {data.get('conversation_id')}")
+
+            time.sleep(delay)
+
+        succeeded_this_pass = len(remaining) - len(still_failed)
+        print(f"Pass {pass_num} done. {succeeded_this_pass} succeeded, {len(still_failed)} still failed.")
+
+        if succeeded_this_pass == 0:
+            print("No progress made this pass — stopping retries early.")
+            remaining = still_failed
+            break
+
+        remaining = still_failed
+
+    return remaining
