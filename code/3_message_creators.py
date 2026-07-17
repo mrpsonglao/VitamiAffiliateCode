@@ -58,7 +58,7 @@ else:
     refresh_token = os.environ.get("TIKTOK_REFRESH_TOKEN")
 
 # # Step 1. Monitor Sample Application Status
-print(">>> Extracting latest sample application statuses.")
+print("\n>>> Extracting latest sample application statuses.")
 statuses = [
     "AWAITING_SHIPMENT", "SHIPPED", "CONTENT_PENDING", 
     "OPS_COMPLETED", "COMPLETED"
@@ -97,7 +97,7 @@ list_create_conversation = df_creators_messaging.loc[
     & df_creators_messaging['conversation_id'].isnull(),
     'creator_open_id'
 ].tolist()
-print(f">>> Generating conversation IDs for {len(list_create_conversation)} new creators.")
+print(f"\n>>> Generating conversation IDs for {len(list_create_conversation)} new creators.")
 
 if list_create_conversation:
     print("Generating conversations...")
@@ -171,7 +171,7 @@ if skipped:
     print(f"Skipping {skipped} conversation(s) already sent in a previous run.")
 
 if list_viber_invite:
-    print(f">>> Sending Viber invites for {len(list_viber_invite)} new creators.")
+    print(f"\n>>> Sending Viber invites for {len(list_viber_invite)} new creators.")
 
     results = []
     
@@ -228,7 +228,7 @@ if skipped:
     print(f"Skipping {skipped} conversation(s) already sent in a previous run.")
 
 if list_collab_invite:
-    print(f">>> Sending collab invites for {len(list_collab_invite)} new creators.")
+    print(f"\n>>> Sending collab invites for {len(list_collab_invite)} new creators.")
 
     results = []
     
