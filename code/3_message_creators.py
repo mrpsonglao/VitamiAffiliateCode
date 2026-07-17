@@ -82,7 +82,10 @@ df_creators_list = pd.read_excel("all_creators_sorted.xlsx", sheet_name="LIST_CR
 df_creators = pd.read_csv(CONSOLIDATED_CSV)
 df_all_conversations = pd.read_csv(ALL_CONVERSATIONS_CSV)
 df_target_collab = pd.read_csv(TARGET_COLLAB_CREATORS_CSV)
+
+# ensure IDs are strings
 df_target_collab['target_collaboration_id'] = df_target_collab['target_collaboration_id'].astype(str)
+df_all_conversations['conversation_id'] = df_all_conversations['conversation_id'].astype(str)
 
 # merge all extracted data
 df_creators_messaging = df_creators_list \
@@ -90,6 +93,21 @@ df_creators_messaging = df_creators_list \
     .merge(df_target_collab.rename(columns={'name':'target_collaboration_name'}).drop(['batch_name'], axis=1), how='left', on="creator_open_id") \
     .merge(df_all_sample_applications[['creator.creator_open_id', 'status']].rename(columns={'creator.creator_open_id':'creator_open_id', 'status':'sample_status'}), how='left', on="creator_open_id") \
     .merge(df_all_conversations, how='left', on="username")
+
+# ## Track Message Status based on manifest
+df_collab_invite = pd.read_csv(COLLAB_INVITE_MANIFEST_CSV)
+df_viber_invite = pd.read_csv(VIBER_INVITE_MANIFEST_CSV)
+df_creators_messaging['invited_to_join_collab'] =  df_creators_messaging['conversation_id'].isin(df_collab_invite['conversation_id'].astype(str))
+df_creators_messaging['invited_to_viber_grp'] =  df_creators_messaging['conversation_id'].isin(df_viber_invite['conversation_id'].astype(str))
+
+count_viber_invite = df_creators_messaging.loc[df_creators_messaging['sample_status'].notnull() & ~df_creators_messaging['invited_to_viber_grp']].shape[0]
+print(f"To send: Viber invites for {count_viber_invite} new creators.")
+count_collab_invite = df_creators_messaging.loc[~df_creators_messaging['invited_to_join_collab'] & df_creators_messaging['target_collaboration_id'].notnull()].shape[0]
+print(f"To send: collab invites for {count_collab_invite} new creators.")
+
+proceed = input("Proceed with sending messages to creators? (y/n): ").strip().lower()
+if proceed != "y":
+    raise SystemExit("Stopped by user.")
 
 # ## [Optional] Create Conversation if no conversation_id but has target_collaboration_id or has sample application
 list_create_conversation = df_creators_messaging.loc[
@@ -129,7 +147,7 @@ df_creators_messaging = df_creators_list \
     .merge(df_creators[['username', 'creator_open_id']], how='left', on="username") \
     .merge(df_target_collab.rename(columns={'name':'target_collaboration_name'}).drop(['batch_name'], axis=1), how='left', on="creator_open_id") \
     .merge(df_all_sample_applications[['creator.creator_open_id', 'status']].rename(columns={'creator.creator_open_id':'creator_open_id', 'status':'sample_status'}), how='left', on="creator_open_id") \
-    .merge(df_all_conversations[['creator_im_id', 'conversation_id', 'username']], how='left', on="username")
+    .merge(df_all_conversations, how='left', on="username")
 
 dict_conv_to_username = df_creators_messaging.dropna(subset=['conversation_id']).set_index('conversation_id')['username'].to_dict()
 dict_conv_to_collab =  df_creators_messaging.dropna(subset=['conversation_id']).set_index('conversation_id')['target_collaboration_id'].to_dict()
@@ -141,13 +159,7 @@ df_creators_messaging['invited_to_join_collab'] =  df_creators_messaging['conver
 df_creators_messaging['invited_to_viber_grp'] =  df_creators_messaging['conversation_id'].isin(df_viber_invite['conversation_id'].astype(str))
 
 list_viber_invite = df_creators_messaging.loc[df_creators_messaging['sample_status'].notnull() & ~df_creators_messaging['invited_to_viber_grp'], 'conversation_id'].astype(str).tolist()
-print(f"To send: Viber invites for {len(list_viber_invite)} new creators.")
 list_collab_invite = df_creators_messaging.loc[~df_creators_messaging['invited_to_join_collab'] & df_creators_messaging['target_collaboration_id'].notnull(), 'conversation_id'].astype(str).tolist()
-print(f"To send: collab invites for {len(list_collab_invite)} new creators.")
-
-proceed = input("Proceed with sending messages to creators? (y/n): ").strip().lower()
-if proceed != "y":
-    raise SystemExit("Stopped by user.")
 
 # ## Send Viber Group invite
 message_thank_you = "Hi {}! Thank you so much for accepting our invite, super excited to work with you! Sending over a photo with QR codes para sa content brief and Viber community namin. Just scan para ma access mo!\n\n Feel free to message me here anytime kung may mga tanong ka. Looking forward to creating with you!"
