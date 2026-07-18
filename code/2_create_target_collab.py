@@ -60,7 +60,7 @@ else:
 
 # # Step 1: Load Creator Open IDs
 # load all creators
-df_creators_list = pd.read_excel("all_creators_sorted.xlsx", sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
+df_creators_list = pd.read_excel("creators/all_creators_sorted.xlsx", sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
 list_all_creators = df_creators_list['username'].tolist()
 
 # Load or initialize the manifest (tracks which handles are already found)
