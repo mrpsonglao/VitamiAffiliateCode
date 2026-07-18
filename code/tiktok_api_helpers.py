@@ -32,9 +32,16 @@ SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messa
 UPLOAD_MESSAGE_IMAGE_PATH = "/affiliate_seller/202511/images/upload"
 SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/search"
 
-CONSOLIDATED_CSV = "creators/creators_found.csv"
-MANIFEST_CSV = "creators/creators_manifest.csv"
-LOG_FILE = "creators/run_pass.log"
+OUTPUT_DIR = Path("creators")
+OUTPUT_DIR.mkdir(exist_ok=True)
+
+RESULTS_CSV = OUTPUT_DIR / "creators_gmv_units_sold.csv"
+CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_checkpoint.json"
+LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold.log"
+
+CONSOLIDATED_CSV = OUTPUT_DIR / "creators_found.csv"
+MANIFEST_CSV = OUTPUT_DIR / "creators_manifest.csv"
+LOG_FILE = OUTPUT_DIR / "run_pass.log"
 
 TARGET_COLLAB_MANIFEST_CSV = "collabs/target_collaboration_manifest.csv"
 TARGET_COLLAB_CREATORS_CSV = "collabs/target_collaboration_creators.csv"
@@ -59,6 +66,10 @@ if not logger.handlers:  # avoid duplicate handlers if this module is re-importe
     _file_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
     logger.addHandler(_file_handler)
 
+def log_print(msg: str) -> None:
+    """Prints to console AND writes to the log file, so nothing shown live is lost."""
+    print(msg)
+    logger.info(msg)
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
     """
