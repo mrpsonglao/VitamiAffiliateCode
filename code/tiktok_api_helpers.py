@@ -141,6 +141,7 @@ def call_api(
     max_retries: int = 3,
     base_delay: float = 15.0,
     max_delay: float = 45.0,
+    retry_logger: logging.Logger | None = None,
 ) -> dict:
     """
     Generic signed call to a TikTok Shop Open API endpoint. Handles:
@@ -158,9 +159,18 @@ def call_api(
                   app_key and timestamp are added automatically each attempt.
     body_dict: the JSON request body as a dict, or None for GET/no-body calls.
 
+    retry_logger: which logger to use for the retry/backoff messages below
+    (e.g. "Rate limited, waiting Xs..."). Defaults to the shared run_pass
+    logger if not given. Callers like search_creators_with_retry forward
+    unknown kwargs straight through via **retry_kwargs, so passing
+    retry_logger=some_other_logger to them works without any changes needed
+    on their end — e.g. search_creators_with_retry(..., retry_logger=gmv_units_logger).
+
     Does not raise on persistent rate-limiting — returns the last response
     as-is so the caller can log it and move on rather than crash.
     """
+    active_logger = retry_logger if retry_logger is not None else logger
+
     query_params = dict(query_params or {})
     body = json.dumps(body_dict) if body_dict is not None else ""
     headers = {"x-tts-access-token": access_token, "content-type": "application/json"}
@@ -194,12 +204,12 @@ def call_api(
 
         if attempt == max_retries - 1:
             msg = f"  ⚠️  Still failing after {max_retries} attempts — giving up for now. Last error: {result.get('message')}"
-            logger.info(msg)
+            active_logger.info(msg)
             print(msg)
             return result
 
         delay = min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
-        logger.info(f"{failure_reason}. Waiting {delay:.1f}s...")
+        active_logger.info(f"{failure_reason}. Waiting {delay:.1f}s...")
         time.sleep(delay)
 
     return result

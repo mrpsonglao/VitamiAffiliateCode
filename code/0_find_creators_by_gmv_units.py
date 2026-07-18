@@ -98,6 +98,7 @@ while True:
         search_key=search_key,
         page_token=page_token,
         max_retries=10,
+        retry_logger=gmv_units_logger,
     )
 
     if result.get("code") != 0:
