@@ -74,7 +74,7 @@ print(f">>> {manifest['found'].sum()} handles found out of {len(manifest)}. {len
 
 # ## Shortlist search to top ranks first
 # load all creators
-df_creators_list = pd.read_excel("all_creators_sorted.xlsx", sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
+df_creators_list = pd.read_excel("creators/all_creators_sorted.xlsx", sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
 df_creators_list = df_creators_list.merge(manifest, how='left', left_on='username', right_on='handle')
 
 target_batches = [
