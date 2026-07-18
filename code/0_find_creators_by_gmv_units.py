@@ -61,12 +61,16 @@ else:
     refresh_token = os.environ.get("TIKTOK_REFRESH_TOKEN")
 
 # # Extract Top Creators by GMV and Units Sold
-logger = logging.getLogger("search_creators_by_gmv_units_sold")
-logger.setLevel(logging.INFO)
-if not logger.handlers:  # avoid duplicate handlers if this script/module is re-run in the same session
-    _file_handler = logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8")
-    _file_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
-    logger.addHandler(_file_handler)
+# logger and log_print are already set up in tiktok_api_helpers.py and
+# imported via `from tiktok_api_helpers import *` above — no need to redefine
+# them here.
+
+# Count what's already saved from previous runs, so "total so far" reflects
+# the full cumulative manifest, not just what's been collected this session.
+if RESULTS_CSV.exists():
+    previously_saved_count = len(pd.read_csv(RESULTS_CSV, usecols=[0]))
+else:
+    previously_saved_count = 0
 
 # Resume from a previous run if a checkpoint exists, instead of starting
 # over from page 1.
@@ -114,7 +118,7 @@ while True:
     search_key = data.get("search_key", search_key)  # carry forward, per the doc's caching note
     page_token = data.get("next_page_token", "")
 
-    log_print(f"Page {page_num}: {len(creators)} creator(s) (total so far: {len(all_creators)}). page_token={page_token!r}")
+    log_print(f"Page {page_num}: {len(creators)} creator(s) (total so far: {previously_saved_count + len(all_creators)}). page_token={page_token!r}")
 
     # Save progress AFTER handling this page's data, so the checkpoint
     # always points to the next page still needing to be fetched.
@@ -130,7 +134,7 @@ while True:
     page_num += 1
     time.sleep(DELAY_BETWEEN_QUERIES)
 
-log_print(f"\nDone. {len(all_creators)} creator(s) collected this run.")
+log_print(f"\nDone. {len(all_creators)} creator(s) collected this run ({previously_saved_count + len(all_creators)} total in manifest).")
 
 # Pagination finished cleanly (no more pages, or a page failed and we
 # stopped) — clear the checkpoint so a future run starts a fresh search
