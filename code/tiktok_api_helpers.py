@@ -40,6 +40,21 @@ CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_checkpoint.json"
 GMV_UNITS_LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold.log"
 
 CONSOLIDATED_CSV = OUTPUT_DIR / "creators_found.csv"
+
+# Fixed, canonical column order for creator records returned by the
+# Marketplace Search endpoint (used by both search_creators_with_retry via
+# run_pass, and the GMV/units script). Different pages/chunks can have
+# different creators lacking different fields (e.g. no gmv/video_gmv/live_gmv
+# if a creator has no monetary history) — pd.DataFrame(creators) alone would
+# then produce a DIFFERENT column set/order per chunk. Always reindexing to
+# THIS fixed list before saving guarantees every appended row lines up
+# correctly under the same header, permanently.
+CREATOR_SEARCH_COLUMNS = [
+    "avatar", "avg_ec_live_uv", "avg_ec_video_view_count", "category_ids",
+    "creator_open_id", "follower_count", "gmv_range", "nickname",
+    "selection_region", "top_follower_demographics", "username",
+    "gmv", "video_gmv", "live_gmv",
+]
 MANIFEST_CSV = OUTPUT_DIR / "creators_manifest.csv"
 LOG_FILE = OUTPUT_DIR / "run_pass.log"
 
@@ -682,7 +697,7 @@ def run_pass(handles_to_find: list[str], chunk_size: int, df_creators: pd.DataFr
 
             creators = data.get("creators", [])
             if creators:
-                new_df = pd.DataFrame(creators)
+                new_df = pd.DataFrame(creators).reindex(columns=CREATOR_SEARCH_COLUMNS)
                 usernames_found_this_run.update(new_df["username"])
 
                 # Only count/report matches against the handles we actually

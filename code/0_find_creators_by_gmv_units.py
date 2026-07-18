@@ -94,7 +94,10 @@ all_creators = []
 while True:
     result = search_creators_with_retry(
         gmv_ranges=["GMV_RANGE_10000_AND_ABOVE"],
-        units_sold_ranges=["UNITS_SOLD_RANGE_100_1000", "UNITS_SOLD_RANGE_1000_AND_ABOVE"],
+        units_sold_ranges=[
+            # "UNITS_SOLD_RANGE_100_1000", 
+            "UNITS_SOLD_RANGE_1000_AND_ABOVE"
+                           ],
         search_key=search_key,
         page_token=page_token,
         max_retries=100,
@@ -112,7 +115,7 @@ while True:
     # Save this page's results immediately — so if anything crashes on a
     # LATER page, everything collected so far is already safely on disk.
     if creators:
-        df_page = pd.DataFrame(creators)
+        df_page = pd.DataFrame(creators).reindex(columns=CREATOR_SEARCH_COLUMNS)
         file_exists = RESULTS_CSV.exists()
         df_page.to_csv(RESULTS_CSV, mode="a", header=not file_exists, index=False)
 
