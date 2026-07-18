@@ -37,7 +37,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 RESULTS_CSV = OUTPUT_DIR / "creators_gmv_units_sold.csv"
 CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_checkpoint.json"
-LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold.log"
+GMV_UNITS_LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold.log"
 
 CONSOLIDATED_CSV = OUTPUT_DIR / "creators_found.csv"
 MANIFEST_CSV = OUTPUT_DIR / "creators_manifest.csv"
@@ -67,9 +67,23 @@ if not logger.handlers:  # avoid duplicate handlers if this module is re-importe
     logger.addHandler(_file_handler)
 
 def log_print(msg: str) -> None:
-    """Prints to console AND writes to the log file, so nothing shown live is lost."""
+    """Prints to console AND writes to run_pass's log file, so nothing shown live is lost."""
     print(msg)
     logger.info(msg)
+
+
+gmv_units_logger = logging.getLogger("tiktok_api_helpers.gmv_units_search")
+gmv_units_logger.setLevel(logging.INFO)
+if not gmv_units_logger.handlers:
+    _gmv_file_handler = logging.FileHandler(GMV_UNITS_LOG_FILE, mode="a", encoding="utf-8")
+    _gmv_file_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
+    gmv_units_logger.addHandler(_gmv_file_handler)
+
+
+def gmv_units_log_print(msg: str) -> None:
+    """Prints to console AND writes to the GMV/units search's own dedicated log file (separate from run_pass.log)."""
+    print(msg)
+    gmv_units_logger.info(msg)
 
 def generate_sign(path: str, params: dict, app_secret: str, body: str = "") -> str:
     """

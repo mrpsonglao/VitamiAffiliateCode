@@ -79,7 +79,7 @@ if CHECKPOINT_FILE.exists():
     search_key = checkpoint.get("search_key", "")
     page_token = checkpoint.get("page_token", "")
     page_num = checkpoint.get("page_num", 1)
-    log_print(f"Resuming from checkpoint: page {page_num}, page_token={page_token!r}")
+    gmv_units_log_print(f"Resuming from checkpoint: page {page_num}, page_token={page_token!r}")
 else:
     search_key = ""
     page_token = ""
@@ -101,7 +101,7 @@ while True:
     )
 
     if result.get("code") != 0:
-        log_print(f"  ⚠️  Page {page_num} failed after retries, stopping here. page_token={page_token!r}. Result: {result}")
+        gmv_units_log_print(f"  ⚠️  Page {page_num} failed after retries, stopping here. page_token={page_token!r}. Result: {result}")
         break
 
     data = result.get("data", {}) or {}
@@ -118,7 +118,7 @@ while True:
     search_key = data.get("search_key", search_key)  # carry forward, per the doc's caching note
     page_token = data.get("next_page_token", "")
 
-    log_print(f"Page {page_num}: {len(creators)} creator(s) (total so far: {previously_saved_count + len(all_creators)}). page_token={page_token!r}")
+    gmv_units_log_print(f"Page {page_num}: {len(creators)} creator(s) (total so far: {previously_saved_count + len(all_creators)}). page_token={page_token!r}")
 
     # Save progress AFTER handling this page's data, so the checkpoint
     # always points to the next page still needing to be fetched.
@@ -134,13 +134,13 @@ while True:
     page_num += 1
     time.sleep(DELAY_BETWEEN_QUERIES)
 
-log_print(f"\nDone. {len(all_creators)} creator(s) collected this run ({previously_saved_count + len(all_creators)} total in manifest).")
+gmv_units_log_print(f"\nDone. {len(all_creators)} creator(s) collected this run ({previously_saved_count + len(all_creators)} total in manifest).")
 
 # Pagination finished cleanly (no more pages, or a page failed and we
 # stopped) — clear the checkpoint so a future run starts a fresh search
 # instead of "resuming" a search that's actually already done.
 if not page_token:
     CHECKPOINT_FILE.unlink(missing_ok=True)
-    log_print("Checkpoint cleared — search complete.")
+    gmv_units_log_print("Checkpoint cleared — search complete.")
 else:
-    log_print(f"Checkpoint saved (page_token={page_token!r}) — re-run this script to resume from page {page_num + 1}.")
+    gmv_units_log_print(f"Checkpoint saved (page_token={page_token!r}) — re-run this script to resume from page {page_num + 1}.")
