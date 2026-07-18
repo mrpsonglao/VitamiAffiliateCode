@@ -204,18 +204,44 @@ def get_and_save_shop_cipher() -> str:
     return cipher
 
 
-def search_creators_with_retry(keyword: str, search_key: str = "", page_size: int = 20, **retry_kwargs) -> dict:
+def search_creators_with_retry(
+    keyword: str = "",
+    search_key: str = "",
+    page_token: str = "",
+    gmv_ranges: list[str] | None = None,
+    units_sold_ranges: list[str] | None = None,
+    page_size: int = 20,
+    **retry_kwargs,
+) -> dict:
     """
     Seller Search Creator on Marketplace.
     page_size must be 12 or 20 per the doc's requirement.
+    page_token: pagination cursor from a previous response's data.next_page_token.
+    Leave "" for the first call.
     search_key: pass the value from a previous response's data.search_key
     to help TikTok cache/stabilize the search. Leave "" for a first call.
+
+    gmv_ranges: e.g. ["GMV_RANGE_10000_AND_ABOVE"] — multiple values are OR'd
+    together per the doc (a creator matching ANY listed range is included).
+    units_sold_ranges: e.g. ["UNITS_SOLD_RANGE_100_1000", "UNITS_SOLD_RANGE_1000_AND_ABOVE"]
+    — same OR behavior across multiple values.
+
+    keyword is optional here — leave "" to search purely by filters
+    (gmv_ranges/units_sold_ranges) with no username/nickname match required.
     """
     if page_size not in (12, 20):
         raise ValueError("page_size must be 12 or 20")
 
     query_params = {"page_size": page_size}
+    if page_token:
+        query_params["page_token"] = page_token
+
     body_dict = {"keyword": keyword, "search_key": search_key}
+    if gmv_ranges:
+        body_dict["gmv_ranges"] = gmv_ranges
+    if units_sold_ranges:
+        body_dict["units_sold_ranges"] = units_sold_ranges
+
     return call_api("POST", MARKETPLACE_SEARCH_PATH, query_params, body_dict, **retry_kwargs)
 
 
