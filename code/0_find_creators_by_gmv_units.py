@@ -97,7 +97,7 @@ while True:
         units_sold_ranges=["UNITS_SOLD_RANGE_100_1000", "UNITS_SOLD_RANGE_1000_AND_ABOVE"],
         search_key=search_key,
         page_token=page_token,
-        max_retries=10,
+        max_retries=100,
         retry_logger=gmv_units_logger,
     )
 
