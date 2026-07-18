@@ -32,9 +32,9 @@ SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messa
 UPLOAD_MESSAGE_IMAGE_PATH = "/affiliate_seller/202511/images/upload"
 SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/search"
 
-CONSOLIDATED_CSV = "creators_found.csv"
-MANIFEST_CSV = "creators_manifest.csv"
-LOG_FILE = "run_pass.log"
+CONSOLIDATED_CSV = "creators/creators_found.csv"
+MANIFEST_CSV = "creators/creators_manifest.csv"
+LOG_FILE = "creators/run_pass.log"
 
 TARGET_COLLAB_MANIFEST_CSV = "collabs/target_collaboration_manifest.csv"
 TARGET_COLLAB_CREATORS_CSV = "collabs/target_collaboration_creators.csv"
