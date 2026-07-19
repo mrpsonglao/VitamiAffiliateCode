@@ -35,6 +35,7 @@ SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/
 OUTPUT_DIR = Path("creators")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+SORTED_EXCEL_FILE = OUTPUT_DIR / "all_creators_sorted.xlsx"
 RESULTS_CSV = OUTPUT_DIR / "creators_gmv_units_sold.csv"
 CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_checkpoint.json"
 GMV_UNITS_LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold.log"

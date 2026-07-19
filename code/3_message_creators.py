@@ -78,7 +78,7 @@ print(df_all_sample_applications['status'].value_counts())
 # # Step 2. Create Conversations
 # ## Track conversation IDs of all creators
 # load all creators
-df_creators_list = pd.read_excel("all_creators_sorted.xlsx", sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
+df_creators_list = pd.read_excel(SORTED_EXCEL_FILE, sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
 df_creators = pd.read_csv(CONSOLIDATED_CSV)
 df_all_conversations = pd.read_csv(ALL_CONVERSATIONS_CSV)
 df_target_collab = pd.read_csv(TARGET_COLLAB_CREATORS_CSV)
