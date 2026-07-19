@@ -203,19 +203,26 @@ for batch_name, group in df_creators_list_id_new.groupby('batch_name'):
         created_at = datetime.now(timezone.utc).isoformat()
 
         if result.get("code") == 0:
-            collab_id = result["data"]["target_collaboration"]["id"]
-            print(f"  ✅ Created: {collab_id}")
+            try:
+                collab_id = result["data"]["target_collaboration"]["id"]
+            except (KeyError, TypeError) as e:
+                print(f"  ⚠️  Unexpected response shape ({e}). Full result:")
+                print(json.dumps(result, indent=2))
+                collab_id = None
+            else:
+                print(f"  ✅ Created: {collab_id}")
 
             # One row per creator invited to this collaboration, only recorded
             # on success (a failed collaboration never actually invited anyone).
-            for creator_open_id in chunk:
-                creator_rows.append({
-                    "target_collaboration_id": collab_id,
-                    "name": name,
-                    "batch_name": batch_name,
-                    "creator_open_id": creator_open_id,
-                    "end_time": end_time,
-                })
+            if collab_id is not None:
+                for creator_open_id in chunk:
+                    creator_rows.append({
+                        "target_collaboration_id": collab_id,
+                        "name": name,
+                        "batch_name": batch_name,
+                        "creator_open_id": creator_open_id,
+                        "end_time": end_time,
+                    })
         else:
             collab_id = None
             print(f"  ⚠️  Failed: {result}")
