@@ -78,8 +78,7 @@ print(df_all_sample_applications['status'].value_counts())
 # # Step 2. Create Conversations
 # ## Track conversation IDs of all creators
 # load all creators
-df_creators_list = pd.read_excel(SORTED_EXCEL_FILE, sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
-df_creators = pd.read_csv(CONSOLIDATED_CSV)
+df_creators = pd.read_csv(RESULTS_CSV)
 df_all_conversations = pd.read_csv(ALL_CONVERSATIONS_CSV)
 df_target_collab = pd.read_csv(TARGET_COLLAB_CREATORS_CSV)
 
@@ -88,8 +87,7 @@ df_target_collab['target_collaboration_id'] = df_target_collab['target_collabora
 df_all_conversations['conversation_id'] = df_all_conversations['conversation_id'].astype(str)
 
 # merge all extracted data
-df_creators_messaging = df_creators_list \
-    .merge(df_creators[['username', 'creator_open_id']], how='left', on="username") \
+df_creators_messaging = df_creators[['username', 'creator_open_id']] \
     .merge(df_target_collab.rename(columns={'name':'target_collaboration_name'}).drop(['batch_name'], axis=1), how='left', on="creator_open_id") \
     .merge(df_all_sample_applications[['creator.creator_open_id', 'status']].rename(columns={'creator.creator_open_id':'creator_open_id', 'status':'sample_status'}), how='left', on="creator_open_id") \
     .merge(df_all_conversations, how='left', on="username")
@@ -143,8 +141,7 @@ df_all_conversations['conversation_id'] = df_all_conversations['conversation_id'
 
 # # Step 3. Bulk Send Message
 # merge all extracted data
-df_creators_messaging = df_creators_list \
-    .merge(df_creators[['username', 'creator_open_id']], how='left', on="username") \
+df_creators_messaging = df_creators[['username', 'creator_open_id']] \
     .merge(df_target_collab.rename(columns={'name':'target_collaboration_name'}).drop(['batch_name'], axis=1), how='left', on="creator_open_id") \
     .merge(df_all_sample_applications[['creator.creator_open_id', 'status']].rename(columns={'creator.creator_open_id':'creator_open_id', 'status':'sample_status'}), how='left', on="creator_open_id") \
     .merge(df_all_conversations, how='left', on="username")

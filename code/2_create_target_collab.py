@@ -59,23 +59,15 @@ else:
 
 
 # # Step 1: Load Creator Open IDs
-# load all creators
-df_creators_list = pd.read_excel(SORTED_EXCEL_FILE, sheet_name="LIST_CREATOR", usecols=[1, 2, 25])
-list_all_creators = df_creators_list['username'].tolist()
-
-# Load or initialize the manifest (tracks which handles are already found)
-manifest = pd.read_csv(MANIFEST_CSV)
-df_creators = pd.read_csv(CONSOLIDATED_CSV)
-
-# recheck manifest in case of failed runs
-manifest["found"] = manifest["handle"].isin(set(df_creators['username']))
-manifest.to_csv(MANIFEST_CSV, index=False)
-print(f"{manifest['found'].sum()} creator_open_id found")
+# Creators found via the GMV/units-sold filter search already have both
+# username and creator_open_id, so no separate Excel handle list or
+# found/not-found manifest is needed anymore.
+df_creators = pd.read_csv(RESULTS_CSV)
 
 # # Step 2: Extract List of existing target collaborations to avoid invitation conflicts
 
 # load IDs to check
-creator_open_id_list = df_creators.loc[df_creators['username'].isin(set(manifest['handle'])), 'creator_open_id'].tolist()
+creator_open_id_list = df_creators['creator_open_id'].tolist()
 product_id_list = ['1734810555690551128']
 
 # Load known conflicts from previous runs
@@ -118,8 +110,7 @@ else:
 
 # ## Review current status
 # merge all extracted data
-df_creators_list_id_conflict = df_creators_list \
-    .merge(df_creators[['username', 'creator_open_id']], how='left', on="username") \
+df_creators_list_id_conflict = df_creators \
     .merge(df_all_collab_conflicts, how='left', on="creator_open_id")
 
 df_creator_summary = df_creators_list_id_conflict.groupby('batch_name').agg(
@@ -127,7 +118,6 @@ df_creator_summary = df_creators_list_id_conflict.groupby('batch_name').agg(
     creators_with_id=('creator_open_id', 'count'),
     invited=('existing_collaboration_id', 'count'),
 )
-
 df_creator_summary['to_invite'] = df_creator_summary['creators_with_id'] - df_creator_summary['invited']
 print(df_creator_summary)
 
@@ -169,7 +159,9 @@ manifest_df = pd.read_csv(TARGET_COLLAB_MANIFEST_CSV)
 optimize_collab_count = True
 optimize_cutoff = 50
 
-# Batch-create target collaborations: group by batch_name, then chunk each group's creators into groups of 50 (the API's max per invitation)
+# Batch-create target collaborations: group by batch_name (the GMV/units
+# pairing that produced each creator), then chunk each group's creators
+# into groups of 50 (the API's max per invitation)
 results = []
 creator_rows = []  # long-format rows: one per (target_collaboration_id, creator_open_id)
 
