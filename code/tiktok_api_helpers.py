@@ -32,15 +32,11 @@ SEND_IM_MESSAGE_PATH_TEMPLATE = "/affiliate_seller/202412/conversations/{}/messa
 UPLOAD_MESSAGE_IMAGE_PATH = "/affiliate_seller/202511/images/upload"
 SEARCH_SAMPLE_APPLICATIONS_PATH = "/affiliate_seller/202508/sample_applications/search"
 
-OUTPUT_DIR = Path("creators")
-OUTPUT_DIR.mkdir(exist_ok=True)
-
-SORTED_EXCEL_FILE = OUTPUT_DIR / "all_creators_sorted.xlsx"
-RESULTS_CSV = OUTPUT_DIR / "creators_gmv_units_sold_not_invited_l90_days.csv"
-CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_not_invited_l90_days_checkpoint.json"
-GMV_UNITS_LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold_not_invited_l90_days.log"
-
-CONSOLIDATED_CSV = OUTPUT_DIR / "creators_found.csv"
+OUTPUT_DIR_NEW = Path("creators_new")
+SORTED_EXCEL_FILE = OUTPUT_DIR_NEW / "all_creators_sorted.xlsx"
+RESULTS_CSV = OUTPUT_DIR_NEW / "creators_gmv_units_sold_not_invited_l90_days.csv"
+CHECKPOINT_FILE = OUTPUT_DIR_NEW / "creators_gmv_units_sold_not_invited_l90_days_checkpoint.json"
+GMV_UNITS_LOG_FILE = OUTPUT_DIR_NEW / "search_creators_by_gmv_units_sold_not_invited_l90_days.log"
 
 # Fixed, canonical column order for creator records returned by the
 # Marketplace Search endpoint (used by both search_creators_with_retry via
@@ -56,6 +52,9 @@ CREATOR_SEARCH_COLUMNS = [
     "selection_region", "top_follower_demographics", "username",
     "gmv", "video_gmv", "live_gmv",
 ]
+
+OUTPUT_DIR = Path("creators")
+CONSOLIDATED_CSV = OUTPUT_DIR / "creators_found.csv"
 MANIFEST_CSV = OUTPUT_DIR / "creators_manifest.csv"
 LOG_FILE = OUTPUT_DIR / "run_pass.log"
 
