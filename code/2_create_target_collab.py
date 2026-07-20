@@ -156,7 +156,7 @@ manifest_df = pd.read_csv(TARGET_COLLAB_MANIFEST_CSV)
 
 # ## Batch process Target Collab
 # create collab only if there are at N=optimize_cutoff in the group
-optimize_collab_count = True
+optimize_collab_count = False
 optimize_cutoff = 50
 
 # Batch-create target collaborations: group by batch_name (the GMV/units
