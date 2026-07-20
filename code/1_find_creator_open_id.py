@@ -83,7 +83,7 @@ target_batches = [
        'Health_202606_04k-06k', 'All_202606_04k-06k',
        'Health_202606_06k-08k', 'All_202606_06k-08k',
        'Health_202606_08k-10k', 'All_202606_08k-10k',
-    #    'Health_202606_10k-12k', 'All_202606_10k-12k'
+       'Health_202606_10k-12k', 'All_202606_10k-12k'
        ]
 
 still_not_found = df_creators_list.loc[(df_creators_list['batch_name'].isin(target_batches) & ~df_creators_list['found']), 'username'].tolist()
@@ -102,33 +102,14 @@ proceed = input("Proceed with finding creator open IDs? (y/n): ").strip().lower(
 if proceed != "y":
     raise SystemExit("Stopped by user.")
 
-# ## First-pass: Chunk size = 10
-# Phase 1: chunk_size=10, single pass through everything not yet found
-print("\n\n\n>>> Starting Phase 1 (chunksize = 10)")
-still_not_found, found_usernames, df_creators = run_pass(still_not_found, chunk_size=10, df_creators=df_creators)
+chunk_size_phase_list = [20, 10, 5, 1]
+for phase_num, chunk_size in enumerate(chunk_size_phase_list, start=1):
+    print(f"\n\n\n>>> Starting Phase {phase_num} (chunksize = {chunk_size})")
 
-manifest["found"] = manifest["handle"].isin(found_usernames)
-manifest.to_csv(MANIFEST_CSV, index=False)
-print(f"\nPhase 1 (chunksize = 10) done. {len(still_not_found)} handles still not found.\n")
+    still_not_found, found_usernames, df_creators = run_pass(still_not_found, chunk_size=chunk_size, df_creators=df_creators)
 
-# ## Second-pass: Chunk size = 5
-# Phase 2: chunk_size=5, only for leftovers from phase 1
-print("\n\n\n>>> Starting Phase 2 (chunksize = 5)")
-still_not_found, found_usernames, df_creators = run_pass(still_not_found, chunk_size=5, df_creators=df_creators)
+    found_usernames = set(df_creators["username"])
+    manifest["found"] = manifest["handle"].isin(found_usernames)
+    manifest.to_csv(MANIFEST_CSV, index=False)
 
-found_usernames = set(df_creators["username"])
-manifest["found"] = manifest["handle"].isin(found_usernames)
-manifest.to_csv(MANIFEST_CSV, index=False)
-
-print(f"\nPhase 2 (chunksize = 5) done. {int(manifest['found'].sum())} / {len(manifest)} handles found.")
-
-# ## Third-pass: Chunk size = 1
-# Phase 3: chunk_size=1, only for leftovers from phase 2
-print("\n\n\n>>> Starting Phase 3 (chunksize = 1)")
-still_not_found, found_usernames, df_creators = run_pass(still_not_found, chunk_size=1, df_creators=df_creators)
-
-found_usernames = set(df_creators["username"])
-manifest["found"] = manifest["handle"].isin(found_usernames)
-manifest.to_csv(MANIFEST_CSV, index=False)
-
-print(f"\Phase 3 (chunksize = 1) done. {int(manifest['found'].sum())} / {len(manifest)} handles found.")
+    print(f"\nPhase {phase_num} (chunksize = {chunk_size}) done. {int(manifest['found'].sum())} out of {len(manifest)} handles found. {len(still_not_found)} handles still not found.\n")
