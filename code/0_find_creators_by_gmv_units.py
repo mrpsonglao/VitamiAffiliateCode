@@ -95,8 +95,8 @@ while True:
     result = search_creators_with_retry(
         gmv_ranges=["GMV_RANGE_10000_AND_ABOVE"],
         units_sold_ranges=[
-            # "UNITS_SOLD_RANGE_100_1000", 
-            "UNITS_SOLD_RANGE_1000_AND_ABOVE"
+            "UNITS_SOLD_RANGE_100_1000", 
+            # "UNITS_SOLD_RANGE_1000_AND_ABOVE"
                            ],
         not_invited_l90_days=True,
         search_key=search_key,
