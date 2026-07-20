@@ -62,7 +62,7 @@ else:
 # Creators found via the GMV/units-sold filter search already have both
 # username and creator_open_id, so no separate Excel handle list or
 # found/not-found manifest is needed anymore.
-df_creators = pd.read_csv(RESULTS_CSV)
+df_creators = pd.read_csv(RESULTS_CSV).drop_duplicates(subset=['creator_open_id', 'username'], keep='last')
 
 # # Step 2: Extract List of existing target collaborations to avoid invitation conflicts
 
