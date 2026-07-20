@@ -102,7 +102,7 @@ proceed = input("Proceed with finding creator open IDs? (y/n): ").strip().lower(
 if proceed != "y":
     raise SystemExit("Stopped by user.")
 
-chunk_size_phase_list = [20, 10, 5, 1]
+chunk_size_phase_list = [10, 5, 1]
 for phase_num, chunk_size in enumerate(chunk_size_phase_list, start=1):
     print(f"\n\n\n>>> Starting Phase {phase_num} (chunksize = {chunk_size})")
 
