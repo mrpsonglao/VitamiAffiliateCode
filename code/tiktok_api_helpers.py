@@ -36,9 +36,9 @@ OUTPUT_DIR = Path("creators")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 SORTED_EXCEL_FILE = OUTPUT_DIR / "all_creators_sorted.xlsx"
-RESULTS_CSV = OUTPUT_DIR / "creators_gmv_units_sold.csv"
-CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_checkpoint.json"
-GMV_UNITS_LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold.log"
+RESULTS_CSV = OUTPUT_DIR / "creators_gmv_units_sold_not_invited_l90_days.csv"
+CHECKPOINT_FILE = OUTPUT_DIR / "creators_gmv_units_sold_not_invited_l90_days_checkpoint.json"
+GMV_UNITS_LOG_FILE = OUTPUT_DIR / "search_creators_by_gmv_units_sold_not_invited_l90_days.log"
 
 CONSOLIDATED_CSV = OUTPUT_DIR / "creators_found.csv"
 
@@ -261,6 +261,7 @@ def search_creators_with_retry(
     page_token: str = "",
     gmv_ranges: list[str] | None = None,
     units_sold_ranges: list[str] | None = None,
+    not_invited_l90_days: bool | None = None,
     page_size: int = 20,
     **retry_kwargs,
 ) -> dict:
@@ -277,8 +278,12 @@ def search_creators_with_retry(
     units_sold_ranges: e.g. ["UNITS_SOLD_RANGE_100_1000", "UNITS_SOLD_RANGE_1000_AND_ABOVE"]
     — same OR behavior across multiple values.
 
+    not_invited_l90_days: pass True to exclude creators you've already invited
+    to a target collaboration in the last 90 days. Maps to the nested
+    body field affiliate_data.not_invited_l90_days.
+
     keyword is optional here — leave "" to search purely by filters
-    (gmv_ranges/units_sold_ranges) with no username/nickname match required.
+    (gmv_ranges/units_sold_ranges/not_invited_l90_days) with no username/nickname match required.
     """
     if page_size not in (12, 20):
         raise ValueError("page_size must be 12 or 20")
@@ -292,6 +297,8 @@ def search_creators_with_retry(
         body_dict["gmv_ranges"] = gmv_ranges
     if units_sold_ranges:
         body_dict["units_sold_ranges"] = units_sold_ranges
+    if not_invited_l90_days is not None:
+        body_dict["affiliate_data"] = {"not_invited_l90_days": not_invited_l90_days}
 
     return call_api("POST", MARKETPLACE_SEARCH_PATH, query_params, body_dict, **retry_kwargs)
 

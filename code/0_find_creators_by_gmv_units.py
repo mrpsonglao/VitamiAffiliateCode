@@ -98,6 +98,7 @@ while True:
             # "UNITS_SOLD_RANGE_100_1000", 
             "UNITS_SOLD_RANGE_1000_AND_ABOVE"
                            ],
+        not_invited_l90_days=True,
         search_key=search_key,
         page_token=page_token,
         max_retries=100,
