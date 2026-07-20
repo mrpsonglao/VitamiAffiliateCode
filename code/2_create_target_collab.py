@@ -151,7 +151,8 @@ free_sample_rule = {
     'is_sample_approval_exempt': True
 }
 
-# Load prior runs' manifest so chunk numbering continues from where each batch_name last left off, instead of restarting at 01 every run.
+# Load prior runs' manifest so numbering continues from where today's last
+# collaboration left off, instead of restarting at _01 every run.
 manifest_df = pd.read_csv(TARGET_COLLAB_MANIFEST_CSV)
 
 # ## Batch process Target Collab
@@ -159,27 +160,40 @@ manifest_df = pd.read_csv(TARGET_COLLAB_MANIFEST_CSV)
 optimize_collab_count = False
 optimize_cutoff = 50
 
+# Target collaboration names have a 30-character limit, so the actual
+# pairing name (e.g. "GMV_RANGE_10000_AND_ABOVE-UNITS_SOLD_RANGE_100_1000")
+# is too long to use directly. Instead, name = "{today's date}_{seq:02d}",
+# e.g. 2026-07-20_01, 2026-07-20_02, ... — a single running sequence for
+# today, shared across every batch_name/pairing in this run (not reset per
+# pairing). batch_name is still recorded in the manifest/creator rows as
+# metadata, just no longer embedded in the name itself.
+today_str = datetime.now().strftime("%Y-%m-%d")
+
+todays_names = manifest_df.loc[manifest_df["name"].str.startswith(f"{today_str}_", na=False), "name"]
+if not todays_names.empty:
+    existing_seq_numbers = todays_names.str.extract(rf"{today_str}_(\d+)")[0].astype(int)
+    chunk_count = int(existing_seq_numbers.max()) + 1
+else:
+    chunk_count = 1
+
 # Batch-create target collaborations: group by batch_name (the GMV/units
-# pairing that produced each creator), then chunk each group's creators
-# into groups of 50 (the API's max per invitation)
+# pairing that produced each creator) purely to check conflicts/track
+# provenance — chunk_count numbering itself is now global across all
+# batches combined, not restarted per batch_name.
 results = []
 creator_rows = []  # long-format rows: one per (target_collaboration_id, creator_open_id)
 
 for batch_name, group in df_creators_list_id_new.groupby('batch_name'):
     creator_ids = group['creator_open_id'].tolist()
     chunks = [creator_ids[i:i + 50] for i in range(0, len(creator_ids), 50)]
-    # Find the highest chunk_count already used for this batch_name in the manifest (across any previous run), and continue numbering from there.
-    existing_counts = manifest_df.loc[manifest_df["batch_name"] == batch_name, "chunk_count"]
-    start_count = int(existing_counts.max()) + 1 if not existing_counts.empty else 1
 
-    for offset, chunk in enumerate(chunks):
+    for chunk in chunks:
         if optimize_collab_count:
             if len(chunk) < optimize_cutoff:
                 continue
 
-        chunk_count = start_count + offset
-        name = f"{batch_name}_{chunk_count:02d}"
-        print(f"Creating '{name}' with {len(chunk)} creators...")
+        name = f"{today_str}_{chunk_count:03d}"
+        print(f"Creating '{name}' with {len(chunk)} creators (source batch: {batch_name})...")
 
         result = create_target_collaboration(
             name=name,
@@ -230,6 +244,10 @@ for batch_name, group in df_creators_list_id_new.groupby('batch_name'):
             "created_at": created_at,
             "end_time": end_time,
         })
+
+        # Increment regardless of success/failure, so a failed attempt's
+        # name is never reused for a different chunk later in this same run.
+        chunk_count += 1
 
 # Append a summary row per collaboration to the CSV manifest.
 if results:
